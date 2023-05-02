@@ -1,0 +1,305 @@
+2023-05-01 21:22:31 database: opening C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1 (build 214)
+2023-05-01 21:22:31 database: opened C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:22:31 database: connecting session #3 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:22:31 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:22:31 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:22:31 jdbc[3]: 
+/*SQL #:1 t:2*/CALL READONLY();
+2023-05-01 21:22:32 database: connecting session #4 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:22:32 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:22:32 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:22:32 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:22:32 database: connecting session #5 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:22:32 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:22:32 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:22:32 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:22:32 database: connecting session #6 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:22:32 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:22:32 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:22:32 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:22:32 database: connecting session #7 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:22:32 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:22:32 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:22:32 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:22:32 database: connecting session #8 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:22:32 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:22:32 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:22:32 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:22:32 database: connecting session #9 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:22:32 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:22:32 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:22:32 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:22:32 database: connecting session #10 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:22:32 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:22:32 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:22:32 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:22:32 database: connecting session #11 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:22:32 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:22:32 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:22:32 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:22:32 database: connecting session #12 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:22:32 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:22:32 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:22:32 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:22:32 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-01 21:22:33 jdbc[3]: 
+/*SQL t:3*/select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-01 21:22:33 jdbc[3]: 
+/*SQL t:2*/create table appointments (id bigint not null, appointment_slot_id bigint, barber_id bigint, client_id bigint, primary key (id));
+2023-05-01 21:22:33 jdbc[3]: 
+/*SQL */create table appointment_slot (appointment_slot_id bigint not null, barber_id bigint, date timestamp(6), end_time varchar(255), start_time varchar(255), primary key (appointment_slot_id));
+2023-05-01 21:22:34 jdbc[3]: 
+/*SQL */create table barber (id bigint not null, email varchar(255), first_name varchar(255), geo_hash varchar(255), last_name varchar(255), latitude float(53), location varchar(255), longitude float(53), middle_name varchar(255), primary key (id));
+2023-05-01 21:22:34 jdbc[3]: 
+/*SQL */create table client (id bigint not null, email varchar(255), first_name varchar(255), geo_hash varchar(255), last_name varchar(255), latitude float(53), location varchar(255), longitude float(53), middle_name varchar(255), primary key (id));
+2023-05-01 21:34:32 database: closing C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1 from shutdown hook
+2023-05-01 21:34:32 database: disconnecting session #3
+2023-05-01 21:34:32 database: disconnected session #3
+2023-05-01 21:34:32 database: disconnecting session #4
+2023-05-01 21:34:32 database: disconnected session #4
+2023-05-01 21:34:32 database: disconnecting session #5
+2023-05-01 21:34:32 database: disconnected session #5
+2023-05-01 21:34:32 database: disconnecting session #6
+2023-05-01 21:34:32 database: disconnected session #6
+2023-05-01 21:34:32 database: disconnecting session #7
+2023-05-01 21:34:32 database: disconnected session #7
+2023-05-01 21:34:32 database: disconnecting session #8
+2023-05-01 21:34:32 database: disconnected session #8
+2023-05-01 21:34:32 database: disconnecting session #9
+2023-05-01 21:34:32 database: disconnected session #9
+2023-05-01 21:34:32 database: disconnecting session #10
+2023-05-01 21:34:32 database: disconnected session #10
+2023-05-01 21:34:32 database: disconnecting session #11
+2023-05-01 21:34:32 database: disconnected session #11
+2023-05-01 21:34:32 database: disconnecting session #12
+2023-05-01 21:34:32 database: disconnected session #12
+2023-05-01 21:34:32 database: closing C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:34:32 database: closed
+2023-05-01 21:34:47 database: opening C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1 (build 214)
+2023-05-01 21:34:47 database: opened C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:34:47 database: connecting session #3 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:34:47 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:34:47 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:34:47 jdbc[3]: 
+/*SQL #:1 t:2*/CALL READONLY();
+2023-05-01 21:34:48 database: connecting session #4 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:34:48 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:34:48 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:34:48 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:34:48 database: connecting session #5 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:34:48 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:34:48 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:34:48 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:34:48 database: connecting session #6 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:34:48 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:34:48 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:34:48 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:34:48 database: connecting session #7 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:34:48 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:34:48 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:34:48 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:34:48 database: connecting session #8 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:34:48 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:34:48 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:34:48 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:34:48 database: connecting session #9 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:34:48 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:34:48 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:34:48 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:34:48 database: connecting session #10 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:34:48 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:34:48 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:34:48 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:34:48 database: connecting session #11 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:34:48 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:34:48 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:34:48 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:34:48 database: connecting session #12 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:34:48 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:34:48 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:34:48 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:34:48 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-01 21:34:49 jdbc[3]: 
+/*SQL t:2*/select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-01 21:36:04 database: closing C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1 from shutdown hook
+2023-05-01 21:36:04 database: disconnecting session #3
+2023-05-01 21:36:04 database: disconnected session #3
+2023-05-01 21:36:04 database: disconnecting session #4
+2023-05-01 21:36:04 database: disconnected session #4
+2023-05-01 21:36:04 database: disconnecting session #5
+2023-05-01 21:36:04 database: disconnected session #5
+2023-05-01 21:36:04 database: disconnecting session #6
+2023-05-01 21:36:04 database: disconnected session #6
+2023-05-01 21:36:04 database: disconnecting session #7
+2023-05-01 21:36:04 database: disconnected session #7
+2023-05-01 21:36:04 database: disconnecting session #8
+2023-05-01 21:36:04 database: disconnected session #8
+2023-05-01 21:36:04 database: disconnecting session #9
+2023-05-01 21:36:04 database: disconnected session #9
+2023-05-01 21:36:04 database: disconnecting session #10
+2023-05-01 21:36:04 database: disconnected session #10
+2023-05-01 21:36:04 database: disconnecting session #11
+2023-05-01 21:36:04 database: disconnected session #11
+2023-05-01 21:36:04 database: disconnecting session #12
+2023-05-01 21:36:04 database: disconnected session #12
+2023-05-01 21:36:05 database: closing C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:36:05 database: closed
+2023-05-01 21:40:11 database: opening C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1 (build 214)
+2023-05-01 21:40:11 database: opened C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:40:11 database: connecting session #3 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:40:11 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:40:11 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:40:11 jdbc[3]: 
+/*SQL #:1 t:2*/CALL READONLY();
+2023-05-01 21:40:11 database: connecting session #4 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:40:11 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:40:11 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:40:11 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:40:11 database: connecting session #5 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:40:11 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:40:11 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:40:11 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:40:11 database: connecting session #6 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:40:11 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:40:11 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:40:11 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:40:12 database: connecting session #7 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:40:12 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:40:12 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:40:12 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:40:12 database: connecting session #8 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:40:12 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:40:12 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:40:12 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:40:12 database: connecting session #9 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:40:12 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:40:12 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:40:12 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:40:12 database: connecting session #10 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:40:12 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:40:12 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:40:12 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:40:12 database: connecting session #11 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:40:12 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:40:12 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:40:12 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:40:12 database: connecting session #12 to C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 21:40:12 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-01 21:40:12 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db1;TRACE_LEVEL_FILE=2", "", "");
+2023-05-01 21:40:12 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-01 21:40:12 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-01 21:40:13 jdbc[3]: 
+/*SQL t:2*/select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-01 22:06:10 database: closing C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1 from shutdown hook
+2023-05-01 22:06:10 database: disconnecting session #3
+2023-05-01 22:06:10 database: disconnected session #3
+2023-05-01 22:06:10 database: disconnecting session #4
+2023-05-01 22:06:10 database: disconnected session #4
+2023-05-01 22:06:10 database: disconnecting session #5
+2023-05-01 22:06:10 database: disconnected session #5
+2023-05-01 22:06:10 database: disconnecting session #6
+2023-05-01 22:06:10 database: disconnected session #6
+2023-05-01 22:06:10 database: disconnecting session #7
+2023-05-01 22:06:10 database: disconnected session #7
+2023-05-01 22:06:10 database: disconnecting session #8
+2023-05-01 22:06:10 database: disconnected session #8
+2023-05-01 22:06:10 database: disconnecting session #9
+2023-05-01 22:06:10 database: disconnected session #9
+2023-05-01 22:06:10 database: disconnecting session #10
+2023-05-01 22:06:10 database: disconnected session #10
+2023-05-01 22:06:10 database: disconnecting session #11
+2023-05-01 22:06:10 database: disconnected session #11
+2023-05-01 22:06:10 database: disconnecting session #12
+2023-05-01 22:06:10 database: disconnected session #12
+2023-05-01 22:06:10 database: closing C:/Users/Binyamin Jachter/CompSci/Capstone/COM4020_SPR23/UBarber/database/files/db1
+2023-05-01 22:06:10 database: closed

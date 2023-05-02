@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Barber/Client Profile</title>
+</head>
+
+<body>
+    <h1 id="formHeader"> Login/Register</h1>
+    <form id="profile-form">
+        <input type="radio" id="barber" name="profile-type" value="barber">
+        <label for="barber" style="font-size: 20px; width: 50%; margin: 0 auto;">Barber</label>
+        <input type="radio" id="client" name="profile-type" value="client">
+        <label for="client" style="font-size: 20px; text-align: center;">Client</label>
+        <br><br>
+        <label for="id" style="font-size: 20px; text-align: center;">ID:</label>
+        <input type="text" id="id" name="id" required><br>
+
+        <label for="email" style="font-size: 20px; text-align: center;">Email:</label>
+        <input type="text" id="email" name="email" required><br>
+
+        <label for="firstname" style="font-size: 20px; text-align: center;">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required><br>
+
+        <label for="middlename" style="font-size: 20px; text-align: center;">Middle Name:</label>
+        <input type="text" id="middlename" name="middlename"><br>
+
+        <label for="lastname" style="font-size: 20px; text-align: center;">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required><br>
+
+        <label for="location" style="font-size: 20px; text-align: center;">Location:</label>
+        <input type="text" id="location" name="location" required><br>
+
+        <input type="submit" style="font-size: 15px; text-align: center;" value="Create Profile">
+    </form>
+
+    <img id="logo-pic" src="barberLogo.jpg" alt="barberLogog" style="width: 200px; height: 200px;">
+    <script src="./signIn.js"></script>
+</body>

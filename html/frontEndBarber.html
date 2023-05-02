@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Barber/Client Profile</title>
+</head>
+
+<body>
+    <h1 id="formHeader"> Create Profile</h1>
+    <form id="profile-form">
+        <input type="radio" id="barber" name="profile-type" value="barber">
+        <label for="barber" style="font-size: 20px; width: 50%; margin: 0 auto;">Barber</label>
+        <input type="radio" id="client" name="profile-type" value="client">
+        <label for="client" style="font-size: 20px; text-align: center;">Client</label>
+        <br><br>
+        <label for="id" style="font-size: 20px; text-align: center;">ID:</label>
+        <input type="text" id="id" name="id" required><br>
+
+        <label for="email" style="font-size: 20px; text-align: center;">Email:</label>
+        <input type="text" id="email" name="email" required><br>
+
+        <label for="firstname" style="font-size: 20px; text-align: center;">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required><br>
+
+        <label for="middlename" style="font-size: 20px; text-align: center;">Middle Name:</label>
+        <input type="text" id="middlename" name="middlename"><br>
+
+        <label for="lastname" style="font-size: 20px; text-align: center;">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required><br>
+
+        <label for="location" style="font-size: 20px; text-align: center;">Location:</label>
+        <input type="text" id="location" name="location" required><br>
+
+        <input type="submit" style="font-size: 15px; text-align: center;" value="Create Profile">
+    </form>
+
+    <img id="logo-pic" src="barberLogo.jpg" alt="barberLogog" style="width: 200px; height: 200px;">
+
+
+    <div id="option-buttons" style="display: none;">
+        <h1 style="color: blue;">Select an option </h1>
+        <button id="booked-appointments" style="background-color: aliceblue; font-size: 20px;">View booked
+            appointments</button>
+        <button id="nearby-barbers" style="background-color: aliceblue; font-size: 20px;">Get nearby barbers</button>
+        <button id="all-barbers" style="background-color: aliceblue; font-size: 20px;">View all barbers</button>
+        <button id="book-appointment" style="background-color: aliceblue; font-size: 20px;">Book appointment</button>
+        <button id="cancel-appointment" style="background-color: aliceblue; font-size: 20px;">Cancel
+            appointment</button>
+        <button id="add-schedule" style="display:none; background-color: aliceblue; font-size: 20px;">Add
+            Schedule</button>
+        <button id="find-appointment" style="background-color: aliceblue; font-size: 20px;">Find Appointment</button>
+    </div>
+
+
+
+    <div id="view-booked-appointments-page" style="display: none;">
+        <h1>View booked appointments</h1>
+    </div>
+
+    <div id="add-schedule-page" style="display: none;">
+        <h1>Add Schedule</h1>
+        <form id="add-schedule-form">
+            <label for="day">Day:</label>
+            <input type="text" id="day" name="day"><br>
+            <label for="start-time">Start Time:</label>
+            <input type="text" id="start-time" name="start-time"><br>
+            <label for="end-time">End Time:</label>
+            <input type="text" id="end-time" name="end-time"><br>
+            <input type="submit" value="Add Schedule">
+        </form>
+    </div>
+
+    <div id="nearby-barbers-page" style="display: none;">
+        <h1>Nearby Barbers</h1>
+        <form id="nearby-barbers-form">
+            <label for="nbplocation">Location:</label>
+            <input type="text" id="nbplocation" name="location"><br>
+            <input type="submit" value="Get Nearby Barbers">
+        </form>
+    </div>
+
+    <div id="all-barbers-page" style="display: none;">
+        <h1>All Barbers</h1>
+    </div>
+
+    <div id="book-appointment-page" style="display: none;">
+        <h1>Book Appointment</h1>
+        <form id="book-appointment-form">
+            <label for="barber-id">Barber ID:</label>
+            <input type="text" id="barber-id" name="barber-id"><br>
+            <label for="client-id">Client ID:</label>
+            <input type="text" id="client-id" name="client-id"><br>
+            <label for="date">Date:</label>
+            <input type="text" id="date" name="date"><br>
+            <label for="time">Time:</label>
+            <input type="text" id="time" name="time"><br>
+            <input type="submit" value="Book Appointment">
+        </form>
+    </div>
+
+    <div id="cancel-appointment-page" style="display: none;">
+        <h1>Cancel Appointment</h1>
+        <form id="cancel-appointment-form">
+            <label for="appointment-id">Appointment ID:</label>
+            <input type="text" id="appointment-id" name="appointment-id"><br>
+            <input type="submit" value="Cancel Appointment">
+        </form>
+    </div>
+
+    <div id="find-appointment-page" style="display: none;">
+        <h1>Find Appointment</h1>
+        <button id="find-by-barber" style="background-color: aliceblue; font-size: 20px;">Find By Barber</button>
+        <button id="find-by-date" style="background-color: aliceblue; font-size: 20px;">Find By Date</button>
+        <button id="find-by-time" style="background-color: aliceblue; font-size: 20px;">Find By Time</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

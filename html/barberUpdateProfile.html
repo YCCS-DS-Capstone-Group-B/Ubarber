@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Barber Update Profile</title>
+</head>
+
+<body>
+    <div id="update-profile-page">
+        <h1>Update Profile</h1>
+        <form id="update-profile-form">
+            <label for="id" style="font-size: 20px; text-align: center;">ID:</label>
+            <input type="text" id="id" name="id" required><br>
+    
+            <label for="email" style="font-size: 20px; text-align: center;">Email:</label>
+            <input type="text" id="email" name="email" required><br>
+    
+            <label for="firstname" style="font-size: 20px; text-align: center;">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required><br>
+    
+            <label for="middlename" style="font-size: 20px; text-align: center;">Middle Name:</label>
+            <input type="text" id="middlename" name="middlename"><br>
+    
+            <label for="lastname" style="font-size: 20px; text-align: center;">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required><br>
+    
+            <label for="location" style="font-size: 20px; text-align: center;">Location:</label>
+            <input type="text" id="location" name="location" required><br>
+    
+            <input type="submit" style="font-size: 15px; text-align: center;" value="Create Profile">
+        </form>
+    </div>
+    <div id="json-data" style="display: none;"></div>
+    <script src="./barberUpdateProfile.js"></script>
+</body>
+
+</html>
