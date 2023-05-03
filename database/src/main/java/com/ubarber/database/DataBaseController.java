@@ -49,6 +49,15 @@ public class DataBaseController {
         logger.addHandler(fh);
         SimpleFormatter formatter = new SimpleFormatter();
         fh.setFormatter(formatter);
+        try {
+            List<String> logs = LogHandler.readLogFile();
+            String latestLog = logs.get(logs.size() -1);
+            String[] splitLog = latestLog.split(" ", 3);
+            logCounter.set(Integer.parseInt(splitLog[1]));
+        } catch (Exception e) {
+
+        }
+
     }
 
     /**
@@ -390,11 +399,11 @@ public class DataBaseController {
 
     @PostMapping("/updateDatabase/{url}")
     public List<String> updateDatabase(@PathVariable String url){
-        String uri = "https://" + url + "/getDatabaseLogs/" + logCounter.get();
+        String uri = "http://" + url + "/getDatabaseLogs/" + logCounter.get();
         HttpRequest request = HttpRequest.newBuilder().
                 GET()
                 .uri(URI.create(uri))
-                .header("Content-Type", "application/json")
+                .header("Content-Type", "application/charset-8")
                 .build();
 
         HttpResponse<String> response = null;
@@ -432,7 +441,8 @@ public class DataBaseController {
             return ResponseEntity.notFound().build();
         }
         List<String> finalModel = new ArrayList<>();
-        for (int i = id; i < collectionModel.size(); i++) {
+        for (int i = id*2; i < collectionModel.size(); i++) {
+            if(i % 2 == 0) continue;
             finalModel.add(collectionModel.get(i));
         }
         return ResponseEntity.ok(finalModel);
