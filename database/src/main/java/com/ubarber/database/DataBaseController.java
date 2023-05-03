@@ -7,6 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
+import com.google.gson.Gson;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -399,7 +401,7 @@ public class DataBaseController {
 
     @PostMapping("/updateDatabase/{url}")
     public List<String> updateDatabase(@PathVariable String url){
-        String uri = "http://" + url + "/getDatabaseLogs/" + logCounter.get();
+        String uri = "http://" + url + "/getDatabaseLogs/" + 0;
         HttpRequest request = HttpRequest.newBuilder().
                 GET()
                 .uri(URI.create(uri))
@@ -417,7 +419,11 @@ public class DataBaseController {
         }
 
         if (response != null) {
-            implementLogChanges(response.body());
+            Gson gson = new Gson();
+            String[] logs = gson.fromJson(response.body(), String[].class);
+            for (String log : logs) {
+                implementLogChanges(log);
+            }
         } else {
             System.out.println("the response was null");
         }
@@ -428,8 +434,8 @@ public class DataBaseController {
         return null;
     }
 
-    private void implementLogChanges(String body) {
-        System.out.println(body);
+    private void implementLogChanges(String log) {
+        System.out.println(log);
     }
 
     @GetMapping("/getDatabaseLogs/{id}")
