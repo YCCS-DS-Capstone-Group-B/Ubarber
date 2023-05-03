@@ -9,15 +9,25 @@ import pojos.*;
 import utils.Http;
 
 import java.lang.reflect.Type;
-import java.net.URI;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class BookingService {
 
+    static Gson gson = new Gson();
+
+
+    public static ResponseEntity<CollectionModel<Appointment>> allAppointmentsByClient(String uri, long clientId) {
+        HttpResponse<String> response = Http.get(uri + "/clients/"+ clientId + "/appointments");
+        Type appointmentListType = new TypeToken<ArrayList<Appointment>>(){}.getType();
+        ArrayList<Appointment> appointmentList = gson.fromJson(response.body(), appointmentListType);
+        CollectionModel<Appointment> collectionModel = CollectionModel.of(appointmentList);
+        return ResponseEntity.ok(collectionModel);
+    }
+
     public static ResponseEntity<CollectionModel<AppointmentSlot>> getBarberSchedule(String uri, long barberId) {
-        HttpResponse<String> response = Http.get(uri + "/barbers/"+ barberId + "/appointmentSlots");
+        HttpResponse<String> response = Http.get(uri + "/barbers/" + barberId + "/appointmentSlots");
         Gson gson = new Gson();
         Type listType = new TypeToken<ArrayList<AppointmentSlot>>(){}.getType();
 
@@ -38,7 +48,7 @@ public class BookingService {
         return ResponseEntity.ok(collectionModel);
     }
 
-    public static ResponseEntity<EntityModel<Appointment>> bookBarber(String uri, long barberId, long clientId, long slotId) {
+    public static ResponseEntity<EntityModel<Appointment>> newAppointment(String uri, long barberId, long clientId, long slotId) {
         //TODO some how figure out how to populate the appointmentID. Currently there is only a dummy var: -1
         Appointment appointment = new Appointment(-1L, barberId, clientId, slotId);
         Gson gson = new Gson();
@@ -52,6 +62,13 @@ public class BookingService {
     public static ResponseEntity<EntityModel<Appointment>> cancelAppointment(String uri, long appointmentId) {
         HttpResponse<String> response = Http.delete(uri + "/appointments/" + appointmentId);
         Gson gson = new Gson();
+        Appointment responseAppointment = gson.fromJson(response.body(), Appointment.class);
+        return ResponseEntity.ok(EntityModel.of(responseAppointment));
+    }
+
+    public static ResponseEntity<EntityModel<Appointment>> updateAppointment(String uri, long appointmentId, Appointment appointment) {
+        Gson gson = new Gson();
+        HttpResponse<String> response = Http.put(uri + "/appointments/" + appointmentId, gson.toJson(appointment));
         Appointment responseAppointment = gson.fromJson(response.body(), Appointment.class);
         return ResponseEntity.ok(EntityModel.of(responseAppointment));
     }

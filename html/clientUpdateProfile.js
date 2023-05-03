@@ -6,7 +6,7 @@ updateProfileForm.addEventListener('submit', (event) => {
   const updateProfilePage = document.getElementById('update-profile-page');
   updateProfilePage.style.display = 'none';
 
-  const barberId = document.getElementById('id').value;
+  const clientId = document.getElementById('id').value;
   const email = document.getElementById('email').value;
   const firstname = document.getElementById('firstname').value;
   const middlename = document.getElementById('middlename').value;
@@ -14,7 +14,7 @@ updateProfileForm.addEventListener('submit', (event) => {
   const location = document.getElementById('location').value;
 
   const formData = {
-    id: barberId,
+    id: clientId,
     email: email,
     firstName: firstname,
     middleName: middlename,
@@ -41,7 +41,7 @@ console.log(zip);
 const id = urlParams.get('id');
 console.log(id);
 
-fetch(`http://localhost:8081/barberUpdateProfile/${id}/${zip}}`, requestOptions)
+fetch(`http://localhost:8081/clientUpdateProfile/${id}/${zip}}`, requestOptions)
     .then(response => response.json())
     .then(data => {
         const jsonElement = document.getElementById('json-data');

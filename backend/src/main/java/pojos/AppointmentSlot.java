@@ -3,6 +3,7 @@ package pojos;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -17,6 +18,7 @@ public class AppointmentSlot {
     @Column
     private String endTime;
     @Column
+    @DateTimeFormat(pattern = "MM/dd/yyyy")
     private Date date;
 
     public Date getDate() {

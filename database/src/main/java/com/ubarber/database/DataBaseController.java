@@ -95,7 +95,7 @@ public class DataBaseController {
      * An appointment slot is created when a barber says this time slot is available for him to be booked.
      */
     @PostMapping("/appointmentSlots")
-    protected ResponseEntity<EntityModel<AppointmentSlot>> newAppoitmentSlot(@RequestBody AppointmentSlot newAppointmentSlot) {
+    protected ResponseEntity<EntityModel<AppointmentSlot>> newAppointmentSlot(@RequestBody AppointmentSlot newAppointmentSlot) {
         logger.info(logCounter.incrementAndGet() + " post " + "/appointmentSlots " + newAppointmentSlot.toString());
         EntityModel<AppointmentSlot> entityModel = EntityModel.of(appointmentSlotRepository.save(newAppointmentSlot));
         return ResponseEntity.ok().body(entityModel);
@@ -135,9 +135,9 @@ public class DataBaseController {
      * @return ResponceEntity<EntityModel<Barber>>
      * This method is used to get a specific barber from the database
      */
-    @GetMapping("/barbers/{id}")
-    protected ResponseEntity<EntityModel<Barber>> oneBarber(@PathVariable Long id) {
-        EntityModel<Barber> entityModel = EntityModel.of(barberRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Barber not found")));
+    @GetMapping("/barbers/{barberId}")
+    protected ResponseEntity<EntityModel<Barber>> oneBarber(@PathVariable Long barberId) {
+        EntityModel<Barber> entityModel = EntityModel.of(barberRepository.findById(barberId).orElseThrow(() -> new IllegalArgumentException("Barber not found")));
         return ResponseEntity.ok(entityModel);
     }
     @GetMapping("/getAllBarbers")
@@ -158,9 +158,9 @@ public class DataBaseController {
      * @return ResponceEntity<EntityModel<Client>>
      * This method is used to get a specific client from the database
      */
-    @GetMapping("/clients/{id}")
-    protected ResponseEntity<EntityModel<Client>> oneClient(@PathVariable Long id) {
-        EntityModel<Client> entityModel = EntityModel.of(clientRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Client not found")));
+    @GetMapping("/clients/{clientId}")
+    protected ResponseEntity<EntityModel<Client>> oneClient(@PathVariable Long clientId) {
+        EntityModel<Client> entityModel = EntityModel.of(clientRepository.findById(clientId).orElseThrow(() -> new IllegalArgumentException("Client not found")));
         return ResponseEntity.ok(entityModel);
     }
 
@@ -168,9 +168,9 @@ public class DataBaseController {
        @return ResponseEntity<EntityModel<oneAppointment>>
        @apiNote this method is used to get one appointment based on ID
      */
-    @GetMapping("/appointments/{id}")
-    protected ResponseEntity<EntityModel<Appointments>> oneAppointment(@PathVariable Long id){
-        EntityModel<Appointments> entityModel = EntityModel.of(appointmentsRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Client not appointment")));
+    @GetMapping("/appointments/{appointmentId}")
+    protected ResponseEntity<EntityModel<Appointments>> oneAppointment(@PathVariable Long appointmentId){
+        EntityModel<Appointments> entityModel = EntityModel.of(appointmentsRepository.findById(appointmentId).orElseThrow(() -> new IllegalArgumentException("Client not appointment")));
         return ResponseEntity.ok(entityModel);
     }
 
@@ -178,9 +178,9 @@ public class DataBaseController {
      * @return ResponseEntity<EntityModel<AppointmentSlot>>
      * @apiNote This method is used to get a specific appointment slot from the database
      */
-    @GetMapping("/appointmentSlots/{id}")
-    protected ResponseEntity<EntityModel<AppointmentSlot>> oneAppointmentSlot(@PathVariable Long id) {
-        EntityModel<AppointmentSlot> entityModel = EntityModel.of(appointmentSlotRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Appointment slot not found")));
+    @GetMapping("/appointmentSlots/{appointmentSlotId}")
+    protected ResponseEntity<EntityModel<AppointmentSlot>> oneAppointmentSlot(@PathVariable Long appointmentSlotId) {
+        EntityModel<AppointmentSlot> entityModel = EntityModel.of(appointmentSlotRepository.findById(appointmentSlotId).orElseThrow(() -> new IllegalArgumentException("Appointment slot not found")));
         return ResponseEntity.ok(entityModel);
     }
 
@@ -196,13 +196,12 @@ public class DataBaseController {
 
 
     /**
-     * @param id
      * @return ResponseEntity<EntityModel<Barber>>
      * @apiNote This method is used to update a specific barber from the database
      */
-    @PutMapping("/barbers/{id}")
-    protected ResponseEntity<EntityModel<Barber>> updateBarber(@RequestBody Barber newBarber, @PathVariable Long id) {
-        Barber updatedBarber = barberRepository.findById(id)
+    @PutMapping("/barbers/{barberId}")
+    protected ResponseEntity<EntityModel<Barber>> updateBarber(@RequestBody Barber newBarber, @PathVariable Long barberId) {
+        Barber updatedBarber = barberRepository.findById(barberId)
                 .map(barber -> {
                     barber.setFirstName(newBarber.getFirstName());
                     barber.setLastName(newBarber.getLastName());
@@ -212,24 +211,23 @@ public class DataBaseController {
                     return barberRepository.save(barber);
                 })
                 .orElseGet(() -> {
-                    newBarber.setId(id);
+                    newBarber.setId(barberId);
                     return barberRepository.save(newBarber);
                 });
         EntityModel<Barber> entityModel = EntityModel.of(updatedBarber);
-        Link link = linkTo(methodOn(this.getClass()).updateBarber(newBarber, id)).withSelfRel();
+        Link link = linkTo(methodOn(this.getClass()).updateBarber(newBarber, barberId)).withSelfRel();
         entityModel.add(link);
-        logger.info(logCounter.incrementAndGet() + " put " + "/barbers/" + id + " " + entityModel.toString());
+        logger.info(logCounter.incrementAndGet() + " put " + "/barbers/" + barberId + " " + entityModel.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
     /**
-     * @param id
      * @return ResponseEntity<EntityModel<Client>>
      * @apiNote This method is used to update a specific client from the database
      */
-    @PutMapping("/clients/{id}")
-    protected ResponseEntity<EntityModel<Client>> updateClient(@RequestBody Client newClient, @PathVariable Long id) {
-        Client updatedClient = clientRepository.findById(id)
+    @PutMapping("/clients/{clientID}")
+    protected ResponseEntity<EntityModel<Client>> updateClient(@RequestBody Client newClient, @PathVariable Long clientId) {
+        Client updatedClient = clientRepository.findById(clientId)
                 .map(client -> {
                     client.setFirstName(newClient.getFirstName());
                     client.setLastName(newClient.getLastName());
@@ -239,22 +237,21 @@ public class DataBaseController {
                     return clientRepository.save(client);
                 })
                 .orElseGet(() -> {
-                    newClient.setId(id);
+                    newClient.setId(clientId);
                     return clientRepository.save(newClient);
                 });
         EntityModel<Client> entityModel = EntityModel.of(updatedClient);
-        logger.info(logCounter.incrementAndGet() + " put " + "/clients/" + id + " " + entityModel.toString());
+        logger.info(logCounter.incrementAndGet() + " put " + "/clients/" + clientId + " " + entityModel.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
     /**
-     * @param id
      * @return ResponseEntity<EntityModel<AppointmentSlot>>
      * @apiNote This method is used to update a specific appointment slot from the database
      */
-    @PutMapping("/appointments/{id}")
-    protected ResponseEntity<EntityModel<Appointments>> updateAppointment(@RequestBody Appointments newAppointment, @PathVariable Long id) {
-        Appointments updatedAppointment = appointmentsRepository.findById(id)
+    @PutMapping("/appointments/{appointmentId}")
+    protected ResponseEntity<EntityModel<Appointments>> updateAppointment(@RequestBody Appointments newAppointment, @PathVariable Long appointmentId) {
+        Appointments updatedAppointment = appointmentsRepository.findById(appointmentId)
                 .map(appointment -> {
                     appointment.setBarberId(newAppointment.getBarberId());
                     appointment.setClientId(newAppointment.getClientId());
@@ -263,22 +260,21 @@ public class DataBaseController {
                     return appointmentsRepository.save(appointment);
                 })
                 .orElseGet(() -> {
-                    newAppointment.setId(id);
+                    newAppointment.setId(appointmentId);
                     return appointmentsRepository.save(newAppointment);
                 });
         EntityModel<Appointments> entityModel = EntityModel.of(updatedAppointment);
-        logger.info(logCounter.incrementAndGet() + " put " + "/appointments/" + id + " " + entityModel.toString());
+        logger.info(logCounter.incrementAndGet() + " put " + "/appointments/" + appointmentId + " " + entityModel.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
     /**
-     * @param id
      * @return ResponseEntity<EntityModel<AppointmentSlot>>
      * @apiNote This method is used to update a specific appointment slot from the database
      */
-    @PutMapping("/appointmentSlots/{id}")
-    protected ResponseEntity<EntityModel<AppointmentSlot>> updateAppointmentSlot(@RequestBody AppointmentSlot newAppointmentSlot, @PathVariable Long id) {
-        AppointmentSlot updatedAppointmentSlot = appointmentSlotRepository.findById(id)
+    @PutMapping("/appointmentSlots/{appointmentSlotId}")
+    protected ResponseEntity<EntityModel<AppointmentSlot>> updateAppointmentSlot(@RequestBody AppointmentSlot newAppointmentSlot, @PathVariable Long appointmentSlotId) {
+        AppointmentSlot updatedAppointmentSlot = appointmentSlotRepository.findById(appointmentSlotId)
                 .map(appointmentSlot -> {
                     appointmentSlot.setBarberId(newAppointmentSlot.getBarberId());
                     appointmentSlot.setAppointmentSlotId(newAppointmentSlot.getAppointmentSlotId());
@@ -287,70 +283,70 @@ public class DataBaseController {
                     return appointmentSlotRepository.save(appointmentSlot);
                 })
                 .orElseGet(() -> {
-                    newAppointmentSlot.setAppointmentSlotId(id);
+                    newAppointmentSlot.setAppointmentSlotId(appointmentSlotId);
                     return appointmentSlotRepository.save(newAppointmentSlot);
                 });
         EntityModel<AppointmentSlot> entityModel = EntityModel.of(updatedAppointmentSlot);
-        logger.info(logCounter.incrementAndGet() + " put " + "/appointmentSlots/" + id + " " + entityModel.toString());
+        logger.info(logCounter.incrementAndGet() + " put " + "/appointmentSlots/" + appointmentSlotId + " " + entityModel.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
     /**
-     * @param id
+     * @param barberId
      * @return ResponseEntity<EntityModel<Barber>>
      * @apiNote This method is used to delete a specific barber from the database
      */
-    @DeleteMapping("/barbers/{id}")
-    protected ResponseEntity<EntityModel<Barber>> deleteBarber(@PathVariable Long id) {
-        barberRepository.deleteById(id);
-        logger.info(logCounter.incrementAndGet() + " delete " + "/barbers/" + id);
+    @DeleteMapping("/barbers/{barberId}")
+    protected ResponseEntity<EntityModel<Barber>> deleteBarber(@PathVariable Long barberId) {
+        barberRepository.deleteById(barberId);
+        logger.info(logCounter.incrementAndGet() + " delete " + "/barbers/" + barberId);
         return ResponseEntity.noContent().build();
     }
 
     /**
-     * @param id
+     * @param clientId
      * @return ResponseEntity<EntityModel<Client>>
      * @apiNote This method is used to delete a specific client from the database
      */
-    @DeleteMapping("/clients/{id}")
-    protected ResponseEntity<EntityModel<Client>> deleteClient(@PathVariable Long id) {
-        clientRepository.deleteById(id);
-        logger.info(logCounter.incrementAndGet() + " delete " + "/clients/" + id);
+    @DeleteMapping("/clients/{clientID}")
+    protected ResponseEntity<EntityModel<Client>> deleteClient(@PathVariable Long clientId) {
+        clientRepository.deleteById(clientId);
+        logger.info(logCounter.incrementAndGet() + " delete " + "/clients/" + clientId);
         return ResponseEntity.noContent().build();
     }
 
     /**
-     * @param id
+     * @param appointmentId
      * @return ResponseEntity<EntityModel<Appointment>>
      * @apiNote This method is used to delete a specific appointment from the database
      */
-    @DeleteMapping("/appointments/{id}")
-    protected ResponseEntity<EntityModel<Appointments>> deleteAppointment(@PathVariable Long id) {
-        logger.info(logCounter.incrementAndGet() + " delete " + "/appointments/" + id);
-        appointmentsRepository.deleteById(id);
+    @DeleteMapping("/appointments/{appointmentId}")
+    protected ResponseEntity<EntityModel<Appointments>> deleteAppointment(@PathVariable Long appointmentId) {
+        logger.info(logCounter.incrementAndGet() + " delete " + "/appointments/" + appointmentId);
+        appointmentsRepository.deleteById(appointmentId);
         return ResponseEntity.noContent().build();
     }
 
     /**
-     * @param id
+     * @param appointmentSlotId
      * @return ResponseEntity<EntityModel<AppointmentSlot>>
      * @apiNote This method is used to delete a specific appointment slot from the database
      */
-    @DeleteMapping("/appointmentSlots/{id}")
-    protected ResponseEntity<EntityModel<AppointmentSlot>> deleteAppointmentSlot(@PathVariable Long id) {
-        appointmentSlotRepository.deleteById(id);
-        logger.info(logCounter.incrementAndGet() + " delete " + "/appointmentSlots/" + id);
+    @DeleteMapping("/appointmentSlots/{appointmentSlotId}")
+    protected ResponseEntity<EntityModel<AppointmentSlot>> deleteAppointmentSlot(@PathVariable Long appointmentSlotId) {
+        appointmentSlotRepository.deleteById(appointmentSlotId);
+        logger.info(logCounter.incrementAndGet() + " delete " + "/appointmentSlots/" + appointmentSlotId);
         return ResponseEntity.noContent().build();
     }
 
     /**
-     * @param id
+     * @param barberId
      * @return ResponseEntity<EntityModel<Barber>>
      * @apiNote This method is used to get all the appointments booked for a specific barber from the database
      */
-    @GetMapping("/barbers/{id}/appointments")
-    protected ResponseEntity<CollectionModel<Appointments>> allAppointmentsByBarber(@PathVariable Long id) {
-        CollectionModel<Appointments> collectionModel = CollectionModel.of(appointmentsRepository.findByBarberId(id));
+    @GetMapping("/barbers/{barberId}/appointments")
+    protected ResponseEntity<CollectionModel<Appointments>> allAppointmentsByBarber(@PathVariable Long barberId) {
+        CollectionModel<Appointments> collectionModel = CollectionModel.of(appointmentsRepository.findByBarberId(barberId));
 
         return ResponseEntity.ok(collectionModel);
     }
@@ -367,24 +363,24 @@ public class DataBaseController {
     }
 
     /**
-     * @param id
+     * @param barberId
      * @return ResponseEntity<CollectionsModel<Appointment>>
      * @apiNote This method is used to get all the appointments available for a specific barber from the database
      */
-    @GetMapping("/barbers/{id}/appointmentSlots")
-    protected ResponseEntity<CollectionModel<AppointmentSlot>> allAppointmentSlotsByBarber(@PathVariable Long id) {
-        CollectionModel<AppointmentSlot> collectionModel = CollectionModel.of(appointmentSlotRepository.findByBarberId(id));
+    @GetMapping("/barbers/{barberId}/appointmentSlots")
+    protected ResponseEntity<CollectionModel<AppointmentSlot>> allAppointmentSlotsByBarber(@PathVariable Long barberId) {
+        CollectionModel<AppointmentSlot> collectionModel = CollectionModel.of(appointmentSlotRepository.findByBarberId(barberId));
         return ResponseEntity.ok(collectionModel);
     }
 
     /**
-     * @param id
+     * @param clientId
      * @return ResponseEntity<CollectionsModel<AppointmentSlot>>
      * @apiNote This method is used to get all the appointments booked by a specific client from the database
      */
-    @GetMapping("/clients/{id}/appointments")
-    protected ResponseEntity<CollectionModel<Appointments>> allAppointmentsByClient(@PathVariable Long id) {
-        CollectionModel<Appointments> collectionModel = CollectionModel.of(appointmentsRepository.findByClientId(id));
+    @GetMapping("/clients/{clientId}/appointments")
+    protected ResponseEntity<CollectionModel<Appointments>> allAppointmentsByClient(@PathVariable Long clientId) {
+        CollectionModel<Appointments> collectionModel = CollectionModel.of(appointmentsRepository.findByClientId(clientId));
         return ResponseEntity.ok(collectionModel);
     }
 

@@ -1,13 +1,13 @@
-const cancelAppointmentForm = document.getElementById('cancel-appointment-form');
+const deleteAppointmentSlotForm = document.getElementById('delete-appointment-slot-form');
 
-cancelAppointmentForm.addEventListener('submit', (event) => {
+deleteAppointmentSlotForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    const cancelAppointmentPage = document.getElementById('cancel-appointment-page');
-    cancelAppointmentPage.style.display = 'none';
-    const appointmentID = cancelAppointmentForm.elements['appointment-id'].value;
-    const barberZip = cancelAppointmentForm.elements['barber-zip'].value;
+    const deleteAppointmentSlotPage = document.getElementById('delete-appointment-slot-page');
+    deleteAppointmentSlotPage.style.display = 'none';
+    const appointmentSlotId = deleteAppointmentSlotForm.elements['appointment-slot-id'].value;
+    const barberZip = deleteAppointmentSlotForm.elements['barber-zip'].value;
 
-    console.log(appointmentID);
+    console.log(appointmentSlotId);
 
     const requestOptions = {
         method: 'DELETE',
@@ -19,7 +19,7 @@ cancelAppointmentForm.addEventListener('submit', (event) => {
         mode: 'cors'
     };
 
-    fetch(`http://localhost:8081/clientCancelAppointment/${appointmentID}/${barberZip}}`, requestOptions)
+    fetch(`http://localhost:8081/deleteAppointmentSlot/${appointmentSlotId}/${barberZip}}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');
