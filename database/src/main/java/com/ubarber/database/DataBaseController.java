@@ -101,12 +101,12 @@ public class DataBaseController {
 
     /**
      * @param newAppointmentSlot
-     * @return ResponseEntity<EntityModel<AppoitmentSlot>>
+     * @return ResponseEntity<EntityModel<AppointmentSlot>>
      * @apiNote This method is used to create a new appointment slot in the database.
      * An appointment slot is created when a barber says this time slot is available for him to be booked.
      */
     @PostMapping("/appointmentSlots")
-    protected ResponseEntity<EntityModel<AppointmentSlot>> newAppoitmentSlot(@RequestBody AppointmentSlot newAppointmentSlot) {
+    protected ResponseEntity<EntityModel<AppointmentSlot>> newAppointmentSlot(@RequestBody AppointmentSlot newAppointmentSlot) {
         logger.info(logCounter.incrementAndGet() + " post " + "/appointmentSlots " + newAppointmentSlot.toString());
         EntityModel<AppointmentSlot> entityModel = EntityModel.of(appointmentSlotRepository.save(newAppointmentSlot));
         return ResponseEntity.ok().body(entityModel);
@@ -399,9 +399,9 @@ public class DataBaseController {
         return ResponseEntity.ok(collectionModel);
     }
 
-    @PostMapping("/updateDatabase/{url}")
+    @PutMapping("/updateDatabase/{url}")
     public List<String> updateDatabase(@PathVariable String url){
-        String uri = "http://" + url + "/getDatabaseLogs/" + 0;
+        String uri = "http://" + url + "/getDatabaseLogs/" + logCounter.get();
         HttpRequest request = HttpRequest.newBuilder().
                 GET()
                 .uri(URI.create(uri))
@@ -434,8 +434,86 @@ public class DataBaseController {
         return null;
     }
 
-    private void implementLogChanges(String log) {
+    private ResponseEntity implementLogChanges(String log) {
+        String[] details = log.split(" ", 5);
+        if(Integer.parseInt(details[1]) <= logCounter.get()) return null;
+        String request = details[2];
+        switch (request){
+            case "post" -> {
+                return handlePost(details[3], details[4]);
+            }
+            case "put" -> {
+                return handlePut(details[3], details[4]);
+            }
+            case "delete" -> {
+                return handleDelete(details[3]);
+            }
+        }
         System.out.println(log);
+        return null;
+    }
+
+    private ResponseEntity handleDelete(String extension) {
+        String[] pieces = extension.split("/");
+        switch (pieces[0]){
+            case "/barbers" -> {
+                return deleteBarber((long) Integer.parseInt(pieces[1]));
+            }
+            case "/clients" -> {
+                return deleteClient((long) Integer.parseInt(pieces[1]));
+            }
+            case "/appointments" -> {
+                return deleteAppointment((long) Integer.parseInt(pieces[1]));
+            }
+            case "/appointmentSlots" -> {
+                return deleteAppointmentSlot((long) Integer.parseInt(pieces[1]));
+            }
+        }
+        return null;
+    }
+
+    private ResponseEntity handlePut(String extension, String json) {
+        String[] pieces = extension.split("/");
+        Gson gson = new Gson();
+        switch (pieces[0]){
+            case "/barbers" -> {
+                return updateBarber(gson.fromJson(json, Barber.class), (long) Integer.parseInt(pieces[1]));
+            }
+            case "/clients" -> {
+                return updateClient(gson.fromJson(json, Client.class), (long) Integer.parseInt(pieces[1]));
+            }
+            case "/appointments" -> {
+                return updateAppointment(gson.fromJson(json, Appointments.class), (long) Integer.parseInt(pieces[1]));
+            }
+            case "/appointmentSlots" -> {
+                return updateAppointmentSlot(gson.fromJson(json, AppointmentSlot.class), (long) Integer.parseInt(pieces[1]));
+            }
+        }
+        return null;
+    }
+
+    private ResponseEntity handlePost(String extension, String json) {
+        Gson gson = new Gson();
+        switch (extension){
+            case "/barbers" -> {
+                return newBarber(gson.fromJson(json, Barber.class));
+            }
+            case "/clients" -> {
+                return newClient(gson.fromJson(json, Client.class));
+            }
+            case "/appointments" -> {
+                return newAppointment(gson.fromJson(json, Appointments.class));
+            }
+            case "/appointmentSlots" -> {
+                return newAppointmentSlot(gson.fromJson(json, AppointmentSlot.class));
+            }
+        }
+        return null;
+    }
+
+    @PutMapping("/updateLog")
+    public ResponseEntity addOneLog(@RequestBody String log){
+        return implementLogChanges(log);
     }
 
     @GetMapping("/getDatabaseLogs/{id}")
