@@ -41,7 +41,7 @@ console.log(zip);
 const id = urlParams.get('id');
 console.log(id);
 
-fetch(`http://localhost:8081/barberUpdateProfile/${id}/${zip}}`, requestOptions)
+fetch(`http://localhost:8081/barberUpdateProfile/${id}/${zip}`, requestOptions)
     .then(response => response.json())
     .then(data => {
         const jsonElement = document.getElementById('json-data');

@@ -5,9 +5,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 import java.util.Optional;
 
-public interface AppointmentsRepository extends JpaRepository<Appointments, Long> {
+public interface AppointmentsRepository extends JpaRepository<Appointment, Long> {
 
-    Optional<Appointments> findById(Long aLong);
-    List<Appointments> findByBarberId(Long barberId);
-    List<Appointments> findByClientId(Long clientId);
+    Optional<Appointment> findById(Long aLong);
+    List<Appointment> findByBarberId(Long barberId);
+    List<Appointment> findByClientId(Long clientId);
 }

@@ -22,7 +22,7 @@ cancelAppointmentForm.addEventListener('submit', (event) => {
     const zip = urlParams.get('zip');
     console.log(zip);
 
-    fetch(`http://localhost:8081/barberCancelAppointment/${appointmentID}/${zip}}`, requestOptions)
+    fetch(`http://localhost:8081/barberCancelAppointment/${appointmentID}/${zip}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');

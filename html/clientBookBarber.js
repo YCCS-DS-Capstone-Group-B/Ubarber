@@ -20,7 +20,7 @@ bookBarberForm.addEventListener('submit', (event) => {
             // 'Origin': 'http://127.0.0.1:5500' // set the 'Origin' header explicitly
         },
         mode: 'cors',
-        body: formData
+        body: JSON.stringify(formData)
     };
 
     fetch(`http://localhost:8081/newAppointment/${formData.barberId}/${bookBarberForm.elements['barber-zip'].value}`, requestOptions)

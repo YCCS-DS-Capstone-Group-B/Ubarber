@@ -18,7 +18,7 @@ getBarbersNearMeForm.addEventListener('submit', (event) => {
         mode: 'cors'
     };
 
-    fetch(`http://localhost:8081/getBarbersNearMe/${clientZip}}`, requestOptions)
+    fetch(`http://localhost:8081/getBarbersNearMe/${clientZip}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');

@@ -20,7 +20,7 @@ getBarberScheduleForm.addEventListener('submit', (event) => {
         mode: 'cors'
     };
 
-    fetch(`http://localhost:8081/barberSchedule/${barberID}/${barberZip}}`, requestOptions)
+    fetch(`http://localhost:8081/barberSchedule/${barberID}/${barberZip}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');

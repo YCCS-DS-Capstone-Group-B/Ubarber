@@ -1,6 +1,8 @@
 package com.ubarber.backend;
 
 
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 import jakarta.annotation.PostConstruct;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.google.gson.Gson;
@@ -174,10 +176,12 @@ public class NodeController {
 	}
 
 	@PostMapping("/newAppointment/{barberId}/{zip}")
-	public ResponseEntity<EntityModel<Appointment>> newAppointment(@RequestBody String appointmentJson, @PathVariable long barberId, @PathVariable String zip){
+	public ResponseEntity<EntityModel<Appointment>> newAppointment(@RequestBody String appointment, @PathVariable long barberId, @PathVariable String zip){
 		Gson gson = new Gson();
-		int clientId = gson.fromJson("clientID", Integer.TYPE);
-		int slotId = gson.fromJson("slotID", Integer.TYPE);
+		JsonElement jsonElement = gson.fromJson(appointment, JsonElement.class);
+		JsonObject jsonObject = jsonElement.getAsJsonObject();
+		int clientId = jsonObject.get("clientId").getAsInt();
+		int slotId = jsonObject.get("appointmentSlotId").getAsInt();
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
 		ResponseEntity<EntityModel<Appointment>> response = BookingService.newAppointment(servers.get(bucket), barberId, clientId, slotId);
 		ResponseEntity<EntityModel<Appointment>> response2 = BookingService.newAppointment(replicas.get(bucket), barberId, clientId, slotId);

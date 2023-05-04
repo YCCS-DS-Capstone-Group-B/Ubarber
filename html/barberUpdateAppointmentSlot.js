@@ -35,7 +35,7 @@ updateAppointmentSlotForm.updateEventListener('submit', (event) => {
     };
 
 
-    fetch(`http://localhost:8081/updateAppointmentSlot/${appointmentSlotId}/${zip}}`, requestOptions)
+    fetch(`http://localhost:8081/updateAppointmentSlot/${appointmentSlotId}/${zip}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');

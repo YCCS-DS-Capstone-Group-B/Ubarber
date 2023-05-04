@@ -4,7 +4,7 @@ addAppointmentSlotForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const addAppointmentSlotPage = document.getElementById('add-appointment-slot-page');
     addAppointmentSlotPage.style.display = 'none';
-    const day = addAppointmentSlotForm.elements['day'].value;
+    const date = addAppointmentSlotForm.elements['date'].value;
     const startTime = addAppointmentSlotForm.elements['start-time'].value;
     const endTime = addAppointmentSlotForm.elements['end-time'].value;
     const urlParams = new URLSearchParams(window.location.search);
@@ -16,7 +16,7 @@ addAppointmentSlotForm.addEventListener('submit', (event) => {
     const appointmentSlot = {
         appointmentSlotId: 13, // TODO: This needs to be generated somehow
         barberId: id,
-        day: day,
+        date: date,
         startTime: startTime,
         endTime: endTime
     };
@@ -35,7 +35,7 @@ addAppointmentSlotForm.addEventListener('submit', (event) => {
     };
 
 
-    fetch(`http://localhost:8081/addAppointmentSlot/${zip}}`, requestOptions)
+    fetch(`http://localhost:8081/addAppointmentSlot/${zip}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');

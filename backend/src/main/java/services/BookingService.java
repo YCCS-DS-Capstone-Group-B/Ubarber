@@ -1,6 +1,9 @@
 package services;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
@@ -31,26 +34,40 @@ public class BookingService {
         Gson gson = new Gson();
         Type listType = new TypeToken<ArrayList<AppointmentSlot>>(){}.getType();
 
-        ArrayList<AppointmentSlot> list = gson.fromJson(response.body(), listType);
+        ArrayList<AppointmentSlot> list = null;
+        try {
+            JsonObject jsonObject = JsonParser.parseString(response.body()).getAsJsonObject();
+            JsonArray jsonArray = jsonObject.getAsJsonObject("_embedded").getAsJsonArray("appointmentSlotList");
+            list = gson.fromJson(jsonArray, listType);
+        } catch (NullPointerException ignored) {}
 
-        HttpResponse<String> response2 = Http.get(uri + "/barbers/"+ barberId + "/appointments");
-        Type appointmentListType = new TypeToken<ArrayList<Appointment>>(){}.getType();
-
-        ArrayList<Appointment> appointmentList = gson.fromJson(response2.body(), appointmentListType);
-        HashMap<Long, AppointmentSlot> map = new HashMap<>(list.size());
-        for (AppointmentSlot slot: list) {
-            map.put(slot.getAppointmentSlotId(), slot);
+        CollectionModel<AppointmentSlot> collectionModel = CollectionModel.of(new ArrayList<>());
+        if(list != null) {
+            HttpResponse<String> response2 = Http.get(uri + "/barbers/" + barberId + "/appointments");
+            Type appointmentListType = new TypeToken<ArrayList<Appointment>>(){}.getType();
+            try {
+                JsonObject jsonObject2 = JsonParser.parseString(response2.body()).getAsJsonObject();
+                JsonArray jsonArray2 = jsonObject2.getAsJsonObject("_embedded").getAsJsonArray("appointmentList");
+                ArrayList<Appointment> appointmentList = gson.fromJson(jsonArray2, appointmentListType);
+                if (appointmentList != null) {
+                    HashMap<Long, AppointmentSlot> map = new HashMap<>(list.size());
+                    for (AppointmentSlot slot : list) {
+                        map.put(slot.getAppointmentSlotId(), slot);
+                    }
+                    for (Appointment appointment : appointmentList) {
+                        if (map.containsKey(appointment.getAppointmentSlotId()))
+                            list.remove(map.get(appointment.getAppointmentSlotId()));
+                    }
+                }
+            } catch (NullPointerException ignored) {}
+            collectionModel = CollectionModel.of(list);
         }
-        for (Appointment appointment : appointmentList) {
-            if(map.containsKey(appointment.getAppointmentSlotId())) list.remove(map.get(appointment.getAppointmentSlotId()));
-        }
-        CollectionModel<AppointmentSlot> collectionModel = CollectionModel.of(list);
         return ResponseEntity.ok(collectionModel);
     }
 
     public static ResponseEntity<EntityModel<Appointment>> newAppointment(String uri, long barberId, long clientId, long slotId) {
         //TODO some how figure out how to populate the appointmentID. Currently there is only a dummy var: -1
-        Appointment appointment = new Appointment(-1L, barberId, clientId, slotId);
+        Appointment appointment = new Appointment(1L, barberId, clientId, slotId);
         Gson gson = new Gson();
         String json=gson.toJson(appointment);
         HttpResponse<String> response = Http.post(uri + "/appointments", json);
