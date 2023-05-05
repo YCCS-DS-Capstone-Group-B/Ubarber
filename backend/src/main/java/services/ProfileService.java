@@ -24,17 +24,15 @@ public class ProfileService {
         return response.body();
     }
 
-    public static ResponseEntity<EntityModel<Barber>> updateProfile(String uri, long barberId, Barber barber) {
+    public static String updateProfile(String uri, long barberId, Barber barber) {
         String json = gson.toJson(barber);
         HttpResponse<String> response = Http.put(uri + "/barbers/" + barberId, json);
-        Barber b = gson.fromJson(response.body(), Barber.class);
-        return ResponseEntity.ok(EntityModel.of(b));
+        return response.body();
     }
 
-    public static ResponseEntity<EntityModel<Client>> updateProfile(String uri, long clientId, Client client) {
+    public static String updateProfile(String uri, long clientId, Client client) {
         String json = gson.toJson(client);
         HttpResponse<String> response = Http.put(uri + "/clients/" + clientId, json);
-        Client c = gson.fromJson(response.body(), Client.class);
-        return ResponseEntity.ok(EntityModel.of(c));
+        return response.body();
     }
 }

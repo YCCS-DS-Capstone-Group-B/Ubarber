@@ -65,29 +65,26 @@ public class BookingService {
         return ResponseEntity.ok(collectionModel);
     }
 
-    public static ResponseEntity<EntityModel<Appointment>> newAppointment(String uri, long barberId, long clientId, long slotId) {
+    public static String newAppointment(String uri, long barberId, long clientId, long slotId) {
         //TODO some how figure out how to populate the appointmentID. Currently there is only a dummy var: -1
         Appointment appointment = new Appointment(1L, barberId, clientId, slotId);
         Gson gson = new Gson();
         String json=gson.toJson(appointment);
         HttpResponse<String> response = Http.post(uri + "/appointments", json);
-        if(response.statusCode() != 200) return ResponseEntity.status(response.statusCode()).build();
-        Appointment responseAppointment = gson.fromJson(response.body(), Appointment.class);
-        return ResponseEntity.ok(EntityModel.of(responseAppointment));
+        if(response.statusCode() != 200) return String.valueOf(response.statusCode());
+        return response.body();
     }
 
-    public static ResponseEntity<EntityModel<Appointment>> cancelAppointment(String uri, long appointmentId) {
+    public static String cancelAppointment(String uri, long appointmentId) {
         HttpResponse<String> response = Http.delete(uri + "/appointments/" + appointmentId);
         Gson gson = new Gson();
-        Appointment responseAppointment = gson.fromJson(response.body(), Appointment.class);
-        return ResponseEntity.ok(EntityModel.of(responseAppointment));
+        return response.body();
     }
 
-    public static ResponseEntity<EntityModel<Appointment>> updateAppointment(String uri, long appointmentId, Appointment appointment) {
+    public static String updateAppointment(String uri, long appointmentId, Appointment appointment) {
         Gson gson = new Gson();
         HttpResponse<String> response = Http.put(uri + "/appointments/" + appointmentId, gson.toJson(appointment));
-        Appointment responseAppointment = gson.fromJson(response.body(), Appointment.class);
-        return ResponseEntity.ok(EntityModel.of(responseAppointment));
+        return response.body();
     }
 
     private int notifyBarber() {

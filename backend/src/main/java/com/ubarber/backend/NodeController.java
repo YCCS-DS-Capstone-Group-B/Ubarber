@@ -55,7 +55,7 @@ public class NodeController {
 		String response = ProfileService.registerBarberProfile(servers.get(bucket), barber); //databaseLeader.getServers().get(bucket)
 		//Create thread to update replicas
 		sendLogToReplica(response, replicas.get(bucket));
-        logger.info("Registering barber with id: " + barber.getId() + " to server: " + servers.get(bucket) + " " + response.getStatusCodeValue());
+        //logger.info("Registering barber with id: " + barber.getId() + " to server: " + servers.get(bucket) + " " + response.getStatusCodeValue());
 		return response;
 	}
 	@PostMapping("/registerClient")
@@ -112,58 +112,65 @@ public class NodeController {
 	}
 
 	@PostMapping("/addAppointmentSlot/{zip}")
-	public ResponseEntity<EntityModel<AppointmentSlot>> addAppointmentSlot(@RequestBody AppointmentSlot appointmentSlot, @PathVariable String zip) {
+	public String addAppointmentSlot(@RequestBody AppointmentSlot appointmentSlot, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
-		ResponseEntity<EntityModel<AppointmentSlot>> response = BarberSideServices.newAppointmentSlot(servers.get(bucket), appointmentSlot);
-		ResponseEntity<EntityModel<AppointmentSlot>> response2 = BarberSideServices.newAppointmentSlot(replicas.get(bucket), appointmentSlot);
+		String response = BarberSideServices.newAppointmentSlot(servers.get(bucket), appointmentSlot);
+		//Create thread to update replicas
+		sendLogToReplica(response, replicas.get(bucket));
 		return response;
 	}
 
 	@PutMapping("/updateAppointmentSlot/{appointmentSlotId}/{zip}")
-	public ResponseEntity<EntityModel<AppointmentSlot>> updateAppointmentSlot(@RequestBody AppointmentSlot appointmentSlot, @PathVariable long appointmentSlotId, @PathVariable String zip) {
+	public String updateAppointmentSlot(@RequestBody AppointmentSlot appointmentSlot, @PathVariable long appointmentSlotId, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
-		ResponseEntity<EntityModel<AppointmentSlot>> response = BarberSideServices.updateAppointmentSlot(servers.get(bucket), appointmentSlotId, appointmentSlot);
-		ResponseEntity<EntityModel<AppointmentSlot>> response2 = BarberSideServices.updateAppointmentSlot(replicas.get(bucket), appointmentSlotId, appointmentSlot);
+		String response = BarberSideServices.updateAppointmentSlot(servers.get(bucket), appointmentSlotId, appointmentSlot);
+		//Create thread to update replicas
+		sendLogToReplica(response, replicas.get(bucket));
 		return response;
 	}
 
 	@PutMapping("/updateAppointment/{appointmentId}/{zip}")
-	public ResponseEntity<EntityModel<Appointment>> updateAppointment(@RequestBody Appointment appointment, @PathVariable long appointmentId, @PathVariable String zip) {
+	public String updateAppointment(@RequestBody Appointment appointment, @PathVariable long appointmentId, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
-		ResponseEntity<EntityModel<Appointment>> response = BookingService.updateAppointment(servers.get(bucket), appointmentId, appointment);
-		ResponseEntity<EntityModel<Appointment>> response2 = BookingService.updateAppointment(replicas.get(bucket), appointmentId, appointment);
+		String response = BookingService.updateAppointment(servers.get(bucket), appointmentId, appointment);
+		//Create thread to update replicas
+		sendLogToReplica(response, replicas.get(bucket));
 		return response;
 	}
 
 	@DeleteMapping("/deleteAppointmentSlot/{appointmentId}/{zip}")
-	public ResponseEntity<EntityModel<AppointmentSlot>> deleteAppointmentSlot(@PathVariable long appointmentId, @PathVariable String zip) {
+	public String deleteAppointmentSlot(@PathVariable long appointmentId, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
-		ResponseEntity<EntityModel<AppointmentSlot>> response = BarberSideServices.deleteAppointmentSlot(servers.get(bucket), appointmentId);
-		ResponseEntity<EntityModel<AppointmentSlot>> response2 = BarberSideServices.deleteAppointmentSlot(replicas.get(bucket), appointmentId);
+		String response = BarberSideServices.deleteAppointmentSlot(servers.get(bucket), appointmentId);
+		//Create thread to update replicas
+		sendLogToReplica(response, replicas.get(bucket));
 		return response;
 	}
 
 	@DeleteMapping("/barberCancelAppointment/{appointmentId}/{zip}")
-	public ResponseEntity<EntityModel<Appointment>> cancelAppointment(@PathVariable long appointmentId, @PathVariable String zip) {
+	public String cancelAppointment(@PathVariable long appointmentId, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
-		ResponseEntity<EntityModel<Appointment>> response =  BarberSideServices.cancelAppointment(servers.get(bucket), appointmentId);
-		ResponseEntity<EntityModel<Appointment>> response2 =  BarberSideServices.cancelAppointment(replicas.get(bucket), appointmentId);
+		String response =  BarberSideServices.cancelAppointment(servers.get(bucket), appointmentId);
+		//Create thread to update replicas
+		sendLogToReplica(response, replicas.get(bucket));
 		return response;
 	}
 
 	@PutMapping("/barberUpdateProfile/{barberId}/{zip}")
-	public ResponseEntity<EntityModel<Barber>> updateProfile(@RequestBody Barber barber, @PathVariable long barberId, @PathVariable String zip) {
+	public String updateProfile(@RequestBody Barber barber, @PathVariable long barberId, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
-		ResponseEntity<EntityModel<Barber>> response =  ProfileService.updateProfile(servers.get(bucket), barberId, barber);
-		ResponseEntity<EntityModel<Barber>> response2 =  ProfileService.updateProfile(replicas.get(bucket), barberId, barber);
+		String response =  ProfileService.updateProfile(servers.get(bucket), barberId, barber);
+		//Create thread to update replicas
+		sendLogToReplica(response, replicas.get(bucket));
 		return response;
 	}
 
 	@PutMapping("/clientUpdateProfile/{clientId}/{zip}")
-	public ResponseEntity<EntityModel<Client>> updateProfile(@RequestBody Client client, @PathVariable long clientId, @PathVariable String zip) {
+	public String updateProfile(@RequestBody Client client, @PathVariable long clientId, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
-		ResponseEntity<EntityModel<Client>> response =  ProfileService.updateProfile(servers.get(bucket), clientId, client);
-		ResponseEntity<EntityModel<Client>> response2 =  ProfileService.updateProfile(replicas.get(bucket), clientId, client);
+		String response =  ProfileService.updateProfile(servers.get(bucket), clientId, client);
+		//Create thread to update replicas
+		sendLogToReplica(response, replicas.get(bucket));
 		return response;
 	}
 
@@ -174,23 +181,25 @@ public class NodeController {
 	}
 
 	@PostMapping("/newAppointment/{barberId}/{zip}")
-	public ResponseEntity<EntityModel<Appointment>> newAppointment(@RequestBody String appointment, @PathVariable long barberId, @PathVariable String zip){
+	public String newAppointment(@RequestBody String appointment, @PathVariable long barberId, @PathVariable String zip){
 		Gson gson = new Gson();
 		JsonElement jsonElement = gson.fromJson(appointment, JsonElement.class);
 		JsonObject jsonObject = jsonElement.getAsJsonObject();
 		int clientId = jsonObject.get("clientId").getAsInt();
 		int slotId = jsonObject.get("appointmentSlotId").getAsInt();
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
-		ResponseEntity<EntityModel<Appointment>> response = BookingService.newAppointment(servers.get(bucket), barberId, clientId, slotId);
-		ResponseEntity<EntityModel<Appointment>> response2 = BookingService.newAppointment(replicas.get(bucket), barberId, clientId, slotId);
+		String response = BookingService.newAppointment(servers.get(bucket), barberId, clientId, slotId);
+		//Create thread to update replicas
+		sendLogToReplica(response, replicas.get(bucket));
 		return response;
 	}
 
 	@DeleteMapping("/clientCancelAppointment/{appointmentId}/{zip}")
-	public ResponseEntity<EntityModel<Appointment>> cancelAppointmentClientSide(@PathVariable long appointmentId, @PathVariable String zip){
+	public String cancelAppointmentClientSide(@PathVariable long appointmentId, @PathVariable String zip){
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
-		ResponseEntity<EntityModel<Appointment>> response = BookingService.cancelAppointment(servers.get(bucket), appointmentId);
-		ResponseEntity<EntityModel<Appointment>> response2 = BookingService.cancelAppointment(replicas.get(bucket), appointmentId);
+		String response = BookingService.cancelAppointment(servers.get(bucket), appointmentId);
+		//Create thread to update replicas
+		sendLogToReplica(response, replicas.get(bucket));
 		return response;
 	}
 	private void sendLogToReplica(String log , String replicaURL){
