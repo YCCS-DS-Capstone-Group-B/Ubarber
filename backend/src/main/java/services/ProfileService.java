@@ -18,11 +18,10 @@ public class ProfileService {
         return response.body();
     }
 
-    public static ResponseEntity<EntityModel<Client>> registerClientProfile(String uri, Client client) {
+    public static String registerClientProfile(String uri, Client client) {
         String json=gson.toJson(client);
         HttpResponse<String> response = Http.post(uri + "/clients", json);
-        Client c = gson.fromJson(response.body(), Client.class);
-        return ResponseEntity.ok(EntityModel.of(c));
+        return response.body();
     }
 
     public static ResponseEntity<EntityModel<Barber>> updateProfile(String uri, long barberId, Barber barber) {

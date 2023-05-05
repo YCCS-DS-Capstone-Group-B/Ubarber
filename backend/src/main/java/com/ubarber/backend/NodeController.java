@@ -55,23 +55,19 @@ public class NodeController {
 		String response = ProfileService.registerBarberProfile(servers.get(bucket), barber); //databaseLeader.getServers().get(bucket)
 		//Create thread to update replicas
 		sendLogToReplica(response, replicas.get(bucket));
-		//potential option is to not change the server map if the server is down but instead check the response code
-		//of each and if the server is down return the response2 of the replica instead
-//		if(response.getStatusCodeValue() != 200 && response2.getStatusCodeValue() == 200){
-//			return response2;
-//		}
         logger.info("Registering barber with id: " + barber.getId() + " to server: " + servers.get(bucket) + " " + response.getStatusCodeValue());
 		return response;
 	}
 	@PostMapping("/registerClient")
-	public ResponseEntity<EntityModel<Client>> registerClient(@RequestBody Client client) {
+	public String registerClient(@RequestBody Client client) {
 		double[] latLong = ShardingUtils.getLatLong(client.getLocation());
 		client.setLatitude(latLong[0]);
 		client.setLongitude(latLong[1]);
 		client.setGeoHash(ShardingUtils.getGeoHash(client.getLatitude(),client.getLongitude()));
 		int bucket = ShardingUtils.getBucket(client.getLocation(),servers.size());
-		ResponseEntity<EntityModel<Client>> response = ProfileService.registerClientProfile(servers.get(bucket), client);
-		ResponseEntity<EntityModel<Client>> response2 = ProfileService.registerClientProfile(replicas.get(bucket), client);
+		String response = ProfileService.registerClientProfile(servers.get(bucket), client);
+		//Create thread to update replicas
+		sendLogToReplica(response, replicas.get(bucket));
 		return response;
 	}
 	@GetMapping("/getBarber/{barberId}/{zip}")
