@@ -12,11 +12,10 @@ import java.net.http.HttpResponse;
 public class ProfileService {
     static Gson gson = new Gson();
 
-    public static ResponseEntity<EntityModel<Barber>> registerBarberProfile(String uri, Barber barber) throws JsonProcessingException {
+    public static String registerBarberProfile(String uri, Barber barber) throws JsonProcessingException {
         String json=gson.toJson(barber);
         HttpResponse<String> response = Http.post(uri + "/barbers", json);
-        Barber b = gson.fromJson(response.body(), Barber.class);
-        return ResponseEntity.ok(EntityModel.of(b));
+        return response.body();
     }
 
     public static ResponseEntity<EntityModel<Client>> registerClientProfile(String uri, Client client) {

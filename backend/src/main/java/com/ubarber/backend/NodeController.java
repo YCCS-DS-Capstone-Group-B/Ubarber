@@ -13,8 +13,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pojos.*;
 import services.*;
+import utils.Http;
 import utils.ShardingUtils;
 
+import java.net.http.HttpResponse;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +44,7 @@ public class NodeController {
 	private String database;
 
 	@PostMapping("/registerBarber")
-	public ResponseEntity<EntityModel<Barber>> registerBarber(@RequestBody Barber barber) throws JsonProcessingException {
+	public String registerBarber(@RequestBody Barber barber) throws JsonProcessingException {
 		double[] latLong = ShardingUtils.getLatLong(barber.getLocation());
 		barber.setLatitude(latLong[0]);
 		barber.setLongitude(latLong[1]);
@@ -50,9 +52,9 @@ public class NodeController {
 		int bucket = ShardingUtils.getBucket(barber.getLocation(),servers.size());
 //		ResponseEntity<EntityModel<Barber>> response = ProfileService.registerBarberProfile(databaseLeader.getServers().get(bucket), barber); //databaseLeader.getServers().get(bucket)
 //		ResponseEntity<EntityModel<Barber>> response2 = ProfileService.registerBarberProfile(databaseLeader.getReplicas().get(bucket), barber); //databaseLeader.getReplicas().get(bucket)
-		ResponseEntity<EntityModel<Barber>> response = ProfileService.registerBarberProfile(servers.get(bucket), barber); //databaseLeader.getServers().get(bucket)
-		ResponseEntity<EntityModel<Barber>> response2 = ProfileService.registerBarberProfile(replicas.get(bucket), barber); //databaseLeader.getReplicas().get(bucket)
-
+		String response = ProfileService.registerBarberProfile(servers.get(bucket), barber); //databaseLeader.getServers().get(bucket)
+		//Create thread to update replicas
+		sendLogToReplica(response, replicas.get(bucket));
 		//potential option is to not change the server map if the server is down but instead check the response code
 		//of each and if the server is down return the response2 of the replica instead
 //		if(response.getStatusCodeValue() != 200 && response2.getStatusCodeValue() == 200){
@@ -195,5 +197,23 @@ public class NodeController {
 		ResponseEntity<EntityModel<Appointment>> response2 = BookingService.cancelAppointment(replicas.get(bucket), appointmentId);
 		return response;
 	}
+	private void sendLogToReplica(String log , String replicaURL){
+		new Thread(() -> {
+			int i = 0;
+			while(i < 3){
+				HttpResponse<String> response = Http.postString(replicaURL + "/updateLog", log);
+				if(response.statusCode() == 200){
+					break;
+				}
+				i++;
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}).start();
+	}
+
 
 }

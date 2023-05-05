@@ -106,4 +106,28 @@ public class Http {
 
 		return response;
 	}
+	public static HttpResponse<String> postString(String uri, String string) {
+		HttpRequest request = HttpRequest.newBuilder().
+				POST(HttpRequest.BodyPublishers.ofString(string))
+				.uri(URI.create(uri))
+				.header("Content-Type", "text/plain")
+				.build();
+
+		HttpResponse<String> response = null;
+		try {
+			response = HttpClient.newBuilder()
+					.build()
+					.send(request, HttpResponse.BodyHandlers.ofString());
+		} catch (IOException | InterruptedException e) {
+			System.out.println("problem in sending it");
+			e.printStackTrace();
+		}
+
+		if (response != null) {
+			System.out.println(response.body());
+		} else {
+			System.out.println("the response was null");
+		}
+		return response;
+	}
 }
