@@ -229,7 +229,7 @@ public class DataBaseController {
         EntityModel<Barber> entityModel = EntityModel.of(updatedBarber);
         Link link = linkTo(methodOn(this.getClass()).updateBarber(newBarber, id)).withSelfRel();
         entityModel.add(link);
-        logger.info(logCounter.incrementAndGet() + " put " + "/barbers/" + id + " " + entityModel.toString());
+        logger.info(logCounter.incrementAndGet() + " put " + "/barbers/" + id + " " + updatedBarber.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
@@ -254,7 +254,7 @@ public class DataBaseController {
                     return clientRepository.save(newClient);
                 });
         EntityModel<Client> entityModel = EntityModel.of(updatedClient);
-        logger.info(logCounter.incrementAndGet() + " put " + "/clients/" + id + " " + entityModel.toString());
+        logger.info(logCounter.incrementAndGet() + " put " + "/clients/" + id + " " + updatedClient.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
@@ -278,7 +278,7 @@ public class DataBaseController {
                     return appointmentsRepository.save(newAppointment);
                 });
         EntityModel<Appointments> entityModel = EntityModel.of(updatedAppointment);
-        logger.info(logCounter.incrementAndGet() + " put " + "/appointments/" + id + " " + entityModel.toString());
+        logger.info(logCounter.incrementAndGet() + " put " + "/appointments/" + id + " " + updatedAppointment.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
@@ -302,7 +302,7 @@ public class DataBaseController {
                     return appointmentSlotRepository.save(newAppointmentSlot);
                 });
         EntityModel<AppointmentSlot> entityModel = EntityModel.of(updatedAppointmentSlot);
-        logger.info(logCounter.incrementAndGet() + " put " + "/appointmentSlots/" + id + " " + entityModel.toString());
+        logger.info(logCounter.incrementAndGet() + " put " + "/appointmentSlots/" + id + " " + updatedAppointmentSlot.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
@@ -315,7 +315,7 @@ public class DataBaseController {
     protected ResponseEntity<EntityModel<Barber>> deleteBarber(@PathVariable Long id) {
         barberRepository.deleteById(id);
         logger.info(logCounter.incrementAndGet() + " delete " + "/barbers/" + id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok().build();
     }
 
     /**
@@ -327,7 +327,7 @@ public class DataBaseController {
     protected ResponseEntity<EntityModel<Client>> deleteClient(@PathVariable Long id) {
         clientRepository.deleteById(id);
         logger.info(logCounter.incrementAndGet() + " delete " + "/clients/" + id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok().build();
     }
 
     /**
@@ -339,7 +339,7 @@ public class DataBaseController {
     protected ResponseEntity<EntityModel<Appointments>> deleteAppointment(@PathVariable Long id) {
         logger.info(logCounter.incrementAndGet() + " delete " + "/appointments/" + id);
         appointmentsRepository.deleteById(id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok().build();
     }
 
     /**
@@ -351,7 +351,7 @@ public class DataBaseController {
     protected ResponseEntity<EntityModel<AppointmentSlot>> deleteAppointmentSlot(@PathVariable Long id) {
         appointmentSlotRepository.deleteById(id);
         logger.info(logCounter.incrementAndGet() + " delete " + "/appointmentSlots/" + id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok().build();
     }
 
     /**
@@ -436,7 +436,7 @@ public class DataBaseController {
 
     private ResponseEntity implementLogChanges(String log) {
         String[] details = log.split(" ", 5);
-        if(Integer.parseInt(details[1]) <= logCounter.get()) return null;
+        if(Integer.parseInt(details[1]) != logCounter.get() +1) return null;
         String request = details[2];
         switch (request){
             case "post" -> {
@@ -513,7 +513,11 @@ public class DataBaseController {
 
     @PutMapping("/updateLog")
     public ResponseEntity addOneLog(@RequestBody String log){
-        return implementLogChanges(log);
+        ResponseEntity implementation = implementLogChanges(log);
+        if(implementation == null){
+            //TODO: get a service node to give the primary database's URL or to call "/updateDatabase/{url}" so we can get all of the missing logs
+        }
+        return implementation;
     }
 
     @GetMapping("/getDatabaseLogs/{id}")
