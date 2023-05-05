@@ -1,12 +1,17 @@
 const clientGetAllMyAppointmentsForm = document.getElementById('client-get-all-my-appointments-form');
+const backLink = document.getElementById('link');
+const urlParams = new URLSearchParams(window.location.search);
+const zip = urlParams.get('zip');
+console.log(zip);
+const id = urlParams.get('id');
+console.log(id);
+backLink.href = 'clientOptions.html?id=' + id + '&zip=' + zip;
 
 clientGetAllMyAppointmentsForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const clientGetAllMyAppointmentsPage = document.getElementById('client-get-all-my-appointments-page');
     clientGetAllMyAppointmentsPage.style.display = 'none';
     const clientID = clientGetAllMyAppointmentsForm.elements['client-id'].value;
-    const urlParams = new URLSearchParams(window.location.search);
-    const zip = urlParams.get('zip');
 
     console.log(clientID);
 

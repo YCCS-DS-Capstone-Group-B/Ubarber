@@ -1,4 +1,11 @@
 const cancelAppointmentForm = document.getElementById('cancel-appointment-form');
+const backLink = document.getElementById('link');
+const urlParams = new URLSearchParams(window.location.search);
+const zip = urlParams.get('zip');
+console.log(zip);
+const id = urlParams.get('id');
+console.log(id);
+backLink.href = 'barberOptions.html?id=' + id + '&zip=' + zip;
 
 cancelAppointmentForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -17,10 +24,6 @@ cancelAppointmentForm.addEventListener('submit', (event) => {
         },
         mode: 'cors'
     };
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const zip = urlParams.get('zip');
-    console.log(zip);
 
     fetch(`http://localhost:8081/barberCancelAppointment/${appointmentID}/${zip}`, requestOptions)
         .then(response => response.json())

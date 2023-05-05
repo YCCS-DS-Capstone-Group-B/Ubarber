@@ -1,4 +1,11 @@
 const deleteAppointmentSlotForm = document.getElementById('delete-appointment-slot-form');
+const backLink = document.getElementById('link');
+const urlParams = new URLSearchParams(window.location.search);
+const zip = urlParams.get('zip');
+console.log(zip);
+const id = urlParams.get('id');
+console.log(id);
+backLink.href = 'barberOptions.html?id=' + id + '&zip=' + zip;
 
 deleteAppointmentSlotForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -20,11 +27,20 @@ deleteAppointmentSlotForm.addEventListener('submit', (event) => {
     };
 
     fetch(`http://localhost:8081/deleteAppointmentSlot/${appointmentSlotId}/${barberZip}`, requestOptions)
-        .then(response => response.json())
+        .then(response => {
+            if (response.status === 204) {
+                return Promise.resolve();
+            } else {
+                return response.json();
+            }
+        })
         .then(data => {
-            const jsonElement = document.getElementById('json-data');
-            jsonElement.innerHTML = JSON.stringify(data);
-            jsonElement.style.display = 'block';
+            if (data) {
+                const jsonElement = document.getElementById('json-data');
+                jsonElement.innerHTML = JSON.stringify(data);
+                jsonElement.style.display = 'block';
+            }
         })
         .catch(error => console.error(error))
+
 })

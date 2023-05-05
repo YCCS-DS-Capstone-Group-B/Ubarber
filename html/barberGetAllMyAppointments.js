@@ -1,12 +1,17 @@
 const barberGetAllMyAppointmentsForm = document.getElementById('barber-get-all-my-appointments-form');
+const backLink = document.getElementById('link');
+const urlParams = new URLSearchParams(window.location.search);
+const zip = urlParams.get('zip');
+console.log(zip);
+const id = urlParams.get('id');
+console.log(id);
+backLink.href = 'barberOptions.html?id=' + id + '&zip=' + zip;
 
 barberGetAllMyAppointmentsForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const barberGetAllMyAppointmentsPage = document.getElementById('barber-get-all-my-appointments-page');
     barberGetAllMyAppointmentsPage.style.display = 'none';
     const barberID = barberGetAllMyAppointmentsForm.elements['barber-id'].value;
-    const urlParams = new URLSearchParams(window.location.search);
-    const zip = urlParams.get('zip');
 
     console.log(barberID);
 

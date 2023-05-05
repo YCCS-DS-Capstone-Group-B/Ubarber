@@ -273,23 +273,34 @@ public class DataBaseController {
      * @apiNote This method is used to update a specific appointment slot from the database
      */
     @PutMapping("/appointmentSlots/{appointmentSlotId}")
-    protected ResponseEntity<EntityModel<AppointmentSlot>> updateAppointmentSlot(@RequestBody AppointmentSlot newAppointmentSlot, @PathVariable Long appointmentSlotId) {
-        AppointmentSlot updatedAppointmentSlot = appointmentSlotRepository.findById(appointmentSlotId)
-                .map(appointmentSlot -> {
-                    appointmentSlot.setBarberId(newAppointmentSlot.getBarberId());
-                    appointmentSlot.setAppointmentSlotId(newAppointmentSlot.getAppointmentSlotId());
-                    appointmentSlot.setStartTime(newAppointmentSlot.getStartTime());
-                    appointmentSlot.setEndTime(newAppointmentSlot.getEndTime());
-                    return appointmentSlotRepository.save(appointmentSlot);
-                })
-                .orElseGet(() -> {
-                    newAppointmentSlot.setAppointmentSlotId(appointmentSlotId);
-                    return appointmentSlotRepository.save(newAppointmentSlot);
-                });
-        EntityModel<AppointmentSlot> entityModel = EntityModel.of(updatedAppointmentSlot);
-        logger.info(logCounter.incrementAndGet() + " put " + "/appointmentSlots/" + appointmentSlotId + " " + entityModel.toString());
-        return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
+//    protected ResponseEntity<EntityModel<AppointmentSlot>> updateAppointmentSlot(@RequestBody AppointmentSlot newAppointmentSlot, @PathVariable Long appointmentSlotId) {
+//        AppointmentSlot updatedAppointmentSlot = appointmentSlotRepository.findById(appointmentSlotId)
+//                .map(existingAppointmentSlot -> {
+//                    existingAppointmentSlot.setBarberId(newAppointmentSlot.getBarberId());
+//                    existingAppointmentSlot.setAppointmentSlotId(newAppointmentSlot.getAppointmentSlotId());
+//                    existingAppointmentSlot.setStartTime(newAppointmentSlot.getStartTime());
+//                    existingAppointmentSlot.setEndTime(newAppointmentSlot.getEndTime());
+//                    return appointmentSlotRepository.save(existingAppointmentSlot);
+//                })
+//                .orElseGet(() -> {
+//                    newAppointmentSlot.setAppointmentSlotId(appointmentSlotId);
+//                    return appointmentSlotRepository.save(newAppointmentSlot);
+//                });
+//        EntityModel<AppointmentSlot> entityModel = EntityModel.of(updatedAppointmentSlot);
+//        logger.info(logCounter.incrementAndGet() + " put " + "/appointmentSlots/" + appointmentSlotId + " " + entityModel.toString());
+//        return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
+//    }
+    protected ResponseEntity<EntityModel<AppointmentSlot>> updateAppointmentSlot(@PathVariable Long appointmentSlotId, @RequestBody AppointmentSlot newAppointmentSlot) {
+        logger.info(logCounter.incrementAndGet() + " put " + "/appointmentSlots/" + appointmentSlotId + " " + newAppointmentSlot.toString());
+        AppointmentSlot existingAppointmentSlot = appointmentSlotRepository.findById(appointmentSlotId)
+                .orElseThrow(() -> new RuntimeException("AppointmentSlot not found with id " + appointmentSlotId));
+        existingAppointmentSlot.setBarberId(newAppointmentSlot.getBarberId());
+        existingAppointmentSlot.setStartTime(newAppointmentSlot.getStartTime());
+        existingAppointmentSlot.setEndTime(newAppointmentSlot.getEndTime());
+        EntityModel<AppointmentSlot> entityModel = EntityModel.of(appointmentSlotRepository.save(existingAppointmentSlot));
+        return ResponseEntity.ok().body(entityModel);
     }
+
 
     /**
      * @param barberId

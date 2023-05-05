@@ -108,8 +108,8 @@ public class NodeController {
 	@GetMapping("/client/myAppointments/{clientId}/{zip}")
 	public ResponseEntity<CollectionModel<Appointment>> allAppointmentsByClient(@PathVariable long clientId, @PathVariable String zip){
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
-		ResponseEntity<CollectionModel<Appointment>> response = BarberSideServices.allAppointmentsByBarber(servers.get(bucket), clientId);
-		ResponseEntity<CollectionModel<Appointment>> response2 = BarberSideServices.allAppointmentsByBarber(servers.get(bucket), clientId);
+		ResponseEntity<CollectionModel<Appointment>> response = BookingService.allAppointmentsByClient(servers.get(bucket), clientId);
+		ResponseEntity<CollectionModel<Appointment>> response2 = BookingService.allAppointmentsByClient(servers.get(bucket), clientId);
 		return response;
 	}
 

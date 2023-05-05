@@ -1,4 +1,11 @@
 const updateProfileForm = document.getElementById('update-profile-form');
+const backLink = document.getElementById('link');
+const urlParams = new URLSearchParams(window.location.search);
+const zip = urlParams.get('zip');
+console.log(zip);
+const id = urlParams.get('id');
+console.log(id);
+backLink.href = 'barberOptions.html?id=' + id + '&zip=' + zip;
 
 updateProfileForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -34,12 +41,6 @@ updateProfileForm.addEventListener('submit', (event) => {
     mode: 'cors',
     body: JSON.stringify(formData)
 };
-
-const urlParams = new URLSearchParams(window.location.search);
-const zip = urlParams.get('zip');
-console.log(zip);
-const id = urlParams.get('id');
-console.log(id);
 
 fetch(`http://localhost:8081/barberUpdateProfile/${id}/${zip}`, requestOptions)
     .then(response => response.json())

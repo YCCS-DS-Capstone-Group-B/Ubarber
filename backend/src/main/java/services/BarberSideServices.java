@@ -20,11 +20,16 @@ public class BarberSideServices {
 
 
     public static ResponseEntity<CollectionModel<Appointment>> allAppointmentsByBarber(String uri, long barberId) {
-        HttpResponse<String> response = Http.get(uri + "/barbers/"+ barberId + "/appointments");
+        HttpResponse<String> response = Http.get(uri + "/barbers/" + barberId + "/appointments");
+        if (response.body() == null || response.body().isEmpty() || response.body().equals("{}")) {
+            // Return an empty collection model if the response body is empty or null
+            return ResponseEntity.ok(CollectionModel.empty());
+        }
         Type appointmentListType = new TypeToken<ArrayList<Appointment>>(){}.getType();
         ArrayList<Appointment> appointmentList = gson.fromJson(response.body(), appointmentListType);
         CollectionModel<Appointment> collectionModel = CollectionModel.of(appointmentList);
         return ResponseEntity.ok(collectionModel);
+
     }
 
     public static ResponseEntity<EntityModel<Appointment>> cancelAppointment(String uri, long appointmentId) {
@@ -49,7 +54,14 @@ public class BarberSideServices {
 
     public static ResponseEntity<EntityModel<AppointmentSlot>> deleteAppointmentSlot(String uri, long appointmentSlotId) {
         HttpResponse<String> response = Http.delete(uri + "/appointmentSlots/" + appointmentSlotId);
-        AppointmentSlot as = gson.fromJson(response.body(), AppointmentSlot.class);
-        return ResponseEntity.ok(EntityModel.of(as));
+        int statusCode = response.statusCode();
+
+        if (statusCode == 204) {
+            return ResponseEntity.noContent().build();
+        } else {
+            AppointmentSlot as = gson.fromJson(response.body(), AppointmentSlot.class);
+            return ResponseEntity.ok(EntityModel.of(as));
+        }
+
     }
 }

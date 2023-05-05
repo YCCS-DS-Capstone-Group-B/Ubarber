@@ -1,4 +1,11 @@
 const bookBarberForm = document.getElementById('book-barber-form');
+const backLink = document.getElementById('link');
+const urlParams = new URLSearchParams(window.location.search);
+const zip = urlParams.get('zip');
+console.log(zip);
+const id = urlParams.get('id');
+console.log(id);
+backLink.href = 'clientOptions.html?id=' + id + '&zip=' + zip;
 
 bookBarberForm.addEventListener('submit', (event) => {
     event.preventDefault();

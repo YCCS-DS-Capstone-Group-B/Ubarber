@@ -24,8 +24,17 @@ public class BookingService {
     public static ResponseEntity<CollectionModel<Appointment>> allAppointmentsByClient(String uri, long clientId) {
         HttpResponse<String> response = Http.get(uri + "/clients/"+ clientId + "/appointments");
         Type appointmentListType = new TypeToken<ArrayList<Appointment>>(){}.getType();
-        ArrayList<Appointment> appointmentList = gson.fromJson(response.body(), appointmentListType);
-        CollectionModel<Appointment> collectionModel = CollectionModel.of(appointmentList);
+        ArrayList<Appointment> list = null;
+        try {
+            JsonObject jsonObject = JsonParser.parseString(response.body()).getAsJsonObject();
+            JsonArray jsonArray = jsonObject.getAsJsonObject("_embedded").getAsJsonArray("appointmentList");
+            list = gson.fromJson(jsonArray, appointmentListType);
+        } catch (NullPointerException ignored) {}
+
+        CollectionModel<Appointment> collectionModel = CollectionModel.of(new ArrayList<>());
+        if(list != null) {
+            collectionModel = CollectionModel.of(list);
+        }
         return ResponseEntity.ok(collectionModel);
     }
 

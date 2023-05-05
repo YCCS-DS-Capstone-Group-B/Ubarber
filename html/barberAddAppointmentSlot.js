@@ -1,4 +1,11 @@
 const addAppointmentSlotForm = document.getElementById('add-appointment-slot-form');
+const backLink = document.getElementById('link');
+const urlParams = new URLSearchParams(window.location.search);
+const zip = urlParams.get('zip');
+console.log(zip);
+const id = urlParams.get('id');
+console.log(id);
+backLink.href = 'barberOptions.html?id=' + id + '&zip=' + zip;
 
 addAppointmentSlotForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -7,11 +14,6 @@ addAppointmentSlotForm.addEventListener('submit', (event) => {
     const date = addAppointmentSlotForm.elements['date'].value;
     const startTime = addAppointmentSlotForm.elements['start-time'].value;
     const endTime = addAppointmentSlotForm.elements['end-time'].value;
-    const urlParams = new URLSearchParams(window.location.search);
-    const zip = urlParams.get('zip');
-    console.log(zip);
-    const id = urlParams.get('id');
-    console.log(id);
 
     const appointmentSlot = {
         appointmentSlotId: 13, // TODO: This needs to be generated somehow
