@@ -11,7 +11,6 @@ bookBarberForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const formData = {
-        appointmentId: bookBarberForm.elements['appointment-id'].value,
         barberId: bookBarberForm.elements['barber-id'].value,
         clientId: bookBarberForm.elements['client-id'].value,
         appointmentSlotId: bookBarberForm.elements['appointment-slot-id'].value,

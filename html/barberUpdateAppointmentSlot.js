@@ -11,12 +11,13 @@ updateAppointmentSlotForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const updateAppointmentSlotPage = document.getElementById('update-appointment-slot-page');
     updateAppointmentSlotPage.style.display = 'none';
+    const appointmentSlotId = updateAppointmentSlotForm.elements['appointment-slot-id'].value;
     const date = updateAppointmentSlotForm.elements['date'].value;
     const startTime = updateAppointmentSlotForm.elements['start-time'].value;
     const endTime = updateAppointmentSlotForm.elements['end-time'].value;
 
     const appointmentSlot = {
-        appointmentSlotId: 13, // TODO: This needs to be generated somehow
+        appointmentSlotId: appointmentSlotId,
         barberId: id,
         date: date,
         startTime: startTime,

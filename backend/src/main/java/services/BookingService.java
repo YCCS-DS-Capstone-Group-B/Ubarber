@@ -74,7 +74,7 @@ public class BookingService {
         return ResponseEntity.ok(collectionModel);
     }
 
-    public static ResponseEntity<EntityModel<Appointment>> newAppointment(String uri, long barberId, long clientId, long slotId) {
+    public static ResponseEntity<EntityModel<Appointment>> newAppointment(String uri, long barberId, long clientId, long slotId, long appointmentId) {
         //TODO some how figure out how to populate the appointmentID. Currently there is only a dummy var: -1
         Appointment appointment = new Appointment(1L, barberId, clientId, slotId);
         Gson gson = new Gson();
@@ -87,10 +87,17 @@ public class BookingService {
 
     public static ResponseEntity<EntityModel<Appointment>> cancelAppointment(String uri, long appointmentId) {
         HttpResponse<String> response = Http.delete(uri + "/appointments/" + appointmentId);
-        Gson gson = new Gson();
-        Appointment responseAppointment = gson.fromJson(response.body(), Appointment.class);
-        return ResponseEntity.ok(EntityModel.of(responseAppointment));
+        if (response.statusCode() == 204) {
+            return ResponseEntity.noContent().build();
+        } else if (response.statusCode() == 200) {
+            Gson gson = new Gson();
+            Appointment responseAppointment = gson.fromJson(response.body(), Appointment.class);
+            return ResponseEntity.ok(EntityModel.of(responseAppointment));
+        } else {
+            throw new RuntimeException("Failed to cancel appointment. Status code: " + response.statusCode());
+        }
     }
+
 
     public static ResponseEntity<EntityModel<Appointment>> updateAppointment(String uri, long appointmentId, Appointment appointment) {
         Gson gson = new Gson();

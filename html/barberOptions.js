@@ -5,6 +5,7 @@ const addAppointmentSlotButton = document.getElementById('add-appointment-slot')
 const deleteAppointmentSlotButton = document.getElementById('delete-appointment-slot');
 const updateAppointmentSlotButton = document.getElementById('update-appointment-slot');
 const barberGetAllMyAppointmentsButton = document.getElementById('get-all-my-appointments');
+const barberGetAllMyAppointmentSlotsButton = document.getElementById('get-all-my-appointment-slots');
 
 const urlParams = new URLSearchParams(window.location.search);
 const zip = urlParams.get('zip');
@@ -36,5 +37,7 @@ barberGetAllMyAppointmentsButton.addEventListener('click', (event) => {
     event.preventDefault();
     window.location.replace(`barberGetAllMyAppointments.html?zip=${zip}&id=${id}`);
 });
-
-
+barberGetAllMyAppointmentSlotsButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.location.replace(`barberGetAllMyAppointmentSlots.html?zip=${zip}&id=${id}`);
+});

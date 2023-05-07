@@ -1,6 +1,9 @@
 package services;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
@@ -18,7 +21,6 @@ public class BarberSideServices {
 
     static Gson gson = new Gson();
 
-
     public static ResponseEntity<CollectionModel<Appointment>> allAppointmentsByBarber(String uri, long barberId) {
         HttpResponse<String> response = Http.get(uri + "/barbers/" + barberId + "/appointments");
         if (response.body() == null || response.body().isEmpty() || response.body().equals("{}")) {
@@ -26,10 +28,39 @@ public class BarberSideServices {
             return ResponseEntity.ok(CollectionModel.empty());
         }
         Type appointmentListType = new TypeToken<ArrayList<Appointment>>(){}.getType();
-        ArrayList<Appointment> appointmentList = gson.fromJson(response.body(), appointmentListType);
-        CollectionModel<Appointment> collectionModel = CollectionModel.of(appointmentList);
-        return ResponseEntity.ok(collectionModel);
+        ArrayList<Appointment> list = null;
+        try {
+            JsonObject jsonObject = JsonParser.parseString(response.body()).getAsJsonObject();
+            JsonArray jsonArray = jsonObject.getAsJsonObject("_embedded").getAsJsonArray("appointmentList");
+            list = gson.fromJson(jsonArray, appointmentListType);
+        } catch (NullPointerException ignored) {}
 
+        CollectionModel<Appointment> collectionModel = CollectionModel.of(new ArrayList<>());
+        if(list != null) {
+            collectionModel = CollectionModel.of(list);
+        }
+        return ResponseEntity.ok(collectionModel);
+    }
+
+    public static ResponseEntity<CollectionModel<AppointmentSlot>> allAppointmentSlotsByBarber(String uri, long barberId) {
+        HttpResponse<String> response = Http.get(uri + "/barbers/" + barberId + "/appointmentSlots");
+        if (response.body() == null || response.body().isEmpty() || response.body().equals("{}")) {
+            // Return an empty collection model if the response body is empty or null
+            return ResponseEntity.ok(CollectionModel.empty());
+        }
+        Type appointmentSlotListType = new TypeToken<ArrayList<AppointmentSlot>>(){}.getType();
+        ArrayList<AppointmentSlot> list = null;
+        try {
+            JsonObject jsonObject = JsonParser.parseString(response.body()).getAsJsonObject();
+            JsonArray jsonArray = jsonObject.getAsJsonObject("_embedded").getAsJsonArray("appointmentSlotList");
+            list = gson.fromJson(jsonArray, appointmentSlotListType);
+        } catch (NullPointerException ignored) {}
+
+        CollectionModel<AppointmentSlot> collectionModel = CollectionModel.of(new ArrayList<>());
+        if(list != null) {
+            collectionModel = CollectionModel.of(list);
+        }
+        return ResponseEntity.ok(collectionModel);
     }
 
     public static ResponseEntity<EntityModel<Appointment>> cancelAppointment(String uri, long appointmentId) {

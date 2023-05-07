@@ -26,11 +26,19 @@ cancelAppointmentForm.addEventListener('submit', (event) => {
     };
 
     fetch(`http://localhost:8081/barberCancelAppointment/${appointmentID}/${zip}`, requestOptions)
-        .then(response => response.json())
+        .then(response => {
+            if (response.status === 204) {
+                return Promise.resolve();
+            } else {
+                return response.json();
+            }
+        })
         .then(data => {
-            const jsonElement = document.getElementById('json-data');
-            jsonElement.innerHTML = JSON.stringify(data);
-            jsonElement.style.display = 'block';
+            if (data) {
+                const jsonElement = document.getElementById('json-data');
+                jsonElement.innerHTML = JSON.stringify(data);
+                jsonElement.style.display = 'block';
+            }
         })
         .catch(error => console.error(error))
 })

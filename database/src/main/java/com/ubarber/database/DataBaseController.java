@@ -295,6 +295,7 @@ public class DataBaseController {
         AppointmentSlot existingAppointmentSlot = appointmentSlotRepository.findById(appointmentSlotId)
                 .orElseThrow(() -> new RuntimeException("AppointmentSlot not found with id " + appointmentSlotId));
         existingAppointmentSlot.setBarberId(newAppointmentSlot.getBarberId());
+        existingAppointmentSlot.setDate(newAppointmentSlot.getDate());
         existingAppointmentSlot.setStartTime(newAppointmentSlot.getStartTime());
         existingAppointmentSlot.setEndTime(newAppointmentSlot.getEndTime());
         EntityModel<AppointmentSlot> entityModel = EntityModel.of(appointmentSlotRepository.save(existingAppointmentSlot));
@@ -376,7 +377,7 @@ public class DataBaseController {
     /**
      * @param barberId
      * @return ResponseEntity<CollectionsModel<Appointment>>
-     * @apiNote This method is used to get all the appointments available for a specific barber from the database
+     * @apiNote This method is used to get all the appointment slots for a specific barber from the database
      */
     @GetMapping("/barbers/{barberId}/appointmentSlots")
     protected ResponseEntity<CollectionModel<AppointmentSlot>> allAppointmentSlotsByBarber(@PathVariable Long barberId) {

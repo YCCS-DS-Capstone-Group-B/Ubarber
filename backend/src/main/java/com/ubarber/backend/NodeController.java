@@ -29,6 +29,8 @@ public class NodeController {
 	Map<Integer, String> servers = new HashMap<>();
 	Map<Integer, String> replicas = new HashMap<>();
 	Logger logger = Logger.getLogger(NodeController.class.getName());
+	static long appointmentSlotId = 0;
+	static long appointmentId = 0;
 
 	@PostConstruct
 	public void makeMap(){
@@ -105,6 +107,14 @@ public class NodeController {
 		return response;
 	}
 
+	@GetMapping("/barber/myAppointmentSlots/{barberId}/{zip}")
+	public ResponseEntity<CollectionModel<AppointmentSlot>> allAppointmentSlotsByBarber(@PathVariable long barberId, @PathVariable String zip){
+		int bucket = ShardingUtils.getBucket(zip,servers.size());
+		ResponseEntity<CollectionModel<AppointmentSlot>> response = BarberSideServices.allAppointmentSlotsByBarber(servers.get(bucket), barberId);
+		ResponseEntity<CollectionModel<AppointmentSlot>> response2 = BarberSideServices.allAppointmentSlotsByBarber(servers.get(bucket), barberId);
+		return response;
+	}
+
 	@GetMapping("/client/myAppointments/{clientId}/{zip}")
 	public ResponseEntity<CollectionModel<Appointment>> allAppointmentsByClient(@PathVariable long clientId, @PathVariable String zip){
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
@@ -116,6 +126,7 @@ public class NodeController {
 	@PostMapping("/addAppointmentSlot/{zip}")
 	public ResponseEntity<EntityModel<AppointmentSlot>> addAppointmentSlot(@RequestBody AppointmentSlot appointmentSlot, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
+		appointmentSlot.setAppointmentSlotId(++appointmentSlotId);
 		ResponseEntity<EntityModel<AppointmentSlot>> response = BarberSideServices.newAppointmentSlot(servers.get(bucket), appointmentSlot);
 		ResponseEntity<EntityModel<AppointmentSlot>> response2 = BarberSideServices.newAppointmentSlot(replicas.get(bucket), appointmentSlot);
 		return response;
@@ -183,8 +194,9 @@ public class NodeController {
 		int clientId = jsonObject.get("clientId").getAsInt();
 		int slotId = jsonObject.get("appointmentSlotId").getAsInt();
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
-		ResponseEntity<EntityModel<Appointment>> response = BookingService.newAppointment(servers.get(bucket), barberId, clientId, slotId);
-		ResponseEntity<EntityModel<Appointment>> response2 = BookingService.newAppointment(replicas.get(bucket), barberId, clientId, slotId);
+		long apptId = ++appointmentId;
+		ResponseEntity<EntityModel<Appointment>> response = BookingService.newAppointment(servers.get(bucket), barberId, clientId, slotId, apptId);
+		ResponseEntity<EntityModel<Appointment>> response2 = BookingService.newAppointment(replicas.get(bucket), barberId, clientId, slotId, apptId);
 		return response;
 	}
 
