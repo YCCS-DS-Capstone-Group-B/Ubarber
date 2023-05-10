@@ -15,7 +15,9 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
@@ -34,6 +36,8 @@ public class DataBaseController {
     private final AppointmentSlotRepository appointmentSlotRepository;
     private final Logger logger = Logger.getLogger(String.valueOf(DataBaseController.class));
     private final AtomicInteger logCounter = new AtomicInteger(0);
+    private final AtomicBoolean batchCatchUp = new AtomicBoolean(false);
+    private final HashMap<Integer, String> undoneLogs = new HashMap<>();
     LogHandler logHandler = new LogHandler();
 
 
@@ -132,7 +136,7 @@ public class DataBaseController {
         return ResponseEntity.ok(collectionModel);
     }
 
-   /**
+    /**
      * @return ResponseEntity<CollectionModel<Appointments>>
      * @apiNote This method is used to get all the appointments in the database
      */
@@ -421,9 +425,14 @@ public class DataBaseController {
         if (response != null) {
             Gson gson = new Gson();
             String[] logs = gson.fromJson(response.body(), String[].class);
+            batchCatchUp.set(true);
             for (String log : logs) {
                 implementLogChanges(log);
             }
+            while(!undoneLogs.isEmpty()){
+                implementLogChanges(undoneLogs.get(logCounter.addAndGet(1)));
+            }
+            batchCatchUp.set(false);
         } else {
             System.out.println("the response was null");
         }
@@ -513,9 +522,15 @@ public class DataBaseController {
 
     @PutMapping("/updateLog")
     public ResponseEntity addOneLog(@RequestBody String log){
+        if (batchCatchUp.get()) {
+            undoneLogs.put(Integer.parseInt(log.split(" ", 5)[1]), log);
+            return null;
+        }
         ResponseEntity implementation = implementLogChanges(log);
         if(implementation == null){
-            //TODO: get a service node to give the primary database's URL or to call "/updateDatabase/{url}" so we can get all of the missing logs
+            if(Integer.parseInt(log.split(" ", 5)[1]) <= logCounter.get())
+                return ResponseEntity.ok().build();
+            undoneLogs.put(Integer.parseInt(log.split(" ", 5)[1]), log);
         }
         return implementation;
     }
