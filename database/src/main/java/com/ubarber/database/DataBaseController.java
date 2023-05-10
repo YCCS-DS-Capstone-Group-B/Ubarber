@@ -519,7 +519,7 @@ public class DataBaseController {
                 return newClient(gson.fromJson(json, Client.class));
             }
             case "/appointments" -> {
-                return newAppointment(gson.fromJson(json, Appointments.class));
+                return newAppointment(gson.fromJson(json, Appointment.class));
             }
             case "/appointmentSlots" -> {
                 return newAppointmentSlot(gson.fromJson(json, AppointmentSlot.class));
