@@ -50,16 +50,15 @@ public class NodeController {
 		barber.setLongitude(latLong[1]);
 		barber.setGeoHash(ShardingUtils.getGeoHash(barber.getLatitude(),barber.getLongitude()));
 		int bucket = ShardingUtils.getBucket(barber.getLocation(),servers.size());
-//		ResponseEntity<EntityModel<Barber>> response = ProfileService.registerBarberProfile(databaseLeader.getServers().get(bucket), barber); //databaseLeader.getServers().get(bucket)
-//		ResponseEntity<EntityModel<Barber>> response2 = ProfileService.registerBarberProfile(databaseLeader.getReplicas().get(bucket), barber); //databaseLeader.getReplicas().get(bucket)
 		ResponseEntity<EntityModel<Barber>> response = ProfileService.registerBarberProfile(servers.get(bucket), barber); //databaseLeader.getServers().get(bucket)
-		ResponseEntity<EntityModel<Barber>> response2 = ProfileService.registerBarberProfile(replicas.get(bucket), barber); //databaseLeader.getReplicas().get(bucket)
+		if(response.getStatusCodeValue() == 200){ //phase 1 main passed successfully
+			ResponseEntity<EntityModel<Barber>> response2 = ProfileService.registerBarberProfile(replicas.get(bucket), barber); //databaseLeader.getReplicas().get(bucket)
+			if(response2.getStatusCodeValue() == 200) { //phase 1 replica passed successfully
+				ResponseEntity<EntityModel<Barber>> responseCommited = ProfileService.registerBarberProfile(servers.get(bucket), barber); //phase 2 main
+				ResponseEntity<EntityModel<Barber>> responseCommited2 = ProfileService.registerBarberProfile(replicas.get(bucket), barber); //phase 2 replica
+			}
 
-		//potential option is to not change the server map if the server is down but instead check the response code
-		//of each and if the server is down return the response2 of the replica instead
-//		if(response.getStatusCodeValue() != 200 && response2.getStatusCodeValue() == 200){
-//			return response2;
-//		}
+		}
         logger.info("Registering barber with id: " + barber.getId() + " to server: " + servers.get(bucket) + " " + response.getStatusCodeValue());
 		return response;
 	}
@@ -71,7 +70,18 @@ public class NodeController {
 		client.setGeoHash(ShardingUtils.getGeoHash(client.getLatitude(),client.getLongitude()));
 		int bucket = ShardingUtils.getBucket(client.getLocation(),servers.size());
 		ResponseEntity<EntityModel<Client>> response = ProfileService.registerClientProfile(servers.get(bucket), client);
-		ResponseEntity<EntityModel<Client>> response2 = ProfileService.registerClientProfile(replicas.get(bucket), client);
+		if(response.getStatusCodeValue() == 200){ //phase 1 main passed successfully
+			logger.info("phase 1 main staged");
+			ResponseEntity<EntityModel<Client>> response2 = ProfileService.registerClientProfile(replicas.get(bucket), client);
+			logger.info("phase 1 replica staged");
+			if(response2.getStatusCodeValue() == 200) { //phase 1 replica passed successfully
+				ResponseEntity<EntityModel<Client>> responseCommited = ProfileService.registerClientProfile(servers.get(bucket), client); //phase 2 main
+				ResponseEntity<EntityModel<Client>> responseCommited2 = ProfileService.registerClientProfile(replicas.get(bucket), client); //phase 2 replica
+				logger.info("phase 2 main and replica call sent to commit");
+			}
+
+		}
+		logger.info("Registering client with id: " + client.getId() + " to server: " + servers.get(bucket) + " " + response.getStatusCodeValue());
 		return response;
 	}
 	@GetMapping("/getBarber/{barberId}/{zip}")
@@ -128,7 +138,14 @@ public class NodeController {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
 		appointmentSlot.setAppointmentSlotId(++appointmentSlotId);
 		ResponseEntity<EntityModel<AppointmentSlot>> response = BarberSideServices.newAppointmentSlot(servers.get(bucket), appointmentSlot);
-		ResponseEntity<EntityModel<AppointmentSlot>> response2 = BarberSideServices.newAppointmentSlot(replicas.get(bucket), appointmentSlot);
+		if(response.getStatusCodeValue() == 200) {
+			ResponseEntity<EntityModel<AppointmentSlot>> response2 = BarberSideServices.newAppointmentSlot(replicas.get(bucket), appointmentSlot);
+			if(response2.getStatusCodeValue() == 200) {
+				ResponseEntity<EntityModel<AppointmentSlot>> responseCommited = BarberSideServices.newAppointmentSlot(servers.get(bucket), appointmentSlot);
+				ResponseEntity<EntityModel<AppointmentSlot>> responseCommited2 = BarberSideServices.newAppointmentSlot(replicas.get(bucket), appointmentSlot);
+			}
+		}
+
 		return response;
 	}
 
@@ -136,7 +153,13 @@ public class NodeController {
 	public ResponseEntity<EntityModel<AppointmentSlot>> updateAppointmentSlot(@RequestBody AppointmentSlot appointmentSlot, @PathVariable long appointmentSlotId, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
 		ResponseEntity<EntityModel<AppointmentSlot>> response = BarberSideServices.updateAppointmentSlot(servers.get(bucket), appointmentSlotId, appointmentSlot);
-		ResponseEntity<EntityModel<AppointmentSlot>> response2 = BarberSideServices.updateAppointmentSlot(replicas.get(bucket), appointmentSlotId, appointmentSlot);
+		if(response.getStatusCodeValue() == 200) {
+			ResponseEntity<EntityModel<AppointmentSlot>> response2 = BarberSideServices.updateAppointmentSlot(replicas.get(bucket), appointmentSlotId, appointmentSlot);
+			if(response2.getStatusCodeValue() == 200) {
+				ResponseEntity<EntityModel<AppointmentSlot>> responseCommited = BarberSideServices.updateAppointmentSlot(servers.get(bucket), appointmentSlotId, appointmentSlot);
+				ResponseEntity<EntityModel<AppointmentSlot>> responseCommited2 = BarberSideServices.updateAppointmentSlot(replicas.get(bucket), appointmentSlotId, appointmentSlot);
+			}
+		}
 		return response;
 	}
 
@@ -144,7 +167,13 @@ public class NodeController {
 	public ResponseEntity<EntityModel<Appointment>> updateAppointment(@RequestBody Appointment appointment, @PathVariable long appointmentId, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
 		ResponseEntity<EntityModel<Appointment>> response = BookingService.updateAppointment(servers.get(bucket), appointmentId, appointment);
-		ResponseEntity<EntityModel<Appointment>> response2 = BookingService.updateAppointment(replicas.get(bucket), appointmentId, appointment);
+		if(response.getStatusCodeValue() == 200) {
+			ResponseEntity<EntityModel<Appointment>> response2 = BookingService.updateAppointment(replicas.get(bucket), appointmentId, appointment);
+			if(response2.getStatusCodeValue() == 200) {
+				ResponseEntity<EntityModel<Appointment>> responseCommited = BookingService.updateAppointment(servers.get(bucket), appointmentId, appointment);
+				ResponseEntity<EntityModel<Appointment>> responseCommited2 = BookingService.updateAppointment(replicas.get(bucket), appointmentId, appointment);
+			}
+		}
 		return response;
 	}
 
@@ -152,7 +181,13 @@ public class NodeController {
 	public ResponseEntity<EntityModel<AppointmentSlot>> deleteAppointmentSlot(@PathVariable long appointmentId, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
 		ResponseEntity<EntityModel<AppointmentSlot>> response = BarberSideServices.deleteAppointmentSlot(servers.get(bucket), appointmentId);
-		ResponseEntity<EntityModel<AppointmentSlot>> response2 = BarberSideServices.deleteAppointmentSlot(replicas.get(bucket), appointmentId);
+		if(response.getStatusCodeValue() == 200){
+			ResponseEntity<EntityModel<AppointmentSlot>> response2 = BarberSideServices.deleteAppointmentSlot(replicas.get(bucket), appointmentId);
+			if(response2.getStatusCodeValue() == 200){
+				ResponseEntity<EntityModel<AppointmentSlot>> responseCommited = BarberSideServices.deleteAppointmentSlot(servers.get(bucket), appointmentId);
+				ResponseEntity<EntityModel<AppointmentSlot>> responseCommited2 = BarberSideServices.deleteAppointmentSlot(replicas.get(bucket), appointmentId);
+			}
+		}
 		return response;
 	}
 
@@ -160,7 +195,13 @@ public class NodeController {
 	public ResponseEntity<EntityModel<Appointment>> cancelAppointment(@PathVariable long appointmentId, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
 		ResponseEntity<EntityModel<Appointment>> response =  BarberSideServices.cancelAppointment(servers.get(bucket), appointmentId);
-		ResponseEntity<EntityModel<Appointment>> response2 =  BarberSideServices.cancelAppointment(replicas.get(bucket), appointmentId);
+		if(response.getStatusCodeValue() == 200){
+			ResponseEntity<EntityModel<Appointment>> response2 =  BarberSideServices.cancelAppointment(replicas.get(bucket), appointmentId);
+			if(response2.getStatusCodeValue() == 200){
+				ResponseEntity<EntityModel<Appointment>> responseCommited =  BarberSideServices.cancelAppointment(servers.get(bucket), appointmentId);
+				ResponseEntity<EntityModel<Appointment>> responseCommited2 =  BarberSideServices.cancelAppointment(replicas.get(bucket), appointmentId);
+			}
+		}
 		return response;
 	}
 
@@ -168,7 +209,13 @@ public class NodeController {
 	public ResponseEntity<EntityModel<Barber>> updateProfile(@RequestBody Barber barber, @PathVariable long barberId, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
 		ResponseEntity<EntityModel<Barber>> response =  ProfileService.updateProfile(servers.get(bucket), barberId, barber);
-		ResponseEntity<EntityModel<Barber>> response2 =  ProfileService.updateProfile(replicas.get(bucket), barberId, barber);
+		if(response.getStatusCodeValue() == 200) {
+			ResponseEntity<EntityModel<Barber>> response2 =  ProfileService.updateProfile(replicas.get(bucket), barberId, barber);
+			if(response2.getStatusCodeValue() == 200) {
+				ResponseEntity<EntityModel<Barber>> responseCommited =  ProfileService.updateProfile(servers.get(bucket), barberId, barber);
+				ResponseEntity<EntityModel<Barber>> responseCommited2 =  ProfileService.updateProfile(replicas.get(bucket), barberId, barber);
+			}
+		}
 		return response;
 	}
 
@@ -176,7 +223,13 @@ public class NodeController {
 	public ResponseEntity<EntityModel<Client>> updateProfile(@RequestBody Client client, @PathVariable long clientId, @PathVariable String zip) {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
 		ResponseEntity<EntityModel<Client>> response =  ProfileService.updateProfile(servers.get(bucket), clientId, client);
-		ResponseEntity<EntityModel<Client>> response2 =  ProfileService.updateProfile(replicas.get(bucket), clientId, client);
+		if(response.getStatusCodeValue() == 200) {
+			ResponseEntity<EntityModel<Client>> response2 =  ProfileService.updateProfile(replicas.get(bucket), clientId, client);
+			if(response2.getStatusCodeValue() == 200) {
+				ResponseEntity<EntityModel<Client>> responseCommited =  ProfileService.updateProfile(servers.get(bucket), clientId, client);
+				ResponseEntity<EntityModel<Client>> responseCommited2 =  ProfileService.updateProfile(replicas.get(bucket), clientId, client);
+			}
+		}
 		return response;
 	}
 
@@ -196,7 +249,13 @@ public class NodeController {
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
 		long apptId = ++appointmentId;
 		ResponseEntity<EntityModel<Appointment>> response = BookingService.newAppointment(servers.get(bucket), barberId, clientId, slotId, apptId);
-		ResponseEntity<EntityModel<Appointment>> response2 = BookingService.newAppointment(replicas.get(bucket), barberId, clientId, slotId, apptId);
+		if(response.getStatusCodeValue() == 200) {
+			ResponseEntity<EntityModel<Appointment>> response2 = BookingService.newAppointment(replicas.get(bucket), barberId, clientId, slotId, apptId);
+			if(response2.getStatusCodeValue() == 200) {
+				ResponseEntity<EntityModel<Appointment>> responseCommited = BookingService.newAppointment(servers.get(bucket), barberId, clientId, slotId, apptId);
+				ResponseEntity<EntityModel<Appointment>> responseCommited2 = BookingService.newAppointment(replicas.get(bucket), barberId, clientId, slotId, apptId);
+			}
+		}
 		return response;
 	}
 
@@ -204,7 +263,13 @@ public class NodeController {
 	public ResponseEntity<EntityModel<Appointment>> cancelAppointmentClientSide(@PathVariable long appointmentId, @PathVariable String zip){
 		int bucket = ShardingUtils.getBucket(zip,servers.size());
 		ResponseEntity<EntityModel<Appointment>> response = BookingService.cancelAppointment(servers.get(bucket), appointmentId);
-		ResponseEntity<EntityModel<Appointment>> response2 = BookingService.cancelAppointment(replicas.get(bucket), appointmentId);
+		if(response.getStatusCode().value() == 200){
+			ResponseEntity<EntityModel<Appointment>> response2 = BookingService.cancelAppointment(replicas.get(bucket), appointmentId);
+			if(response2.getStatusCode().value() == 200){
+				ResponseEntity<EntityModel<Appointment>> responseCommited = BookingService.cancelAppointment(servers.get(bucket), appointmentId);
+				ResponseEntity<EntityModel<Appointment>> responseCommited2 = BookingService.cancelAppointment(replicas.get(bucket), appointmentId);
+			}
+		}
 		return response;
 	}
 
