@@ -1,4 +1,11 @@
 const getBarbersNearMeForm = document.getElementById('get-barbers-near-me-form');
+const backLink = document.getElementById('link');
+const urlParams = new URLSearchParams(window.location.search);
+const zip = urlParams.get('zip');
+console.log(zip);
+const id = urlParams.get('id');
+console.log(id);
+backLink.href = 'clientOptions.html?id=' + id + '&zip=' + zip;
 
 getBarbersNearMeForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -18,7 +25,7 @@ getBarbersNearMeForm.addEventListener('submit', (event) => {
         mode: 'cors'
     };
 
-    fetch(`http://localhost:8081/getBarbersNearMe/${clientZip}}`, requestOptions)
+    fetch(`http://localhost:8081/getBarbersNearMe/${clientZip}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');

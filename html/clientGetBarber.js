@@ -1,4 +1,11 @@
 const getBarberForm = document.getElementById('get-barber-form');
+const backLink = document.getElementById('link');
+const urlParams = new URLSearchParams(window.location.search);
+const zip = urlParams.get('zip');
+console.log(zip);
+const id = urlParams.get('id');
+console.log(id);
+backLink.href = 'clientOptions.html?id=' + id + '&zip=' + zip;
 
 getBarberForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -20,7 +27,7 @@ getBarberForm.addEventListener('submit', (event) => {
         mode: 'cors'
     };
 
-    fetch(`http://localhost:8081/getBarber/${barberID}/${barberZip}}`, requestOptions)
+    fetch(`http://localhost:8081/getBarber/${barberID}/${barberZip}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');

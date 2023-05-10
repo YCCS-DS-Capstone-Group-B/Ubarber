@@ -1,7 +1,7 @@
 package pojos;
 
 public class Appointment {
-    private Long Id;
+    private Long appointmentId;
     private Long barberId;
     private Long clientId;
     private Long appointmentSlotId;
@@ -10,12 +10,12 @@ public class Appointment {
 
     }
 
-    public void setId(Long Id) {
-        this.Id = Id;
+    public void setAppointmentId(Long Id) {
+        this.appointmentId = Id;
     }
 
-    public Long getId() {
-        return Id;
+    public Long getAppointmentId() {
+        return appointmentId;
     }
 
     public Long getBarberId() {
@@ -43,7 +43,7 @@ public class Appointment {
     }
 
     public Appointment(Long Id, Long barberId, Long clientId, Long appointmentSlotId) {
-        this.Id = Id;
+        this.appointmentId = Id;
         this.barberId = barberId;
         this.clientId = clientId;
         this.appointmentSlotId = appointmentSlotId;

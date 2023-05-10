@@ -5,7 +5,7 @@ const zip = urlParams.get('zip');
 console.log(zip);
 const id = urlParams.get('id');
 console.log(id);
-backLink.href = 'barberOptions.html?id=' + id + '&zip=' + zip;
+backLink.href = 'clientOptions.html?id=' + id + '&zip=' + zip;
 
 updateProfileForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -13,7 +13,7 @@ updateProfileForm.addEventListener('submit', (event) => {
   const updateProfilePage = document.getElementById('update-profile-page');
   updateProfilePage.style.display = 'none';
 
-  const barberId = document.getElementById('id').value;
+  const clientId = document.getElementById('id').value;
   const email = document.getElementById('email').value;
   const firstname = document.getElementById('firstname').value;
   const middlename = document.getElementById('middlename').value;
@@ -21,7 +21,7 @@ updateProfileForm.addEventListener('submit', (event) => {
   const location = document.getElementById('location').value;
 
   const formData = {
-    id: barberId,
+    id: clientId,
     email: email,
     firstName: firstname,
     middleName: middlename,
@@ -42,7 +42,13 @@ updateProfileForm.addEventListener('submit', (event) => {
     body: JSON.stringify(formData)
 };
 
-fetch(`http://localhost:8081/barberUpdateProfile/${id}/${zip}`, requestOptions)
+const urlParams = new URLSearchParams(window.location.search);
+const zip = urlParams.get('zip');
+console.log(zip);
+const id = urlParams.get('id');
+console.log(id);
+
+fetch(`http://localhost:8081/clientUpdateProfile/${id}/${zip}`, requestOptions)
     .then(response => response.json())
     .then(data => {
         const jsonElement = document.getElementById('json-data');

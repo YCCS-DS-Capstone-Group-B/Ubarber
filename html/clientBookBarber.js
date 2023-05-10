@@ -1,13 +1,19 @@
-const bookBarberForm = document.getElementById("book-barber-form");
+const bookBarberForm = document.getElementById('book-barber-form');
+const backLink = document.getElementById('link');
+const urlParams = new URLSearchParams(window.location.search);
+const zip = urlParams.get('zip');
+console.log(zip);
+const id = urlParams.get('id');
+console.log(id);
+backLink.href = 'clientOptions.html?id=' + id + '&zip=' + zip;
 
 bookBarberForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const formData = {
-        appointmentId: bookBarberForm.elements["appointment-id"].value,
-        barberId: bookBarberForm.elements["barber-id"].value,
-        clientId: bookBarberForm.elements["client-id"].value,
-        appointmentSlotId: bookBarberForm.elements["appointment-slot-id"].value,
+        barberId: bookBarberForm.elements['barber-id'].value,
+        clientId: bookBarberForm.elements['client-id'].value,
+        appointmentSlotId: bookBarberForm.elements['appointment-slot-id'].value,
     };
 
     console.log(formData);
@@ -17,13 +23,13 @@ bookBarberForm.addEventListener('submit', (event) => {
         headers: {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*',
-            // 'Origin': 'http://127.0.0.1:5500' // set the "Origin" header explicitly
+            // 'Origin': 'http://127.0.0.1:5500' // set the 'Origin' header explicitly
         },
         mode: 'cors',
-        body: formData
+        body: JSON.stringify(formData)
     };
 
-    fetch(`http://localhost:8081/bookBarber/${formData.barberId}/${bookBarberForm.elements["barber-zip"].value}}`, requestOptions)
+    fetch(`http://localhost:8081/newAppointment/${formData.barberId}/${bookBarberForm.elements['barber-zip'].value}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');

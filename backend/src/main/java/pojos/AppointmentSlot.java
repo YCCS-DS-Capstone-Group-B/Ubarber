@@ -1,29 +1,35 @@
 package pojos;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.JsonDeserializer;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 @Entity
 public class AppointmentSlot {
-    @Id
     private Long appointmentSlotId;
-    @Column
     private Long barberId;
-    @Column
     private String startTime;
-    @Column
     private String endTime;
-    @Column
-    private Date date;
+    private String date;
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
@@ -71,4 +77,20 @@ public class AppointmentSlot {
         this.startTime = startTime;
         this.endTime = endTime;
     }
+
+    private static class CustomDateDeserializer extends JsonDeserializer<Date> {
+        private static final String DATE_FORMAT = "yyyy-MM-dd";
+
+        @Override
+        public Date deserialize(JsonParser parser, DeserializationContext ctxt) throws IOException {
+            DateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT);
+            String dateStr = parser.getText();
+            try {
+                return dateFormat.parse(dateStr);
+            } catch (ParseException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
 }

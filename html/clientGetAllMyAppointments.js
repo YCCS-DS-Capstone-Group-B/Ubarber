@@ -1,4 +1,4 @@
-const getBarberScheduleForm = document.getElementById('get-barber-schedule-form');
+const clientGetAllMyAppointmentsForm = document.getElementById('client-get-all-my-appointments-form');
 const backLink = document.getElementById('link');
 const urlParams = new URLSearchParams(window.location.search);
 const zip = urlParams.get('zip');
@@ -7,15 +7,13 @@ const id = urlParams.get('id');
 console.log(id);
 backLink.href = 'clientOptions.html?id=' + id + '&zip=' + zip;
 
-getBarberScheduleForm.addEventListener('submit', (event) => {
+clientGetAllMyAppointmentsForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    const getBarberSchedulePage = document.getElementById('get-barber-schedule-page');
-    getBarberSchedulePage.style.display = 'none';
-    const barberID = getBarberScheduleForm.elements['barber-id'].value;
-    const barberZip = getBarberScheduleForm.elements['barber-zip'].value;
+    const clientGetAllMyAppointmentsPage = document.getElementById('client-get-all-my-appointments-page');
+    clientGetAllMyAppointmentsPage.style.display = 'none';
+    const clientID = clientGetAllMyAppointmentsForm.elements['client-id'].value;
 
-    console.log(barberID);
-    console.log(barberZip);
+    console.log(clientID);
 
     const requestOptions = {
         method: 'GET',
@@ -27,7 +25,7 @@ getBarberScheduleForm.addEventListener('submit', (event) => {
         mode: 'cors'
     };
 
-    fetch(`http://localhost:8081/barberSchedule/${barberID}/${barberZip}`, requestOptions)
+    fetch(`http://localhost:8081/client/myAppointments/${clientID}/${zip}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');

@@ -6,9 +6,10 @@ import jakarta.persistence.Id;
 
 
 @Entity
-public class Appointments {
+public class Appointment {
     @Id
-    private Long Id;
+    @Column
+    private Long appointmentId;
     @Column
     private Long barberId;
     @Column
@@ -17,16 +18,16 @@ public class Appointments {
     private Long appointmentSlotId;
 
 
-    public Appointments() {
+    public Appointment() {
 
     }
 
-    public void setId(Long Id) {
-        this.Id = Id;
+    public void setAppointmentId(Long id) {
+        this.appointmentId = id;
     }
 
-    public Long getId() {
-        return Id;
+    public Long getAppointmentId() {
+        return appointmentId;
     }
 
     public Long getBarberId() {
@@ -53,8 +54,8 @@ public class Appointments {
         this.appointmentSlotId = appointmentSlotId;
     }
 
-    public Appointments(Long Id, Long barberId, Long clientId, Long appointmentSlotId) {
-        this.Id = Id;
+    public Appointment(Long Id, Long barberId, Long clientId, Long appointmentSlotId) {
+        this.appointmentId = Id;
         this.barberId = barberId;
         this.clientId = clientId;
         this.appointmentSlotId = appointmentSlotId;
@@ -63,7 +64,7 @@ public class Appointments {
     @Override
     public String toString() {
         return "{" +
-                "\"id\"=" + Id +
+                "\"appointmentId\"=" + appointmentId +
                 ", \"barberId\"=" + "\"" + barberId + "\"" +
                 ", \"clientId\"=" + "\"" + clientId + "\"" +
                 ", \"appointmentSlotId\"=" + "\"" + appointmentSlotId + "\"" +

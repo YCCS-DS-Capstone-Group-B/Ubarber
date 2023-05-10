@@ -1,21 +1,19 @@
-const getBarberScheduleForm = document.getElementById('get-barber-schedule-form');
+const barberGetAllMyAppointmentSlotsForm = document.getElementById('barber-get-all-my-appointment-slots-form');
 const backLink = document.getElementById('link');
 const urlParams = new URLSearchParams(window.location.search);
 const zip = urlParams.get('zip');
 console.log(zip);
 const id = urlParams.get('id');
 console.log(id);
-backLink.href = 'clientOptions.html?id=' + id + '&zip=' + zip;
+backLink.href = 'barberOptions.html?id=' + id + '&zip=' + zip;
 
-getBarberScheduleForm.addEventListener('submit', (event) => {
+barberGetAllMyAppointmentSlotsForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    const getBarberSchedulePage = document.getElementById('get-barber-schedule-page');
-    getBarberSchedulePage.style.display = 'none';
-    const barberID = getBarberScheduleForm.elements['barber-id'].value;
-    const barberZip = getBarberScheduleForm.elements['barber-zip'].value;
+    const barberGetAllMyAppointmentSlotsPage = document.getElementById('barber-get-all-my-appointment-slots-page');
+    barberGetAllMyAppointmentSlotsPage.style.display = 'none';
+    const barberID = barberGetAllMyAppointmentSlotsForm.elements['barber-id'].value;
 
     console.log(barberID);
-    console.log(barberZip);
 
     const requestOptions = {
         method: 'GET',
@@ -27,7 +25,7 @@ getBarberScheduleForm.addEventListener('submit', (event) => {
         mode: 'cors'
     };
 
-    fetch(`http://localhost:8081/barberSchedule/${barberID}/${barberZip}`, requestOptions)
+    fetch(`http://localhost:8081/barber/myAppointmentSlots/${barberID}/${zip}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');
