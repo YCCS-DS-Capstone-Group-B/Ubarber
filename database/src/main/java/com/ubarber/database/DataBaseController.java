@@ -7,13 +7,17 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
+import com.google.gson.Gson;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
@@ -32,6 +36,8 @@ public class DataBaseController {
     private final AppointmentSlotRepository appointmentSlotRepository;
     private final Logger logger = Logger.getLogger(String.valueOf(DataBaseController.class));
     private final AtomicInteger logCounter = new AtomicInteger(0);
+    private final AtomicBoolean batchCatchUp = new AtomicBoolean(false);
+    private final HashMap<Integer, String> undoneLogs = new HashMap<>();
     LogHandler logHandler = new LogHandler();
 
 
@@ -49,6 +55,15 @@ public class DataBaseController {
         logger.addHandler(fh);
         SimpleFormatter formatter = new SimpleFormatter();
         fh.setFormatter(formatter);
+        try {
+            List<String> logs = LogHandler.readLogFile();
+            String latestLog = logs.get(logs.size() -1);
+            String[] splitLog = latestLog.split(" ", 3);
+            logCounter.set(Integer.parseInt(splitLog[1]));
+        } catch (Exception e) {
+
+        }
+
     }
 
     /**
@@ -90,7 +105,7 @@ public class DataBaseController {
 
     /**
      * @param newAppointmentSlot
-     * @return ResponseEntity<EntityModel<AppoitmentSlot>>
+     * @return ResponseEntity<EntityModel<AppointmentSlot>>
      * @apiNote This method is used to create a new appointment slot in the database.
      * An appointment slot is created when a barber says this time slot is available for him to be booked.
      */
@@ -121,8 +136,7 @@ public class DataBaseController {
         return ResponseEntity.ok(collectionModel);
     }
 
-   /**
-     * @return ResponseEntity<CollectionModel<Appointment>>
+     * @return ResponseEntity<CollectionModel<Appointments>>
      * @apiNote This method is used to get all the appointments in the database
      */
     @GetMapping("/appointments")
@@ -217,7 +231,7 @@ public class DataBaseController {
         EntityModel<Barber> entityModel = EntityModel.of(updatedBarber);
         Link link = linkTo(methodOn(this.getClass()).updateBarber(newBarber, barberId)).withSelfRel();
         entityModel.add(link);
-        logger.info(logCounter.incrementAndGet() + " put " + "/barbers/" + barberId + " " + entityModel.toString());
+        logger.info(logCounter.incrementAndGet() + " put " + "/barbers/" + id + " " + updatedBarber.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
@@ -241,7 +255,7 @@ public class DataBaseController {
                     return clientRepository.save(newClient);
                 });
         EntityModel<Client> entityModel = EntityModel.of(updatedClient);
-        logger.info(logCounter.incrementAndGet() + " put " + "/clients/" + clientId + " " + entityModel.toString());
+        logger.info(logCounter.incrementAndGet() + " put " + "/clients/" + id + " " + updatedClient.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
@@ -263,8 +277,8 @@ public class DataBaseController {
                     newAppointment.setAppointmentId(appointmentId);
                     return appointmentsRepository.save(newAppointment);
                 });
-        EntityModel<Appointment> entityModel = EntityModel.of(updatedAppointment);
-        logger.info(logCounter.incrementAndGet() + " put " + "/appointments/" + appointmentId + " " + entityModel.toString());
+        EntityModel<Appointments> entityModel = EntityModel.of(updatedAppointment);
+        logger.info(logCounter.incrementAndGet() + " put " + "/appointments/" + id + " " + updatedAppointment.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
@@ -272,6 +286,7 @@ public class DataBaseController {
      * @return ResponseEntity<EntityModel<AppointmentSlot>>
      * @apiNote This method is used to update a specific appointment slot from the database
      */
+
     @PutMapping("/appointmentSlots/{appointmentSlotId}")
 //    protected ResponseEntity<EntityModel<AppointmentSlot>> updateAppointmentSlot(@RequestBody AppointmentSlot newAppointmentSlot, @PathVariable Long appointmentSlotId) {
 //        AppointmentSlot updatedAppointmentSlot = appointmentSlotRepository.findById(appointmentSlotId)
@@ -308,11 +323,11 @@ public class DataBaseController {
      * @return ResponseEntity<EntityModel<Barber>>
      * @apiNote This method is used to delete a specific barber from the database
      */
-    @DeleteMapping("/barbers/{barberId}")
-    protected ResponseEntity<EntityModel<Barber>> deleteBarber(@PathVariable Long barberId) {
-        barberRepository.deleteById(barberId);
-        logger.info(logCounter.incrementAndGet() + " delete " + "/barbers/" + barberId);
-        return ResponseEntity.noContent().build();
+    @DeleteMapping("/barbers/{id}")
+    protected ResponseEntity<EntityModel<Barber>> deleteBarber(@PathVariable Long id) {
+        barberRepository.deleteById(id);
+        logger.info(logCounter.incrementAndGet() + " delete " + "/barbers/" + id);
+        return ResponseEntity.ok().build();
     }
 
     /**
@@ -320,11 +335,11 @@ public class DataBaseController {
      * @return ResponseEntity<EntityModel<Client>>
      * @apiNote This method is used to delete a specific client from the database
      */
-    @DeleteMapping("/clients/{clientID}")
-    protected ResponseEntity<EntityModel<Client>> deleteClient(@PathVariable Long clientId) {
-        clientRepository.deleteById(clientId);
-        logger.info(logCounter.incrementAndGet() + " delete " + "/clients/" + clientId);
-        return ResponseEntity.noContent().build();
+    @DeleteMapping("/clients/{id}")
+    protected ResponseEntity<EntityModel<Client>> deleteClient(@PathVariable Long id) {
+        clientRepository.deleteById(id);
+        logger.info(logCounter.incrementAndGet() + " delete " + "/clients/" + id);
+        return ResponseEntity.ok().build();
     }
 
     /**
@@ -332,11 +347,11 @@ public class DataBaseController {
      * @return ResponseEntity<EntityModel<Appointment>>
      * @apiNote This method is used to delete a specific appointment from the database
      */
-    @DeleteMapping("/appointments/{appointmentId}")
-    protected ResponseEntity<EntityModel<Appointment>> deleteAppointment(@PathVariable Long appointmentId) {
-        logger.info(logCounter.incrementAndGet() + " delete " + "/appointments/" + appointmentId);
-        appointmentsRepository.deleteById(appointmentId);
-        return ResponseEntity.noContent().build();
+    @DeleteMapping("/appointments/{id}")
+    protected ResponseEntity<EntityModel<Appointments>> deleteAppointment(@PathVariable Long id) {
+        logger.info(logCounter.incrementAndGet() + " delete " + "/appointments/" + id);
+        appointmentsRepository.deleteById(id);
+        return ResponseEntity.ok().build();
     }
 
     /**
@@ -344,11 +359,11 @@ public class DataBaseController {
      * @return ResponseEntity<EntityModel<AppointmentSlot>>
      * @apiNote This method is used to delete a specific appointment slot from the database
      */
-    @DeleteMapping("/appointmentSlots/{appointmentSlotId}")
-    protected ResponseEntity<EntityModel<AppointmentSlot>> deleteAppointmentSlot(@PathVariable Long appointmentSlotId) {
-        appointmentSlotRepository.deleteById(appointmentSlotId);
-        logger.info(logCounter.incrementAndGet() + " delete " + "/appointmentSlots/" + appointmentSlotId);
-        return ResponseEntity.noContent().build();
+    @DeleteMapping("/appointmentSlots/{id}")
+    protected ResponseEntity<EntityModel<AppointmentSlot>> deleteAppointmentSlot(@PathVariable Long id) {
+        appointmentSlotRepository.deleteById(id);
+        logger.info(logCounter.incrementAndGet() + " delete " + "/appointmentSlots/" + id);
+        return ResponseEntity.ok().build();
     }
 
     /**
@@ -396,13 +411,13 @@ public class DataBaseController {
         return ResponseEntity.ok(collectionModel);
     }
 
-    @PostMapping("/updateDatabase/{url}")
+    @PutMapping("/updateDatabase/{url}")
     public List<String> updateDatabase(@PathVariable String url){
-        String uri = "https://" + url + "/getDatabaseLogs/" + logCounter.get();
+        String uri = "http://" + url + "/getDatabaseLogs/" + logCounter.get();
         HttpRequest request = HttpRequest.newBuilder().
                 GET()
                 .uri(URI.create(uri))
-                .header("Content-Type", "application/json")
+                .header("Content-Type", "application/charset-8")
                 .build();
 
         HttpResponse<String> response = null;
@@ -416,7 +431,16 @@ public class DataBaseController {
         }
 
         if (response != null) {
-            implementLogChanges(response.body());
+            Gson gson = new Gson();
+            String[] logs = gson.fromJson(response.body(), String[].class);
+            batchCatchUp.set(true);
+            for (String log : logs) {
+                implementLogChanges(log);
+            }
+            while(!undoneLogs.isEmpty()){
+                implementLogChanges(undoneLogs.get(logCounter.addAndGet(1)));
+            }
+            batchCatchUp.set(false);
         } else {
             System.out.println("the response was null");
         }
@@ -427,8 +451,96 @@ public class DataBaseController {
         return null;
     }
 
-    private void implementLogChanges(String body) {
-        System.out.println(body);
+    private ResponseEntity implementLogChanges(String log) {
+        String[] details = log.split(" ", 5);
+        if(Integer.parseInt(details[1]) != logCounter.get() +1) return null;
+        String request = details[2];
+        switch (request){
+            case "post" -> {
+                return handlePost(details[3], details[4]);
+            }
+            case "put" -> {
+                return handlePut(details[3], details[4]);
+            }
+            case "delete" -> {
+                return handleDelete(details[3]);
+            }
+        }
+        System.out.println(log);
+        return null;
+    }
+
+    private ResponseEntity handleDelete(String extension) {
+        String[] pieces = extension.split("/");
+        switch (pieces[0]){
+            case "/barbers" -> {
+                return deleteBarber((long) Integer.parseInt(pieces[1]));
+            }
+            case "/clients" -> {
+                return deleteClient((long) Integer.parseInt(pieces[1]));
+            }
+            case "/appointments" -> {
+                return deleteAppointment((long) Integer.parseInt(pieces[1]));
+            }
+            case "/appointmentSlots" -> {
+                return deleteAppointmentSlot((long) Integer.parseInt(pieces[1]));
+            }
+        }
+        return null;
+    }
+
+    private ResponseEntity handlePut(String extension, String json) {
+        String[] pieces = extension.split("/");
+        Gson gson = new Gson();
+        switch (pieces[0]){
+            case "/barbers" -> {
+                return updateBarber(gson.fromJson(json, Barber.class), (long) Integer.parseInt(pieces[1]));
+            }
+            case "/clients" -> {
+                return updateClient(gson.fromJson(json, Client.class), (long) Integer.parseInt(pieces[1]));
+            }
+            case "/appointments" -> {
+                return updateAppointment(gson.fromJson(json, Appointments.class), (long) Integer.parseInt(pieces[1]));
+            }
+            case "/appointmentSlots" -> {
+                return updateAppointmentSlot(gson.fromJson(json, AppointmentSlot.class), (long) Integer.parseInt(pieces[1]));
+            }
+        }
+        return null;
+    }
+
+    private ResponseEntity handlePost(String extension, String json) {
+        Gson gson = new Gson();
+        switch (extension){
+            case "/barbers" -> {
+                return newBarber(gson.fromJson(json, Barber.class));
+            }
+            case "/clients" -> {
+                return newClient(gson.fromJson(json, Client.class));
+            }
+            case "/appointments" -> {
+                return newAppointment(gson.fromJson(json, Appointments.class));
+            }
+            case "/appointmentSlots" -> {
+                return newAppointmentSlot(gson.fromJson(json, AppointmentSlot.class));
+            }
+        }
+        return null;
+    }
+
+    @PutMapping("/updateLog")
+    public ResponseEntity addOneLog(@RequestBody String log){
+        if (batchCatchUp.get()) {
+            undoneLogs.put(Integer.parseInt(log.split(" ", 5)[1]), log);
+            return null;
+        }
+        ResponseEntity implementation = implementLogChanges(log);
+        if(implementation == null){
+            if(Integer.parseInt(log.split(" ", 5)[1]) <= logCounter.get())
+                return ResponseEntity.ok().build();
+            undoneLogs.put(Integer.parseInt(log.split(" ", 5)[1]), log);
+        }
+        return implementation;
     }
 
     @GetMapping("/getDatabaseLogs/{id}")
@@ -440,7 +552,8 @@ public class DataBaseController {
             return ResponseEntity.notFound().build();
         }
         List<String> finalModel = new ArrayList<>();
-        for (int i = id; i < collectionModel.size(); i++) {
+        for (int i = id*2; i < collectionModel.size(); i++) {
+            if(i % 2 == 0) continue;
             finalModel.add(collectionModel.get(i));
         }
         return ResponseEntity.ok(finalModel);
