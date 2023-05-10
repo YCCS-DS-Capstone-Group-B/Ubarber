@@ -168,6 +168,14 @@ public class DatabaseLeader extends Thread {
         }
     }
 
+    private void validatesStagged(){
+        Random rand = new Random();
+        int randomNum = rand.nextInt((idToServers.size()) +1);
+        String serverUrl = idToServers.get(randomNum);
+        String replicaUrl = idToReplicas.get(randomNum);
+        //TODO send a request to the server to check staged of the replica
+        //TODO send a request to replica to check staged of the server
+    }
     public ConcurrentHashMap<Integer, String> getReplicas() {
         return idToReplicas;
     }
