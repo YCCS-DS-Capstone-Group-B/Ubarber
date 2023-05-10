@@ -135,8 +135,8 @@ public class DataBaseController {
         CollectionModel<Client> collectionModel = CollectionModel.of(clientRepository.findAll());
         return ResponseEntity.ok(collectionModel);
     }
-
-     * @return ResponseEntity<CollectionModel<Appointments>>
+    /**
+     * @return ResponseEntity<CollectionModel<Appointment>>
      * @apiNote This method is used to get all the appointments in the database
      */
     @GetMapping("/appointments")
@@ -231,7 +231,7 @@ public class DataBaseController {
         EntityModel<Barber> entityModel = EntityModel.of(updatedBarber);
         Link link = linkTo(methodOn(this.getClass()).updateBarber(newBarber, barberId)).withSelfRel();
         entityModel.add(link);
-        logger.info(logCounter.incrementAndGet() + " put " + "/barbers/" + id + " " + updatedBarber.toString());
+        logger.info(logCounter.incrementAndGet() + " put " + "/barbers/" + barberId + " " + updatedBarber.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
@@ -255,7 +255,7 @@ public class DataBaseController {
                     return clientRepository.save(newClient);
                 });
         EntityModel<Client> entityModel = EntityModel.of(updatedClient);
-        logger.info(logCounter.incrementAndGet() + " put " + "/clients/" + id + " " + updatedClient.toString());
+        logger.info(logCounter.incrementAndGet() + " put " + "/clients/" + clientId + " " + updatedClient.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
@@ -277,8 +277,8 @@ public class DataBaseController {
                     newAppointment.setAppointmentId(appointmentId);
                     return appointmentsRepository.save(newAppointment);
                 });
-        EntityModel<Appointments> entityModel = EntityModel.of(updatedAppointment);
-        logger.info(logCounter.incrementAndGet() + " put " + "/appointments/" + id + " " + updatedAppointment.toString());
+        EntityModel<Appointment> entityModel = EntityModel.of(updatedAppointment);
+        logger.info(logCounter.incrementAndGet() + " put " + "/appointments/" + appointmentId + " " + updatedAppointment.toString());
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
@@ -323,10 +323,10 @@ public class DataBaseController {
      * @return ResponseEntity<EntityModel<Barber>>
      * @apiNote This method is used to delete a specific barber from the database
      */
-    @DeleteMapping("/barbers/{id}")
-    protected ResponseEntity<EntityModel<Barber>> deleteBarber(@PathVariable Long id) {
-        barberRepository.deleteById(id);
-        logger.info(logCounter.incrementAndGet() + " delete " + "/barbers/" + id);
+    @DeleteMapping("/barbers/{barberId}")
+    protected ResponseEntity<EntityModel<Barber>> deleteBarber(@PathVariable Long barberId) {
+        barberRepository.deleteById(barberId);
+        logger.info(logCounter.incrementAndGet() + " delete " + "/barbers/" + barberId);
         return ResponseEntity.ok().build();
     }
 
@@ -335,10 +335,10 @@ public class DataBaseController {
      * @return ResponseEntity<EntityModel<Client>>
      * @apiNote This method is used to delete a specific client from the database
      */
-    @DeleteMapping("/clients/{id}")
-    protected ResponseEntity<EntityModel<Client>> deleteClient(@PathVariable Long id) {
-        clientRepository.deleteById(id);
-        logger.info(logCounter.incrementAndGet() + " delete " + "/clients/" + id);
+    @DeleteMapping("/clients/{clientId}")
+    protected ResponseEntity<EntityModel<Client>> deleteClient(@PathVariable Long clientId) {
+        clientRepository.deleteById(clientId);
+        logger.info(logCounter.incrementAndGet() + " delete " + "/clients/" + clientId);
         return ResponseEntity.ok().build();
     }
 
@@ -347,10 +347,10 @@ public class DataBaseController {
      * @return ResponseEntity<EntityModel<Appointment>>
      * @apiNote This method is used to delete a specific appointment from the database
      */
-    @DeleteMapping("/appointments/{id}")
-    protected ResponseEntity<EntityModel<Appointments>> deleteAppointment(@PathVariable Long id) {
-        logger.info(logCounter.incrementAndGet() + " delete " + "/appointments/" + id);
-        appointmentsRepository.deleteById(id);
+    @DeleteMapping("/appointments/{appointmentId}")
+    protected ResponseEntity<EntityModel<Appointment>> deleteAppointment(@PathVariable Long appointmentId) {
+        logger.info(logCounter.incrementAndGet() + " delete " + "/appointments/" + appointmentId);
+        appointmentsRepository.deleteById(appointmentId);
         return ResponseEntity.ok().build();
     }
 
@@ -359,10 +359,10 @@ public class DataBaseController {
      * @return ResponseEntity<EntityModel<AppointmentSlot>>
      * @apiNote This method is used to delete a specific appointment slot from the database
      */
-    @DeleteMapping("/appointmentSlots/{id}")
-    protected ResponseEntity<EntityModel<AppointmentSlot>> deleteAppointmentSlot(@PathVariable Long id) {
-        appointmentSlotRepository.deleteById(id);
-        logger.info(logCounter.incrementAndGet() + " delete " + "/appointmentSlots/" + id);
+    @DeleteMapping("/appointmentSlots/{appointmentSlotId}")
+    protected ResponseEntity<EntityModel<AppointmentSlot>> deleteAppointmentSlot(@PathVariable Long appointmentSlotId) {
+        appointmentSlotRepository.deleteById(appointmentSlotId);
+        logger.info(logCounter.incrementAndGet() + " delete " + "/appointmentSlots/" + appointmentSlotId);
         return ResponseEntity.ok().build();
     }
 
@@ -500,10 +500,10 @@ public class DataBaseController {
                 return updateClient(gson.fromJson(json, Client.class), (long) Integer.parseInt(pieces[1]));
             }
             case "/appointments" -> {
-                return updateAppointment(gson.fromJson(json, Appointments.class), (long) Integer.parseInt(pieces[1]));
+                return updateAppointment(gson.fromJson(json, Appointment.class), (long) Integer.parseInt(pieces[1]));
             }
             case "/appointmentSlots" -> {
-                return updateAppointmentSlot(gson.fromJson(json, AppointmentSlot.class), (long) Integer.parseInt(pieces[1]));
+                return updateAppointmentSlot((long) Integer.parseInt(pieces[1]), gson.fromJson(json, AppointmentSlot.class));
             }
         }
         return null;
