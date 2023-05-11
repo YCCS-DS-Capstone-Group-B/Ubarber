@@ -3638,3 +3638,2703 @@ Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Binyami
 2023-05-10 17:17:41 database: disconnected session #12
 2023-05-10 17:17:41 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
 2023-05-10 17:17:41 database: closed
+2023-05-10 21:19:22 database: opening /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db (build 214)
+2023-05-10 21:19:22 database: opened /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:19:22 database: connecting session #3 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:19:22 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:19:22 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:19:22 jdbc[3]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:19:22 database: connecting session #4 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:19:22 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:19:22 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:19:22 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:19:22 database: connecting session #5 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:19:22 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:19:22 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:19:22 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:19:22 database: connecting session #6 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:19:22 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:19:22 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:19:22 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:19:22 database: connecting session #7 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:19:22 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:19:22 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:19:22 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:19:22 database: connecting session #8 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:19:22 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:19:22 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:19:22 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:19:22 database: connecting session #9 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:19:22 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:19:22 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:19:22 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:19:22 database: connecting session #10 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:19:22 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:19:22 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:19:22 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:19:22 database: connecting session #11 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:19:22 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:19:22 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:19:22 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:19:22 database: connecting session #12 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:19:22 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:19:22 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:19:22 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:19:23 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-10 21:19:23 jdbc[3]: 
+/*SQL t:1*/select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-10 21:21:06 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(1 AS BIGINT)};
+2023-05-10 21:21:06 jdbc[3]: 
+/*SQL l:74 #:1 t:1*/SELECT SETTING_VALUE FROM INFORMATION_SCHEMA.SETTINGS WHERE SETTING_NAME=? {1: 'QUERY_TIMEOUT'};
+2023-05-10 21:21:06 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:06 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:06 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(1 AS BIGINT)};
+2023-05-10 21:21:06 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:06 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:07 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(2 AS BIGINT)};
+2023-05-10 21:21:07 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:07 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:07 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(2 AS BIGINT)};
+2023-05-10 21:21:07 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:07 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:07 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(3 AS BIGINT)};
+2023-05-10 21:21:07 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:07 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:07 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(3 AS BIGINT)};
+2023-05-10 21:21:07 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:07 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:08 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(5 AS BIGINT)};
+2023-05-10 21:21:08 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:08 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:08 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(5 AS BIGINT)};
+2023-05-10 21:21:08 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:08 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:08 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(6 AS BIGINT)};
+2023-05-10 21:21:08 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:08 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:08 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(6 AS BIGINT)};
+2023-05-10 21:21:08 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:08 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(7 AS BIGINT)};
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(7 AS BIGINT)};
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(8 AS BIGINT)};
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(8 AS BIGINT)};
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(9 AS BIGINT)};
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(9 AS BIGINT)};
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:09 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:10 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(11 AS BIGINT)};
+2023-05-10 21:21:10 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:10 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:10 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(11 AS BIGINT)};
+2023-05-10 21:21:10 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:10 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:10 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(12 AS BIGINT)};
+2023-05-10 21:21:10 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:10 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:10 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(12 AS BIGINT)};
+2023-05-10 21:21:10 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:10 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(13 AS BIGINT)};
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(13 AS BIGINT)};
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL l:163 #:1 t:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(14 AS BIGINT)};
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(14 AS BIGINT)};
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(15 AS BIGINT)};
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(15 AS BIGINT)};
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:12 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(16 AS BIGINT)};
+2023-05-10 21:21:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:12 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(16 AS BIGINT)};
+2023-05-10 21:21:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:12 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(17 AS BIGINT)};
+2023-05-10 21:21:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:12 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(17 AS BIGINT)};
+2023-05-10 21:21:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(18 AS BIGINT)};
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(18 AS BIGINT)};
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(19 AS BIGINT)};
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(19 AS BIGINT)};
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(20 AS BIGINT)};
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(20 AS BIGINT)};
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:14 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(21 AS BIGINT)};
+2023-05-10 21:21:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:14 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(21 AS BIGINT)};
+2023-05-10 21:21:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:14 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(22 AS BIGINT)};
+2023-05-10 21:21:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:14 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(22 AS BIGINT)};
+2023-05-10 21:21:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(24 AS BIGINT)};
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(24 AS BIGINT)};
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(25 AS BIGINT)};
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(25 AS BIGINT)};
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(26 AS BIGINT)};
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(26 AS BIGINT)};
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:16 jdbc[3]: 
+/*SQL l:163*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(27 AS BIGINT)};
+2023-05-10 21:21:16 jdbc[3]: 
+/*SQL l:142 #:1 t:1*/insert into barber (email, first_name, geo_hash, last_name, latitude, location, longitude, middle_name, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?) {1: 'isabella.olivia@example.com', 2: 'Isabella', 3: '9q59wwkt2qrq', 4: NULL, 5: CAST(34.04894 AS DOUBLE PRECISION), 6: '90272', 7: CAST(-118.53628 AS DOUBLE PRECISION), 8: 'Olivia', 9: CAST(27 AS BIGINT)};
+2023-05-10 21:21:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:16 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(27 AS BIGINT)};
+2023-05-10 21:21:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:16 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(28 AS BIGINT)};
+2023-05-10 21:21:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:16 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(28 AS BIGINT)};
+2023-05-10 21:21:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(29 AS BIGINT)};
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'ezj@gmail.com', 2: 'Ava', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '10022', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Elizabeth', 9: CAST(29 AS BIGINT)};
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(29 AS BIGINT)};
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL l:163*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(30 AS BIGINT)};
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL l:142 #:1*/insert into barber (email, first_name, geo_hash, last_name, latitude, location, longitude, middle_name, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?) {1: 'mjz@gmail.com', 2: 'Jacob', 3: 'dr5rsju06sh7', 4: NULL, 5: CAST(40.72501 AS DOUBLE PRECISION), 6: '10012', 7: CAST(-73.9983 AS DOUBLE PRECISION), 8: 'Michael', 9: CAST(30 AS BIGINT)};
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(30 AS BIGINT)};
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:18 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(31 AS BIGINT)};
+2023-05-10 21:21:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:18 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(31 AS BIGINT)};
+2023-05-10 21:21:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:18 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(32 AS BIGINT)};
+2023-05-10 21:21:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:18 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(32 AS BIGINT)};
+2023-05-10 21:21:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:19 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(33 AS BIGINT)};
+2023-05-10 21:21:19 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:19 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:19 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(33 AS BIGINT)};
+2023-05-10 21:21:19 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:19 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:19 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(34 AS BIGINT)};
+2023-05-10 21:21:19 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:19 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:19 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(34 AS BIGINT)};
+2023-05-10 21:21:19 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:19 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(36 AS BIGINT)};
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'noah.jacob@example.com', 2: 'Noah', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '90210', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Jacob', 9: CAST(36 AS BIGINT)};
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(36 AS BIGINT)};
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(37 AS BIGINT)};
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(37 AS BIGINT)};
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(38 AS BIGINT)};
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'michael.anthony@example.com', 2: 'Michael', 3: 'dp3wm8sx0z6b', 4: NULL, 5: CAST(41.88387 AS DOUBLE PRECISION), 6: '60661', 7: CAST(-87.64271 AS DOUBLE PRECISION), 8: 'Anthony', 9: CAST(38 AS BIGINT)};
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(38 AS BIGINT)};
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:21 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(39 AS BIGINT)};
+2023-05-10 21:21:21 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'aaliyah.zoe@example.com', 2: 'Aaliyah', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '10019', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Zoe', 9: CAST(39 AS BIGINT)};
+2023-05-10 21:21:21 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:21 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:21 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(39 AS BIGINT)};
+2023-05-10 21:21:21 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:21 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(40 AS BIGINT)};
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(40 AS BIGINT)};
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(41 AS BIGINT)};
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(41 AS BIGINT)};
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(42 AS BIGINT)};
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(42 AS BIGINT)};
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(43 AS BIGINT)};
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(43 AS BIGINT)};
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(44 AS BIGINT)};
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(44 AS BIGINT)};
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(45 AS BIGINT)};
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(45 AS BIGINT)};
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(46 AS BIGINT)};
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'liam.alexander@example.com', 2: 'Liam', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '10023', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Alexander', 9: CAST(46 AS BIGINT)};
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(46 AS BIGINT)};
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(47 AS BIGINT)};
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(47 AS BIGINT)};
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(48 AS BIGINT)};
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(48 AS BIGINT)};
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:25 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(49 AS BIGINT)};
+2023-05-10 21:21:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:25 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(49 AS BIGINT)};
+2023-05-10 21:21:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:25 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(50 AS BIGINT)};
+2023-05-10 21:21:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:25 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(50 AS BIGINT)};
+2023-05-10 21:21:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:26 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(52 AS BIGINT)};
+2023-05-10 21:21:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:26 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(52 AS BIGINT)};
+2023-05-10 21:21:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:26 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(53 AS BIGINT)};
+2023-05-10 21:21:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:26 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(53 AS BIGINT)};
+2023-05-10 21:21:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(54 AS BIGINT)};
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(54 AS BIGINT)};
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(55 AS BIGINT)};
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(55 AS BIGINT)};
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(56 AS BIGINT)};
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(56 AS BIGINT)};
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(57 AS BIGINT)};
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(57 AS BIGINT)};
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(58 AS BIGINT)};
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(58 AS BIGINT)};
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(59 AS BIGINT)};
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(59 AS BIGINT)};
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:29 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(60 AS BIGINT)};
+2023-05-10 21:21:29 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'evelyn.aria@example.com', 2: 'Evelyn', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '10013', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Aria', 9: CAST(60 AS BIGINT)};
+2023-05-10 21:21:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:29 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(60 AS BIGINT)};
+2023-05-10 21:21:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:29 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(61 AS BIGINT)};
+2023-05-10 21:21:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:29 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(61 AS BIGINT)};
+2023-05-10 21:21:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:30 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(62 AS BIGINT)};
+2023-05-10 21:21:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:30 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(62 AS BIGINT)};
+2023-05-10 21:21:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:30 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(63 AS BIGINT)};
+2023-05-10 21:21:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:30 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(63 AS BIGINT)};
+2023-05-10 21:21:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(64 AS BIGINT)};
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(64 AS BIGINT)};
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(65 AS BIGINT)};
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(65 AS BIGINT)};
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(66 AS BIGINT)};
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(66 AS BIGINT)};
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:32 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(67 AS BIGINT)};
+2023-05-10 21:21:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:32 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(67 AS BIGINT)};
+2023-05-10 21:21:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:32 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(68 AS BIGINT)};
+2023-05-10 21:21:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:32 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(68 AS BIGINT)};
+2023-05-10 21:21:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:33 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(70 AS BIGINT)};
+2023-05-10 21:21:33 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Amelia', 3: '9q5cfxm2ttfs', 4: NULL, 5: CAST(34.09756 AS DOUBLE PRECISION), 6: '90046', 7: CAST(-118.35925 AS DOUBLE PRECISION), 8: 'Charlotte', 9: CAST(70 AS BIGINT)};
+2023-05-10 21:21:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:33 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(70 AS BIGINT)};
+2023-05-10 21:21:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:33 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(71 AS BIGINT)};
+2023-05-10 21:21:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:33 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(71 AS BIGINT)};
+2023-05-10 21:21:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:34 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(73 AS BIGINT)};
+2023-05-10 21:21:34 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Oliver', 3: 'dr72hg4nt0us', 4: NULL, 5: CAST(40.79885 AS DOUBLE PRECISION), 6: '10025', 7: CAST(-73.96798 AS DOUBLE PRECISION), 8: 'Elijah', 9: CAST(73 AS BIGINT)};
+2023-05-10 21:21:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:34 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(73 AS BIGINT)};
+2023-05-10 21:21:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:34 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(74 AS BIGINT)};
+2023-05-10 21:21:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:34 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(74 AS BIGINT)};
+2023-05-10 21:21:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:35 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(76 AS BIGINT)};
+2023-05-10 21:21:35 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:35 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:35 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(76 AS BIGINT)};
+2023-05-10 21:21:35 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:35 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:35 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(77 AS BIGINT)};
+2023-05-10 21:21:35 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:35 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:35 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(77 AS BIGINT)};
+2023-05-10 21:21:35 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:35 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:36 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(79 AS BIGINT)};
+2023-05-10 21:21:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:36 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(79 AS BIGINT)};
+2023-05-10 21:21:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:36 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(80 AS BIGINT)};
+2023-05-10 21:21:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:36 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(80 AS BIGINT)};
+2023-05-10 21:21:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(81 AS BIGINT)};
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Jayden', 3: 'dp3wv1n1byhu', 4: NULL, 5: CAST(41.9736 AS DOUBLE PRECISION), 6: '60640', 7: CAST(-87.66262 AS DOUBLE PRECISION), 8: 'Michael', 9: CAST(81 AS BIGINT)};
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(81 AS BIGINT)};
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(82 AS BIGINT)};
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(82 AS BIGINT)};
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(83 AS BIGINT)};
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(83 AS BIGINT)};
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:38 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(85 AS BIGINT)};
+2023-05-10 21:21:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:38 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(85 AS BIGINT)};
+2023-05-10 21:21:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:38 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(86 AS BIGINT)};
+2023-05-10 21:21:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:38 jdbc[3]: 
+/*SQL l:163 #:1 t:2*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(86 AS BIGINT)};
+2023-05-10 21:21:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:39 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(87 AS BIGINT)};
+2023-05-10 21:21:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:39 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(87 AS BIGINT)};
+2023-05-10 21:21:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:39 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(88 AS BIGINT)};
+2023-05-10 21:21:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:39 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(88 AS BIGINT)};
+2023-05-10 21:21:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(89 AS BIGINT)};
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(89 AS BIGINT)};
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(90 AS BIGINT)};
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(90 AS BIGINT)};
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(91 AS BIGINT)};
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(91 AS BIGINT)};
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(92 AS BIGINT)};
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Chloe', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '94122', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Lily', 9: CAST(92 AS BIGINT)};
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(92 AS BIGINT)};
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(93 AS BIGINT)};
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Wyatt', 3: '9q5cdp7rshtn', 4: NULL, 5: CAST(34.05481 AS DOUBLE PRECISION), 6: '90035', 7: CAST(-118.38403 AS DOUBLE PRECISION), 8: 'James', 9: CAST(93 AS BIGINT)};
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(93 AS BIGINT)};
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(94 AS BIGINT)};
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(94 AS BIGINT)};
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:42 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(96 AS BIGINT)};
+2023-05-10 21:21:42 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Sofia', 3: '9q5cbbc9256t', 4: NULL, 5: CAST(34.06197 AS DOUBLE PRECISION), 6: '90024', 7: CAST(-118.44154 AS DOUBLE PRECISION), 8: 'Mia', 9: CAST(96 AS BIGINT)};
+2023-05-10 21:21:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:42 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(96 AS BIGINT)};
+2023-05-10 21:21:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:42 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(97 AS BIGINT)};
+2023-05-10 21:21:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:42 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(97 AS BIGINT)};
+2023-05-10 21:21:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:43 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(99 AS BIGINT)};
+2023-05-10 21:21:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:43 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(99 AS BIGINT)};
+2023-05-10 21:21:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:43 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(100 AS BIGINT)};
+2023-05-10 21:21:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:43 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(100 AS BIGINT)};
+2023-05-10 21:21:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:43 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(102 AS BIGINT)};
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'logan.isaac@example.com', 2: 'Logan', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '60601', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Isaac', 9: CAST(102 AS BIGINT)};
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(102 AS BIGINT)};
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(103 AS BIGINT)};
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(103 AS BIGINT)};
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(104 AS BIGINT)};
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(104 AS BIGINT)};
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(105 AS BIGINT)};
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'camila.eleanor@example.com', 2: 'Camila', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '10036', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Eleanor', 9: CAST(105 AS BIGINT)};
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(105 AS BIGINT)};
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(106 AS BIGINT)};
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(106 AS BIGINT)};
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(107 AS BIGINT)};
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(107 AS BIGINT)};
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:46 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(109 AS BIGINT)};
+2023-05-10 21:21:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:46 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(109 AS BIGINT)};
+2023-05-10 21:21:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:46 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(110 AS BIGINT)};
+2023-05-10 21:21:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:46 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(110 AS BIGINT)};
+2023-05-10 21:21:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:47 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(112 AS BIGINT)};
+2023-05-10 21:21:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:47 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(112 AS BIGINT)};
+2023-05-10 21:21:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:47 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(113 AS BIGINT)};
+2023-05-10 21:21:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:47 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(113 AS BIGINT)};
+2023-05-10 21:21:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:48 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(115 AS BIGINT)};
+2023-05-10 21:21:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:48 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(115 AS BIGINT)};
+2023-05-10 21:21:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:21:48 jdbc[3]: 
+/*SQL l:185 #:3*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.geo_hash like ? escape '\\' {1: 'dr72%'};
+2023-05-10 21:23:00 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db from shutdown hook
+2023-05-10 21:23:00 database: disconnecting session #3
+2023-05-10 21:23:00 database: disconnected session #3
+2023-05-10 21:23:00 database: disconnecting session #4
+2023-05-10 21:23:00 database: disconnected session #4
+2023-05-10 21:23:00 database: disconnecting session #5
+2023-05-10 21:23:00 database: disconnected session #5
+2023-05-10 21:23:00 database: disconnecting session #6
+2023-05-10 21:23:00 database: disconnected session #6
+2023-05-10 21:23:00 database: disconnecting session #7
+2023-05-10 21:23:00 database: disconnected session #7
+2023-05-10 21:23:00 database: disconnecting session #8
+2023-05-10 21:23:00 database: disconnected session #8
+2023-05-10 21:23:00 database: disconnecting session #9
+2023-05-10 21:23:00 database: disconnected session #9
+2023-05-10 21:23:00 database: disconnecting session #10
+2023-05-10 21:23:00 database: disconnected session #10
+2023-05-10 21:23:00 database: disconnecting session #11
+2023-05-10 21:23:00 database: disconnected session #11
+2023-05-10 21:23:00 database: disconnecting session #12
+2023-05-10 21:23:00 database: disconnected session #12
+2023-05-10 21:23:00 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:23:00 database: closed
+2023-05-10 21:24:49 database: opening /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db (build 214)
+2023-05-10 21:24:49 database: opened /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:24:49 database: connecting session #3 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:24:49 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:24:49 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:24:49 jdbc[3]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:24:49 database: connecting session #4 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:24:49 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:24:49 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:24:49 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:24:49 database: connecting session #5 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:24:49 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:24:49 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:24:49 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:24:49 database: connecting session #6 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:24:49 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:24:49 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:24:49 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:24:49 database: connecting session #7 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:24:49 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:24:49 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:24:49 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:24:49 database: connecting session #8 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:24:49 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:24:49 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:24:49 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:24:49 database: connecting session #9 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:24:49 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:24:49 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:24:49 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:24:49 database: connecting session #10 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:24:49 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:24:49 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:24:49 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:24:49 database: connecting session #11 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:24:49 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:24:49 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:24:49 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:24:49 database: connecting session #12 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:24:49 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-10 21:24:49 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-10 21:24:49 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-10 21:24:49 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-10 21:24:49 jdbc[3]: 
+/*SQL */select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL l:163 #:1 t:4*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(1 AS BIGINT)};
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL l:74 #:1 t:1*/SELECT SETTING_VALUE FROM INFORMATION_SCHEMA.SETTINGS WHERE SETTING_NAME=? {1: 'QUERY_TIMEOUT'};
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(1 AS BIGINT)};
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(2 AS BIGINT)};
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(2 AS BIGINT)};
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(3 AS BIGINT)};
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(3 AS BIGINT)};
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:11 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:12 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(4 AS BIGINT)};
+2023-05-10 21:26:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:12 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(4 AS BIGINT)};
+2023-05-10 21:26:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:12 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(5 AS BIGINT)};
+2023-05-10 21:26:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:12 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(5 AS BIGINT)};
+2023-05-10 21:26:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:12 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:13 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(7 AS BIGINT)};
+2023-05-10 21:26:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:13 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(7 AS BIGINT)};
+2023-05-10 21:26:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:13 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(8 AS BIGINT)};
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(8 AS BIGINT)};
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(9 AS BIGINT)};
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(9 AS BIGINT)};
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(10 AS BIGINT)};
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(10 AS BIGINT)};
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(11 AS BIGINT)};
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(11 AS BIGINT)};
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:14 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:15 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(12 AS BIGINT)};
+2023-05-10 21:26:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:15 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(12 AS BIGINT)};
+2023-05-10 21:26:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:15 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(13 AS BIGINT)};
+2023-05-10 21:26:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:15 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(13 AS BIGINT)};
+2023-05-10 21:26:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:15 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:16 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(14 AS BIGINT)};
+2023-05-10 21:26:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:16 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(14 AS BIGINT)};
+2023-05-10 21:26:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:16 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(15 AS BIGINT)};
+2023-05-10 21:26:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:16 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(15 AS BIGINT)};
+2023-05-10 21:26:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:16 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:17 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(17 AS BIGINT)};
+2023-05-10 21:26:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:17 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(17 AS BIGINT)};
+2023-05-10 21:26:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:17 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(18 AS BIGINT)};
+2023-05-10 21:26:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:17 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(18 AS BIGINT)};
+2023-05-10 21:26:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:17 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(19 AS BIGINT)};
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(19 AS BIGINT)};
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(20 AS BIGINT)};
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(20 AS BIGINT)};
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(21 AS BIGINT)};
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(21 AS BIGINT)};
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:18 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:19 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(22 AS BIGINT)};
+2023-05-10 21:26:19 jdbc[3]: 
+/*SQL l:127 #:1 t:3*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'ethan.benjamin@example.com', 2: 'Ethan', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '10013', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Benjamin', 9: CAST(22 AS BIGINT)};
+2023-05-10 21:26:19 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:19 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:19 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(22 AS BIGINT)};
+2023-05-10 21:26:19 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:19 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(23 AS BIGINT)};
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(23 AS BIGINT)};
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(24 AS BIGINT)};
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(24 AS BIGINT)};
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL l:163 #:1 t:2*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(25 AS BIGINT)};
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(25 AS BIGINT)};
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:20 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:21 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(27 AS BIGINT)};
+2023-05-10 21:26:21 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:21 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:21 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(27 AS BIGINT)};
+2023-05-10 21:26:21 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:21 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:21 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(28 AS BIGINT)};
+2023-05-10 21:26:21 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:21 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(28 AS BIGINT)};
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(29 AS BIGINT)};
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'ezj@gmail.com', 2: 'Ava', 3: 'dr5rugcv8zc3', 4: NULL, 5: CAST(40.75889 AS DOUBLE PRECISION), 6: '10022', 7: CAST(-73.96851 AS DOUBLE PRECISION), 8: 'Elizabeth', 9: CAST(29 AS BIGINT)};
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(29 AS BIGINT)};
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(30 AS BIGINT)};
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(30 AS BIGINT)};
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:22 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(31 AS BIGINT)};
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL l:127 #:1 t:2*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'mia.grace@example.com', 2: 'Mia', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '60614', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Grace', 9: CAST(31 AS BIGINT)};
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(31 AS BIGINT)};
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(32 AS BIGINT)};
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(32 AS BIGINT)};
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(33 AS BIGINT)};
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(33 AS BIGINT)};
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:23 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:24 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(34 AS BIGINT)};
+2023-05-10 21:26:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:24 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(34 AS BIGINT)};
+2023-05-10 21:26:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:24 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(35 AS BIGINT)};
+2023-05-10 21:26:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:24 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(35 AS BIGINT)};
+2023-05-10 21:26:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:24 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:25 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(36 AS BIGINT)};
+2023-05-10 21:26:25 jdbc[3]: 
+/*SQL l:127 #:1 t:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'noah.jacob@example.com', 2: 'Noah', 3: '9q5ccu263p96', 4: NULL, 5: CAST(34.08139 AS DOUBLE PRECISION), 6: '90210', 7: CAST(-118.39927 AS DOUBLE PRECISION), 8: 'Jacob', 9: CAST(36 AS BIGINT)};
+2023-05-10 21:26:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:25 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(36 AS BIGINT)};
+2023-05-10 21:26:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:25 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(37 AS BIGINT)};
+2023-05-10 21:26:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:25 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(37 AS BIGINT)};
+2023-05-10 21:26:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:25 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(38 AS BIGINT)};
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(38 AS BIGINT)};
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(39 AS BIGINT)};
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'aaliyah.zoe@example.com', 2: 'Aaliyah', 3: 'dr5rumnkeehv', 4: NULL, 5: CAST(40.76556 AS DOUBLE PRECISION), 6: '10019', 7: CAST(-73.98418 AS DOUBLE PRECISION), 8: 'Zoe', 9: CAST(39 AS BIGINT)};
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(39 AS BIGINT)};
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(40 AS BIGINT)};
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(40 AS BIGINT)};
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:26 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:27 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(41 AS BIGINT)};
+2023-05-10 21:26:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:27 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(41 AS BIGINT)};
+2023-05-10 21:26:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:27 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(42 AS BIGINT)};
+2023-05-10 21:26:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:27 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(42 AS BIGINT)};
+2023-05-10 21:26:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:27 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:28 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(43 AS BIGINT)};
+2023-05-10 21:26:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:28 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(43 AS BIGINT)};
+2023-05-10 21:26:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:28 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(44 AS BIGINT)};
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(44 AS BIGINT)};
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(45 AS BIGINT)};
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(45 AS BIGINT)};
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(46 AS BIGINT)};
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'liam.alexander@example.com', 2: 'Liam', 3: 'dr5rurpev7ee', 4: NULL, 5: CAST(40.77642 AS DOUBLE PRECISION), 6: '10023', 7: CAST(-73.98239 AS DOUBLE PRECISION), 8: 'Alexander', 9: CAST(46 AS BIGINT)};
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(46 AS BIGINT)};
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:29 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:30 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(47 AS BIGINT)};
+2023-05-10 21:26:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:30 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(47 AS BIGINT)};
+2023-05-10 21:26:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:30 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(48 AS BIGINT)};
+2023-05-10 21:26:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:30 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(48 AS BIGINT)};
+2023-05-10 21:26:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:30 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL l:163 #:1 t:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(50 AS BIGINT)};
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(50 AS BIGINT)};
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(51 AS BIGINT)};
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(51 AS BIGINT)};
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(52 AS BIGINT)};
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(52 AS BIGINT)};
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:31 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(53 AS BIGINT)};
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(53 AS BIGINT)};
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(54 AS BIGINT)};
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(54 AS BIGINT)};
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(55 AS BIGINT)};
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'isabella.natalie@example.com', 2: 'Isabella', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '60611', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Natalie', 9: CAST(55 AS BIGINT)};
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(55 AS BIGINT)};
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:32 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:33 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(56 AS BIGINT)};
+2023-05-10 21:26:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:33 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(56 AS BIGINT)};
+2023-05-10 21:26:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:33 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(57 AS BIGINT)};
+2023-05-10 21:26:33 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'ella.avery@example.com', 2: 'Ella', 3: '9q5c1yhrxspm', 4: NULL, 5: CAST(33.96005 AS DOUBLE PRECISION), 6: '90045', 7: CAST(-118.39349 AS DOUBLE PRECISION), 8: 'Avery', 9: CAST(57 AS BIGINT)};
+2023-05-10 21:26:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:33 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(57 AS BIGINT)};
+2023-05-10 21:26:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:33 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(58 AS BIGINT)};
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'alexander.nicholas@example.com', 2: 'Alexander', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '60606', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Nicholas', 9: CAST(58 AS BIGINT)};
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(58 AS BIGINT)};
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(59 AS BIGINT)};
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(59 AS BIGINT)};
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(60 AS BIGINT)};
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'evelyn.aria@example.com', 2: 'Evelyn', 3: 'dr5rshbwu1tz', 4: NULL, 5: CAST(40.72062 AS DOUBLE PRECISION), 6: '10013', 7: CAST(-74.00304 AS DOUBLE PRECISION), 8: 'Aria', 9: CAST(60 AS BIGINT)};
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(60 AS BIGINT)};
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:34 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:35 jdbc[3]: 
+/*SQL l:163 #:1 t:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(62 AS BIGINT)};
+2023-05-10 21:26:35 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:35 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:35 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(62 AS BIGINT)};
+2023-05-10 21:26:35 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:35 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(63 AS BIGINT)};
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(63 AS BIGINT)};
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(64 AS BIGINT)};
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(64 AS BIGINT)};
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(65 AS BIGINT)};
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(65 AS BIGINT)};
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:36 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:37 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(66 AS BIGINT)};
+2023-05-10 21:26:37 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'Ca66@yahoo.com', 2: 'Charlotte', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '90025', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Amelia', 9: CAST(66 AS BIGINT)};
+2023-05-10 21:26:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:37 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(66 AS BIGINT)};
+2023-05-10 21:26:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:37 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(67 AS BIGINT)};
+2023-05-10 21:26:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:37 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(67 AS BIGINT)};
+2023-05-10 21:26:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:37 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(68 AS BIGINT)};
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(68 AS BIGINT)};
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(69 AS BIGINT)};
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(69 AS BIGINT)};
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(70 AS BIGINT)};
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(70 AS BIGINT)};
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:38 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:39 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(72 AS BIGINT)};
+2023-05-10 21:26:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:39 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(72 AS BIGINT)};
+2023-05-10 21:26:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:39 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(73 AS BIGINT)};
+2023-05-10 21:26:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:39 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(73 AS BIGINT)};
+2023-05-10 21:26:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:39 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:40 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(75 AS BIGINT)};
+2023-05-10 21:26:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:40 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(75 AS BIGINT)};
+2023-05-10 21:26:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:40 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(76 AS BIGINT)};
+2023-05-10 21:26:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:40 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(76 AS BIGINT)};
+2023-05-10 21:26:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:40 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:41 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(77 AS BIGINT)};
+2023-05-10 21:26:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:41 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(77 AS BIGINT)};
+2023-05-10 21:26:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:41 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(78 AS BIGINT)};
+2023-05-10 21:26:41 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Aria', 3: 'dp3wtmduch3z', 4: NULL, 5: CAST(41.95488 AS DOUBLE PRECISION), 6: '60613', 7: CAST(-87.65609 AS DOUBLE PRECISION), 8: 'Evelyn', 9: CAST(78 AS BIGINT)};
+2023-05-10 21:26:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:41 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(78 AS BIGINT)};
+2023-05-10 21:26:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:41 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:42 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(79 AS BIGINT)};
+2023-05-10 21:26:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:42 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(79 AS BIGINT)};
+2023-05-10 21:26:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:42 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(80 AS BIGINT)};
+2023-05-10 21:26:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:42 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(80 AS BIGINT)};
+2023-05-10 21:26:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:42 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:43 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(82 AS BIGINT)};
+2023-05-10 21:26:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:43 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(82 AS BIGINT)};
+2023-05-10 21:26:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:43 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(83 AS BIGINT)};
+2023-05-10 21:26:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:43 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(83 AS BIGINT)};
+2023-05-10 21:26:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:43 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:44 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(84 AS BIGINT)};
+2023-05-10 21:26:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:44 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(84 AS BIGINT)};
+2023-05-10 21:26:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:44 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(85 AS BIGINT)};
+2023-05-10 21:26:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:44 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(85 AS BIGINT)};
+2023-05-10 21:26:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:44 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(87 AS BIGINT)};
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Isaac', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '90016', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Jacob', 9: CAST(87 AS BIGINT)};
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(87 AS BIGINT)};
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(88 AS BIGINT)};
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(88 AS BIGINT)};
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(89 AS BIGINT)};
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(89 AS BIGINT)};
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:45 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:46 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(90 AS BIGINT)};
+2023-05-10 21:26:46 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Ella', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '90045', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Mia', 9: CAST(90 AS BIGINT)};
+2023-05-10 21:26:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:46 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(90 AS BIGINT)};
+2023-05-10 21:26:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:46 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(91 AS BIGINT)};
+2023-05-10 21:26:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:46 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(91 AS BIGINT)};
+2023-05-10 21:26:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:46 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(92 AS BIGINT)};
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Chloe', 3: '9q8yucgbrt8q', 4: NULL, 5: CAST(37.75871 AS DOUBLE PRECISION), 6: '94122', 7: CAST(-122.4811 AS DOUBLE PRECISION), 8: 'Lily', 9: CAST(92 AS BIGINT)};
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(92 AS BIGINT)};
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(93 AS BIGINT)};
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(93 AS BIGINT)};
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(94 AS BIGINT)};
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(94 AS BIGINT)};
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:47 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(95 AS BIGINT)};
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Henry', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '94114', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Alexander', 9: CAST(95 AS BIGINT)};
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(95 AS BIGINT)};
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(96 AS BIGINT)};
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(96 AS BIGINT)};
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(97 AS BIGINT)};
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(97 AS BIGINT)};
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(98 AS BIGINT)};
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Ella', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '94107', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Mia', 9: CAST(98 AS BIGINT)};
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(98 AS BIGINT)};
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:48 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:49 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(99 AS BIGINT)};
+2023-05-10 21:26:49 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:49 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:49 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(99 AS BIGINT)};
+2023-05-10 21:26:49 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:49 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:49 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(100 AS BIGINT)};
+2023-05-10 21:26:49 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:49 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:49 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(100 AS BIGINT)};
+2023-05-10 21:26:49 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:49 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:50 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(102 AS BIGINT)};
+2023-05-10 21:26:50 jdbc[3]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'logan.isaac@example.com', 2: 'Logan', 3: 'dp3wq114wfb0', 4: NULL, 5: CAST(41.88582 AS DOUBLE PRECISION), 6: '60601', 7: CAST(-87.62529 AS DOUBLE PRECISION), 8: 'Isaac', 9: CAST(102 AS BIGINT)};
+2023-05-10 21:26:50 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:50 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:50 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(102 AS BIGINT)};
+2023-05-10 21:26:50 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:50 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:50 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(103 AS BIGINT)};
+2023-05-10 21:26:50 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:50 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:50 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(103 AS BIGINT)};
+2023-05-10 21:26:50 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:50 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(105 AS BIGINT)};
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(105 AS BIGINT)};
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(106 AS BIGINT)};
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(106 AS BIGINT)};
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(107 AS BIGINT)};
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(107 AS BIGINT)};
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:51 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(108 AS BIGINT)};
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL l:127 #:1 t:3*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'luke.oliver@example.com', 2: 'Luke', 3: 's00000000000', 4: NULL, 5: CAST(0.0 AS DOUBLE PRECISION), 6: '90019', 7: CAST(0.0 AS DOUBLE PRECISION), 8: 'Oliver', 9: CAST(108 AS BIGINT)};
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(108 AS BIGINT)};
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(109 AS BIGINT)};
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(109 AS BIGINT)};
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(110 AS BIGINT)};
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(110 AS BIGINT)};
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:52 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(111 AS BIGINT)};
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(111 AS BIGINT)};
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(112 AS BIGINT)};
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(112 AS BIGINT)};
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(113 AS BIGINT)};
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(113 AS BIGINT)};
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:53 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:54 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(114 AS BIGINT)};
+2023-05-10 21:26:54 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:54 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:54 jdbc[3]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(114 AS BIGINT)};
+2023-05-10 21:26:54 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:26:54 jdbc[3]: 
+/*SQL */COMMIT;
+2023-05-10 21:29:00 jdbc[3]: 
+/*SQL l:185 #:3 t:3*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.geo_hash like ? escape '\\' {1: 'dr72%'};
+2023-05-10 21:29:14 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db from shutdown hook
+2023-05-10 21:29:14 database: disconnecting session #3
+2023-05-10 21:29:14 database: disconnected session #3
+2023-05-10 21:29:14 database: disconnecting session #4
+2023-05-10 21:29:14 database: disconnected session #4
+2023-05-10 21:29:14 database: disconnecting session #5
+2023-05-10 21:29:14 database: disconnected session #5
+2023-05-10 21:29:14 database: disconnecting session #6
+2023-05-10 21:29:14 database: disconnected session #6
+2023-05-10 21:29:14 database: disconnecting session #7
+2023-05-10 21:29:14 database: disconnected session #7
+2023-05-10 21:29:14 database: disconnecting session #8
+2023-05-10 21:29:14 database: disconnected session #8
+2023-05-10 21:29:14 database: disconnecting session #9
+2023-05-10 21:29:14 database: disconnected session #9
+2023-05-10 21:29:14 database: disconnecting session #10
+2023-05-10 21:29:14 database: disconnected session #10
+2023-05-10 21:29:14 database: disconnecting session #11
+2023-05-10 21:29:14 database: disconnected session #11
+2023-05-10 21:29:14 database: disconnecting session #12
+2023-05-10 21:29:14 database: disconnected session #12
+2023-05-10 21:29:15 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-10 21:29:15 database: closed

@@ -35,7 +35,7 @@ public class DataBaseController {
     private final AppointmentsRepository appointmentsRepository;
     private final AppointmentSlotRepository appointmentSlotRepository;
     private final Logger logger = Logger.getLogger(String.valueOf(DataBaseController.class));
-    private final Logger consoleLogger = Logger.getLogger(String.valueOf(DataBaseController.class));
+    private final Logger consoleLogger = Logger.getLogger(DataBaseController.class + "console");
     private final AtomicInteger logCounter = new AtomicInteger(0);
     private final AtomicBoolean batchCatchUp = new AtomicBoolean(false);
     private final HashMap<Integer, String> undoneLogs = new HashMap<>();
