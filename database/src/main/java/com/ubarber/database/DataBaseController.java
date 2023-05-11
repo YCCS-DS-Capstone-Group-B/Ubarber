@@ -35,10 +35,12 @@ public class DataBaseController {
     private final AppointmentsRepository appointmentsRepository;
     private final AppointmentSlotRepository appointmentSlotRepository;
     private final Logger logger = Logger.getLogger(String.valueOf(DataBaseController.class));
+    private final Logger consoleLogger = Logger.getLogger(DataBaseController.class + "console");
     private final AtomicInteger logCounter = new AtomicInteger(0);
     private final AtomicBoolean batchCatchUp = new AtomicBoolean(false);
     private final HashMap<Integer, String> undoneLogs = new HashMap<>();
-    LogHandler logHandler = new LogHandler();
+    private final HashMap<String, Integer> stagedCommits = new HashMap<>();
+
 
 
     public DataBaseController(BarberRepository barberRepository, ClientRepository clientRepository, AppointmentsRepository appointmentsRepository, AppointmentSlotRepository appointmentSlotRepository) {
@@ -73,8 +75,20 @@ public class DataBaseController {
      */
     @PostMapping("/barbers")
     protected ResponseEntity<EntityModel<Barber>> newBarber(@RequestBody Barber newBarber) {
-        logger.info(logCounter.incrementAndGet() +  " post " + "/barbers " + newBarber.toString());
-        EntityModel<Barber> entityModel = EntityModel.of(barberRepository.save(newBarber));
+        String log =  " post " + "/barbers " + newBarber.toString();
+        EntityModel<Barber> entityModel;
+        if(stagedCommits.containsKey(log)) {
+            consoleLogger.info("phase 2 commit");
+            logger.info(logCounter.incrementAndGet() + log);
+            stagedCommits.remove(log);
+            entityModel = EntityModel.of(barberRepository.save(newBarber));
+        }
+        else {
+            consoleLogger.info("phase 1 commit");
+            consoleLogger.info( log);
+            stagedCommits.put(log, logCounter.get());
+            entityModel = EntityModel.of(newBarber);
+        }
         return ResponseEntity.ok().body(entityModel);
     }
 
@@ -85,8 +99,21 @@ public class DataBaseController {
      */
     @PostMapping("/clients")
     protected ResponseEntity<EntityModel<Client>> newClient(@RequestBody Client newClient) {
-        logger.info(logCounter.incrementAndGet() + " post " + "/clients " + newClient.toString());
-        EntityModel<Client> entityModel = EntityModel.of(clientRepository.save(newClient));
+        String log =  " post " + "/clients " + newClient.toString();
+        EntityModel<Client> entityModel;
+        if(stagedCommits.containsKey(log)) {
+            consoleLogger.info("phase 2 commit");
+            logger.info(logCounter.incrementAndGet() + log);
+            stagedCommits.remove(log);
+            entityModel = EntityModel.of(clientRepository.save(newClient));
+        }
+        else {
+            consoleLogger.info("phase 1 commit");
+            consoleLogger.info( log);
+            stagedCommits.put(log, logCounter.get());
+            entityModel = EntityModel.of(newClient);
+        }
+
         return ResponseEntity.ok().body(entityModel);
     }
 
@@ -98,8 +125,21 @@ public class DataBaseController {
      */
     @PostMapping("/appointments")
     protected ResponseEntity<EntityModel<Appointment>> newAppointment(@RequestBody Appointment newAppointment) {
-        logger.info(logCounter.incrementAndGet() + " post " + "/appointments " + newAppointment.toString());
-        EntityModel<Appointment> entityModel = EntityModel.of(appointmentsRepository.save(newAppointment));
+        String log =  " post " + "/appointments " + newAppointment.toString();
+        EntityModel<Appointment> entityModel;
+        if(stagedCommits.containsKey(log)) {
+            consoleLogger.info("phase 2 commit");
+            logger.info(logCounter.incrementAndGet() + log);
+            stagedCommits.remove(log);
+            entityModel = EntityModel.of(appointmentsRepository.save(newAppointment));
+        }
+        else {
+            consoleLogger.info("phase 1 commit");
+            consoleLogger.info( log);
+            stagedCommits.put(log, logCounter.get() + 1);
+            entityModel = EntityModel.of(newAppointment);
+        }
+
         return ResponseEntity.ok().body(entityModel);
     }
 
@@ -111,8 +151,21 @@ public class DataBaseController {
      */
     @PostMapping("/appointmentSlots")
     protected ResponseEntity<EntityModel<AppointmentSlot>> newAppointmentSlot(@RequestBody AppointmentSlot newAppointmentSlot) {
-        logger.info(logCounter.incrementAndGet() + " post " + "/appointmentSlots " + newAppointmentSlot.toString());
-        EntityModel<AppointmentSlot> entityModel = EntityModel.of(appointmentSlotRepository.save(newAppointmentSlot));
+        String log = " post " + "/appointmentSlots " + newAppointmentSlot.toString();
+        EntityModel<AppointmentSlot> entityModel;
+        if(stagedCommits.containsKey(log)) {
+            consoleLogger.info("phase 2 commit");
+            logger.info(logCounter.incrementAndGet() + log);
+            stagedCommits.remove(log);
+            entityModel = EntityModel.of(appointmentSlotRepository.save(newAppointmentSlot));
+        }
+        else {
+            consoleLogger.info("phase 1 commit");
+            consoleLogger.info( log);
+            stagedCommits.put(log, logCounter.get() + 1);
+            entityModel = EntityModel.of(newAppointmentSlot);
+        }
+
         return ResponseEntity.ok().body(entityModel);
     }
 
@@ -215,23 +268,34 @@ public class DataBaseController {
      */
     @PutMapping("/barbers/{barberId}")
     protected ResponseEntity<EntityModel<Barber>> updateBarber(@RequestBody Barber newBarber, @PathVariable Long barberId) {
-        Barber updatedBarber = barberRepository.findById(barberId)
-                .map(barber -> {
-                    barber.setFirstName(newBarber.getFirstName());
-                    barber.setLastName(newBarber.getLastName());
-                    barber.setMiddleName(newBarber.getMiddleName());
-                    barber.setId(newBarber.getId());
-                    barber.setLocation(newBarber.getLocation());
-                    return barberRepository.save(barber);
-                })
-                .orElseGet(() -> {
-                    newBarber.setId(barberId);
-                    return barberRepository.save(newBarber);
-                });
-        EntityModel<Barber> entityModel = EntityModel.of(updatedBarber);
-        Link link = linkTo(methodOn(this.getClass()).updateBarber(newBarber, barberId)).withSelfRel();
-        entityModel.add(link);
-        logger.info(logCounter.incrementAndGet() + " put " + "/barbers/" + barberId + " " + updatedBarber.toString());
+        String log = " put " + "/barbers/" + barberId + " " + newBarber.toString();
+        EntityModel<Barber> entityModel;
+        if(stagedCommits.containsKey(log)) {
+            consoleLogger.info("phase 2 commit");
+            stagedCommits.remove(log);
+            Barber updatedBarber = barberRepository.findById(barberId)
+                    .map(barber -> {
+                        barber.setFirstName(newBarber.getFirstName());
+                        barber.setLastName(newBarber.getLastName());
+                        barber.setMiddleName(newBarber.getMiddleName());
+                        barber.setId(newBarber.getId());
+                        barber.setLocation(newBarber.getLocation());
+                        return barberRepository.save(barber);
+                    })
+                    .orElseGet(() -> {
+                        newBarber.setId(barberId);
+                        return barberRepository.save(newBarber);
+                    });
+            entityModel = EntityModel.of(updatedBarber);
+            Link link = linkTo(methodOn(this.getClass()).updateBarber(newBarber, barberId)).withSelfRel();
+            entityModel.add(link);
+            logger.info(logCounter.incrementAndGet() + log);
+        } else{
+            consoleLogger.info("phase 1 commit");
+            consoleLogger.info( log);
+            stagedCommits.put(log, logCounter.get() + 1);
+            entityModel = EntityModel.of(newBarber);
+        }
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
@@ -241,21 +305,32 @@ public class DataBaseController {
      */
     @PutMapping("/clients/{clientID}")
     protected ResponseEntity<EntityModel<Client>> updateClient(@RequestBody Client newClient, @PathVariable Long clientId) {
-        Client updatedClient = clientRepository.findById(clientId)
-                .map(client -> {
-                    client.setFirstName(newClient.getFirstName());
-                    client.setLastName(newClient.getLastName());
-                    client.setMiddleName(newClient.getMiddleName());
-                    client.setId(newClient.getId());
-                    client.setLocation(newClient.getLocation());
-                    return clientRepository.save(client);
-                })
-                .orElseGet(() -> {
-                    newClient.setId(clientId);
-                    return clientRepository.save(newClient);
-                });
-        EntityModel<Client> entityModel = EntityModel.of(updatedClient);
-        logger.info(logCounter.incrementAndGet() + " put " + "/clients/" + clientId + " " + updatedClient.toString());
+        String log = " put " + "/clients/" + clientId + " " + newClient.toString();
+        EntityModel<Client> entityModel;
+        if(stagedCommits.containsKey(log)) {
+            consoleLogger.info("phase 2 commit");
+            stagedCommits.remove(log);
+            Client updatedClient = clientRepository.findById(clientId)
+                    .map(client -> {
+                        client.setFirstName(newClient.getFirstName());
+                        client.setLastName(newClient.getLastName());
+                        client.setMiddleName(newClient.getMiddleName());
+                        client.setId(newClient.getId());
+                        client.setLocation(newClient.getLocation());
+                        return clientRepository.save(client);
+                    })
+                    .orElseGet(() -> {
+                        newClient.setId(clientId);
+                        return clientRepository.save(newClient);
+                    });
+            entityModel = EntityModel.of(updatedClient);
+            logger.info(logCounter.incrementAndGet() + log);
+        } else{
+            consoleLogger.info("phase 1 commit");
+            consoleLogger.info( log);
+            stagedCommits.put(log, logCounter.get() + 1);
+            entityModel = EntityModel.of(newClient);
+        }
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
@@ -265,20 +340,31 @@ public class DataBaseController {
      */
     @PutMapping("/appointments/{appointmentId}")
     protected ResponseEntity<EntityModel<Appointment>> updateAppointment(@RequestBody Appointment newAppointment, @PathVariable Long appointmentId) {
-        Appointment updatedAppointment = appointmentsRepository.findById(appointmentId)
-                .map(appointment -> {
-                    appointment.setBarberId(newAppointment.getBarberId());
-                    appointment.setClientId(newAppointment.getClientId());
-                    appointment.setAppointmentSlotId(newAppointment.getAppointmentSlotId());
-                    appointment.setAppointmentId(newAppointment.getAppointmentId());
-                    return appointmentsRepository.save(appointment);
-                })
-                .orElseGet(() -> {
-                    newAppointment.setAppointmentId(appointmentId);
-                    return appointmentsRepository.save(newAppointment);
-                });
-        EntityModel<Appointment> entityModel = EntityModel.of(updatedAppointment);
-        logger.info(logCounter.incrementAndGet() + " put " + "/appointments/" + appointmentId + " " + updatedAppointment.toString());
+        String log = " put " + "/appointments/" + appointmentId + " " + newAppointment.toString();
+        EntityModel<Appointment> entityModel;
+        if(stagedCommits.containsKey(log)) {
+            consoleLogger.info("phase 2 commit");
+            stagedCommits.remove(log);
+            Appointment updatedAppointment = appointmentsRepository.findById(appointmentId)
+                    .map(appointment -> {
+                        appointment.setBarberId(newAppointment.getBarberId());
+                        appointment.setClientId(newAppointment.getClientId());
+                        appointment.setAppointmentSlotId(newAppointment.getAppointmentSlotId());
+                        appointment.setAppointmentId(newAppointment.getAppointmentId());
+                        return appointmentsRepository.save(appointment);
+                    })
+                    .orElseGet(() -> {
+                        newAppointment.setAppointmentId(appointmentId);
+                        return appointmentsRepository.save(newAppointment);
+                    });
+            entityModel = EntityModel.of(updatedAppointment);
+            logger.info(logCounter.incrementAndGet() + log);
+        } else{
+            consoleLogger.info("phase 1 commit");
+            consoleLogger.info( log);
+            stagedCommits.put(log, logCounter.get() + 1);
+            entityModel = EntityModel.of(newAppointment);
+        }
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
     }
 
@@ -306,14 +392,25 @@ public class DataBaseController {
 //        return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
 //    }
     protected ResponseEntity<EntityModel<AppointmentSlot>> updateAppointmentSlot(@PathVariable Long appointmentSlotId, @RequestBody AppointmentSlot newAppointmentSlot) {
-        logger.info(logCounter.incrementAndGet() + " put " + "/appointmentSlots/" + appointmentSlotId + " " + newAppointmentSlot.toString());
-        AppointmentSlot existingAppointmentSlot = appointmentSlotRepository.findById(appointmentSlotId)
-                .orElseThrow(() -> new RuntimeException("AppointmentSlot not found with id " + appointmentSlotId));
-        existingAppointmentSlot.setBarberId(newAppointmentSlot.getBarberId());
-        existingAppointmentSlot.setDate(newAppointmentSlot.getDate());
-        existingAppointmentSlot.setStartTime(newAppointmentSlot.getStartTime());
-        existingAppointmentSlot.setEndTime(newAppointmentSlot.getEndTime());
-        EntityModel<AppointmentSlot> entityModel = EntityModel.of(appointmentSlotRepository.save(existingAppointmentSlot));
+        String log = " put " + "/appointmentSlots/" + appointmentSlotId + " " + newAppointmentSlot.toString();
+        EntityModel<AppointmentSlot> entityModel;
+        if(stagedCommits.containsKey(log)) {
+            consoleLogger.info("phase 2 commit");
+            stagedCommits.remove(log);
+            logger.info(logCounter.incrementAndGet() + log);
+            AppointmentSlot existingAppointmentSlot = appointmentSlotRepository.findById(appointmentSlotId)
+                    .orElseThrow(() -> new RuntimeException("AppointmentSlot not found with id " + appointmentSlotId));
+            existingAppointmentSlot.setBarberId(newAppointmentSlot.getBarberId());
+            existingAppointmentSlot.setDate(newAppointmentSlot.getDate());
+            existingAppointmentSlot.setStartTime(newAppointmentSlot.getStartTime());
+            existingAppointmentSlot.setEndTime(newAppointmentSlot.getEndTime());
+            entityModel = EntityModel.of(appointmentSlotRepository.save(existingAppointmentSlot));
+        } else{
+            consoleLogger.info("phase 1 commit");
+            consoleLogger.info( log);
+            stagedCommits.put(log, logCounter.get() + 1);
+            entityModel = EntityModel.of(newAppointmentSlot);
+        }
         return ResponseEntity.ok().body(entityModel);
     }
 
@@ -325,8 +422,18 @@ public class DataBaseController {
      */
     @DeleteMapping("/barbers/{barberId}")
     protected ResponseEntity<EntityModel<Barber>> deleteBarber(@PathVariable Long barberId) {
-        barberRepository.deleteById(barberId);
-        logger.info(logCounter.incrementAndGet() + " delete " + "/barbers/" + barberId);
+        String log = " delete " + "/barbers/" + barberId;
+        if(stagedCommits.containsKey(log)){
+            consoleLogger.info("phase 2 commit");
+            stagedCommits.remove(log);
+            logger.info(logCounter.incrementAndGet() + log);
+            barberRepository.deleteById(barberId);
+        } else{
+            consoleLogger.info("phase 1 commit");
+            consoleLogger.info( log);
+            stagedCommits.put(log, logCounter.get() + 1);
+
+        }
         return ResponseEntity.ok().build();
     }
 
@@ -337,8 +444,18 @@ public class DataBaseController {
      */
     @DeleteMapping("/clients/{clientId}")
     protected ResponseEntity<EntityModel<Client>> deleteClient(@PathVariable Long clientId) {
-        clientRepository.deleteById(clientId);
-        logger.info(logCounter.incrementAndGet() + " delete " + "/clients/" + clientId);
+        String log = " delete " + "/clients/" + clientId;
+        if(stagedCommits.containsKey(log)){
+            consoleLogger.info("phase 2 commit");
+            stagedCommits.remove(log);
+            logger.info(logCounter.incrementAndGet() + log);
+            clientRepository.deleteById(clientId);
+
+        } else {
+            consoleLogger.info("phase 1 commit");
+            consoleLogger.info( log);
+            stagedCommits.put(log, logCounter.get() + 1);
+        }
         return ResponseEntity.ok().build();
     }
 
@@ -349,8 +466,17 @@ public class DataBaseController {
      */
     @DeleteMapping("/appointments/{appointmentId}")
     protected ResponseEntity<EntityModel<Appointment>> deleteAppointment(@PathVariable Long appointmentId) {
-        logger.info(logCounter.incrementAndGet() + " delete " + "/appointments/" + appointmentId);
-        appointmentsRepository.deleteById(appointmentId);
+        String log = " delete " + "/appointments/" + appointmentId;
+        if(stagedCommits.containsKey(log)){
+            consoleLogger.info("phase 2 commit");
+            stagedCommits.remove(log);
+            logger.info(logCounter.incrementAndGet() + log);
+            appointmentsRepository.deleteById(appointmentId);
+        } else {
+            consoleLogger.info("phase 1 commit");
+            consoleLogger.info( log);
+            stagedCommits.put(log, logCounter.get() + 1);
+        }
         return ResponseEntity.ok().build();
     }
 
@@ -361,8 +487,18 @@ public class DataBaseController {
      */
     @DeleteMapping("/appointmentSlots/{appointmentSlotId}")
     protected ResponseEntity<EntityModel<AppointmentSlot>> deleteAppointmentSlot(@PathVariable Long appointmentSlotId) {
-        appointmentSlotRepository.deleteById(appointmentSlotId);
-        logger.info(logCounter.incrementAndGet() + " delete " + "/appointmentSlots/" + appointmentSlotId);
+        String log = " delete " + "/appointmentSlots/" + appointmentSlotId;
+        if(stagedCommits.containsKey(log)){
+            consoleLogger.info("phase 2 commit");
+            stagedCommits.remove(log);
+            appointmentSlotRepository.deleteById(appointmentSlotId);
+            logger.info(logCounter.incrementAndGet() + log);
+        }
+        else {
+            consoleLogger.info("phase 1 commit");
+            consoleLogger.info( log);
+            stagedCommits.put(log, logCounter.get() + 1);
+        }
         return ResponseEntity.ok().build();
     }
 
@@ -557,6 +693,62 @@ public class DataBaseController {
             finalModel.add(collectionModel.get(i));
         }
         return ResponseEntity.ok(finalModel);
+    }
+
+    @GetMapping("/getOneLog/{id}")
+    public ResponseEntity<String> getOneLog(@PathVariable int id){
+        List<String> collectionModel;
+        try {
+            collectionModel = LogHandler.readLogFile();
+        } catch (IOException e) {
+            return ResponseEntity.notFound().build();
+        }
+
+        String log = collectionModel.get(id*2);
+        return ResponseEntity.ok(log);
+    }
+
+    @GetMapping("/checkStaged/{url}")
+    public ResponseEntity<Boolean> checkStaged(@PathVariable String url) {
+        if(!stagedCommits.isEmpty()){
+            for(String log: stagedCommits.keySet()){
+                int logNum = stagedCommits.get(log);
+                String uri = "http://" + url + "/getOneLog/" + logNum;
+                HttpRequest request = HttpRequest.newBuilder().
+                        GET()
+                        .uri(URI.create(uri))
+                        .header("Content-Type", "application/charset-8")
+                        .build();
+                HttpResponse<String> response = null;
+                try {
+                    response = HttpClient.newBuilder()
+                            .build()
+                            .send(request, HttpResponse.BodyHandlers.ofString());
+                } catch (IOException | InterruptedException e) {
+                    System.out.println("problem in sending it");
+                    e.printStackTrace();
+                }
+
+                if (response != null) {
+                   String savedLog = response.body().split(" ", 1)[1];
+                   savedLog = savedLog.substring(0, savedLog.length()-2);
+                     if(!savedLog.equals(log)) {
+                          addOneLog(response.body().substring(1, response.body().length()-2));
+                     }
+                     else
+                    {
+                        stagedCommits.remove(log);
+                    }
+                }
+                else
+                {
+                    stagedCommits.remove(log);
+                }
+
+
+            }
+        }
+        return ResponseEntity.ok().build();
     }
 
 }
