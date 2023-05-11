@@ -1,5 +1,7 @@
 package services;
 
+import utils.Http;
+
 import java.io.IOException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -29,6 +31,7 @@ public class DatabaseLeader extends Thread {
         setIdToReplicas();
         this.logger = Logger.getLogger(String.valueOf(DatabaseLeader.class));
         awsTalker.start();
+        validateStaged.start();
     }
 
 
@@ -53,7 +56,7 @@ public class DatabaseLeader extends Thread {
                             }
                             else {
                                 downServers.add(ipToId.get(databases.get(key))); //add the id of the down server to the list of down servers
-                                idToServers.put(ipToId.get(databases.get(key)), idToReplicas.get(ipToId.get(databases.get(key)))); //server is down so only send to its replica, TODO other option is deal with it in the controller
+                                idToServers.put(ipToId.get(databases.get(key)), idToReplicas.get(ipToId.get(databases.get(key)))); //server is down so only send to its replica,
                             }
                             ipToId.remove(databases.get(key));
                         }
@@ -61,6 +64,7 @@ public class DatabaseLeader extends Thread {
                             //TODO do not know what to do if the replica is down for now just ignore it and hope main stays till it is back up
                             logger.info("replica " + ipToId.get(databases.get(key)) + " at " + databases.get(key) + " is down");
                             downReplicas.add(ipToId.get(databases.get(key))); //add the id of the down replica to the list of down replicas
+                            idToReplicas.put(ipToId.get(databases.get(key)), idToServers.get(ipToId.get(databases.get(key)))); //replica is down so only send to its server
                         }
                     }
                 }
@@ -168,14 +172,30 @@ public class DatabaseLeader extends Thread {
         }
     }
 
-    private void validatesStagged(){
+    private void validatesStaged(){
         Random rand = new Random();
         int randomNum = rand.nextInt((idToServers.size()) +1);
         String serverUrl = idToServers.get(randomNum);
         String replicaUrl = idToReplicas.get(randomNum);
         //TODO send a request to the server to check staged of the replica
+        Http.get("http://" + serverUrl + "/checkStaged/" + replicaUrl);
         //TODO send a request to replica to check staged of the server
+        Http.get("http://" + replicaUrl + "/checkStaged/" + serverUrl);
     }
+
+    Thread validateStaged = new Thread(){
+        @Override
+        public void run() {
+            while(true){
+                validatesStaged();
+                try {
+                    Thread.sleep(2100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    };
     public ConcurrentHashMap<Integer, String> getReplicas() {
         return idToReplicas;
     }
