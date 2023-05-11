@@ -39,8 +39,8 @@ public class DataBaseController {
     private final AtomicInteger logCounter = new AtomicInteger(0);
     private final AtomicBoolean batchCatchUp = new AtomicBoolean(false);
     private final HashMap<Integer, String> undoneLogs = new HashMap<>();
-    private final HashMap<String, Integer> staggedCommites = new HashMap<>();
-    LogHandler logHandler = new LogHandler();
+    private final HashMap<String, Integer> stagedCommits = new HashMap<>();
+    
 
 
     public DataBaseController(BarberRepository barberRepository, ClientRepository clientRepository, AppointmentsRepository appointmentsRepository, AppointmentSlotRepository appointmentSlotRepository) {
@@ -77,16 +77,16 @@ public class DataBaseController {
     protected ResponseEntity<EntityModel<Barber>> newBarber(@RequestBody Barber newBarber) {
         String log =  " post " + "/barbers " + newBarber.toString();
         EntityModel<Barber> entityModel;
-        if(staggedCommites.containsKey(log)) {
+        if(stagedCommits.containsKey(log)) {
             consoleLogger.info("phase 2 commit");
             logger.info(logCounter.incrementAndGet() + log);
-            staggedCommites.remove(log);
+            stagedCommits.remove(log);
             entityModel = EntityModel.of(barberRepository.save(newBarber));
         }
         else {
             consoleLogger.info("phase 1 commit");
             consoleLogger.info( log);
-            staggedCommites.put(log, logCounter.get());
+            stagedCommits.put(log, logCounter.get());
             entityModel = EntityModel.of(newBarber);
         }
         return ResponseEntity.ok().body(entityModel);
@@ -101,16 +101,16 @@ public class DataBaseController {
     protected ResponseEntity<EntityModel<Client>> newClient(@RequestBody Client newClient) {
         String log =  " post " + "/clients " + newClient.toString();
         EntityModel<Client> entityModel;
-        if(staggedCommites.containsKey(log)) {
+        if(stagedCommits.containsKey(log)) {
             consoleLogger.info("phase 2 commit");
             logger.info(logCounter.incrementAndGet() + log);
-            staggedCommites.remove(log);
+            stagedCommits.remove(log);
             entityModel = EntityModel.of(clientRepository.save(newClient));
         }
         else {
             consoleLogger.info("phase 1 commit");
             consoleLogger.info( log);
-            staggedCommites.put(log, logCounter.get());
+            stagedCommits.put(log, logCounter.get());
             entityModel = EntityModel.of(newClient);
         }
 
@@ -127,16 +127,16 @@ public class DataBaseController {
     protected ResponseEntity<EntityModel<Appointment>> newAppointment(@RequestBody Appointment newAppointment) {
         String log =  " post " + "/appointments " + newAppointment.toString();
         EntityModel<Appointment> entityModel;
-        if(staggedCommites.containsKey(log)) {
+        if(stagedCommits.containsKey(log)) {
             consoleLogger.info("phase 2 commit");
             logger.info(logCounter.incrementAndGet() + log);
-            staggedCommites.remove(log);
+            stagedCommits.remove(log);
             entityModel = EntityModel.of(appointmentsRepository.save(newAppointment));
         }
         else {
             consoleLogger.info("phase 1 commit");
             consoleLogger.info( log);
-            staggedCommites.put(log, logCounter.get() + 1);
+            stagedCommits.put(log, logCounter.get() + 1);
             entityModel = EntityModel.of(newAppointment);
         }
 
@@ -153,16 +153,16 @@ public class DataBaseController {
     protected ResponseEntity<EntityModel<AppointmentSlot>> newAppointmentSlot(@RequestBody AppointmentSlot newAppointmentSlot) {
         String log = " post " + "/appointmentSlots " + newAppointmentSlot.toString();
         EntityModel<AppointmentSlot> entityModel;
-        if(staggedCommites.containsKey(log)) {
+        if(stagedCommits.containsKey(log)) {
             consoleLogger.info("phase 2 commit");
             logger.info(logCounter.incrementAndGet() + log);
-            staggedCommites.remove(log);
+            stagedCommits.remove(log);
             entityModel = EntityModel.of(appointmentSlotRepository.save(newAppointmentSlot));
         }
         else {
             consoleLogger.info("phase 1 commit");
             consoleLogger.info( log);
-            staggedCommites.put(log, logCounter.get() + 1);
+            stagedCommits.put(log, logCounter.get() + 1);
             entityModel = EntityModel.of(newAppointmentSlot);
         }
 
@@ -270,9 +270,9 @@ public class DataBaseController {
     protected ResponseEntity<EntityModel<Barber>> updateBarber(@RequestBody Barber newBarber, @PathVariable Long barberId) {
         String log = " put " + "/barbers/" + barberId + " " + newBarber.toString();
         EntityModel<Barber> entityModel;
-        if(staggedCommites.containsKey(log)) {
+        if(stagedCommits.containsKey(log)) {
             consoleLogger.info("phase 2 commit");
-            staggedCommites.remove(log);
+            stagedCommits.remove(log);
             Barber updatedBarber = barberRepository.findById(barberId)
                     .map(barber -> {
                         barber.setFirstName(newBarber.getFirstName());
@@ -293,7 +293,7 @@ public class DataBaseController {
         } else{
             consoleLogger.info("phase 1 commit");
             consoleLogger.info( log);
-            staggedCommites.put(log, logCounter.get() + 1);
+            stagedCommits.put(log, logCounter.get() + 1);
             entityModel = EntityModel.of(newBarber);
         }
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
@@ -307,9 +307,9 @@ public class DataBaseController {
     protected ResponseEntity<EntityModel<Client>> updateClient(@RequestBody Client newClient, @PathVariable Long clientId) {
         String log = " put " + "/clients/" + clientId + " " + newClient.toString();
         EntityModel<Client> entityModel;
-        if(staggedCommites.containsKey(log)) {
+        if(stagedCommits.containsKey(log)) {
             consoleLogger.info("phase 2 commit");
-            staggedCommites.remove(log);
+            stagedCommits.remove(log);
             Client updatedClient = clientRepository.findById(clientId)
                     .map(client -> {
                         client.setFirstName(newClient.getFirstName());
@@ -328,7 +328,7 @@ public class DataBaseController {
         } else{
             consoleLogger.info("phase 1 commit");
             consoleLogger.info( log);
-            staggedCommites.put(log, logCounter.get() + 1);
+            stagedCommits.put(log, logCounter.get() + 1);
             entityModel = EntityModel.of(newClient);
         }
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
@@ -342,9 +342,9 @@ public class DataBaseController {
     protected ResponseEntity<EntityModel<Appointment>> updateAppointment(@RequestBody Appointment newAppointment, @PathVariable Long appointmentId) {
         String log = " put " + "/appointments/" + appointmentId + " " + newAppointment.toString();
         EntityModel<Appointment> entityModel;
-        if(staggedCommites.containsKey(log)) {
+        if(stagedCommits.containsKey(log)) {
             consoleLogger.info("phase 2 commit");
-            staggedCommites.remove(log);
+            stagedCommits.remove(log);
             Appointment updatedAppointment = appointmentsRepository.findById(appointmentId)
                     .map(appointment -> {
                         appointment.setBarberId(newAppointment.getBarberId());
@@ -362,7 +362,7 @@ public class DataBaseController {
         } else{
             consoleLogger.info("phase 1 commit");
             consoleLogger.info( log);
-            staggedCommites.put(log, logCounter.get() + 1);
+            stagedCommits.put(log, logCounter.get() + 1);
             entityModel = EntityModel.of(newAppointment);
         }
         return ResponseEntity.created(entityModel.getRequiredLink("self").toUri()).body(entityModel);
@@ -394,9 +394,9 @@ public class DataBaseController {
     protected ResponseEntity<EntityModel<AppointmentSlot>> updateAppointmentSlot(@PathVariable Long appointmentSlotId, @RequestBody AppointmentSlot newAppointmentSlot) {
         String log = " put " + "/appointmentSlots/" + appointmentSlotId + " " + newAppointmentSlot.toString();
         EntityModel<AppointmentSlot> entityModel;
-        if(staggedCommites.containsKey(log)) {
+        if(stagedCommits.containsKey(log)) {
             consoleLogger.info("phase 2 commit");
-            staggedCommites.remove(log);
+            stagedCommits.remove(log);
             logger.info(logCounter.incrementAndGet() + log);
             AppointmentSlot existingAppointmentSlot = appointmentSlotRepository.findById(appointmentSlotId)
                     .orElseThrow(() -> new RuntimeException("AppointmentSlot not found with id " + appointmentSlotId));
@@ -408,7 +408,7 @@ public class DataBaseController {
         } else{
             consoleLogger.info("phase 1 commit");
             consoleLogger.info( log);
-            staggedCommites.put(log, logCounter.get() + 1);
+            stagedCommits.put(log, logCounter.get() + 1);
             entityModel = EntityModel.of(newAppointmentSlot);
         }
         return ResponseEntity.ok().body(entityModel);
@@ -423,15 +423,15 @@ public class DataBaseController {
     @DeleteMapping("/barbers/{barberId}")
     protected ResponseEntity<EntityModel<Barber>> deleteBarber(@PathVariable Long barberId) {
         String log = " delete " + "/barbers/" + barberId;
-        if(staggedCommites.containsKey(log)){
+        if(stagedCommits.containsKey(log)){
             consoleLogger.info("phase 2 commit");
-            staggedCommites.remove(log);
+            stagedCommits.remove(log);
             logger.info(logCounter.incrementAndGet() + log);
             barberRepository.deleteById(barberId);
         } else{
             consoleLogger.info("phase 1 commit");
             consoleLogger.info( log);
-            staggedCommites.put(log, logCounter.get() + 1);
+            stagedCommits.put(log, logCounter.get() + 1);
 
         }
         return ResponseEntity.ok().build();
@@ -445,16 +445,16 @@ public class DataBaseController {
     @DeleteMapping("/clients/{clientId}")
     protected ResponseEntity<EntityModel<Client>> deleteClient(@PathVariable Long clientId) {
         String log = " delete " + "/clients/" + clientId;
-        if(staggedCommites.containsKey(log)){
+        if(stagedCommits.containsKey(log)){
             consoleLogger.info("phase 2 commit");
-            staggedCommites.remove(log);
+            stagedCommits.remove(log);
             logger.info(logCounter.incrementAndGet() + log);
             clientRepository.deleteById(clientId);
 
         } else {
             consoleLogger.info("phase 1 commit");
             consoleLogger.info( log);
-            staggedCommites.put(log, logCounter.get() + 1);
+            stagedCommits.put(log, logCounter.get() + 1);
         }
         return ResponseEntity.ok().build();
     }
@@ -467,15 +467,15 @@ public class DataBaseController {
     @DeleteMapping("/appointments/{appointmentId}")
     protected ResponseEntity<EntityModel<Appointment>> deleteAppointment(@PathVariable Long appointmentId) {
         String log = " delete " + "/appointments/" + appointmentId;
-        if(staggedCommites.containsKey(log)){
+        if(stagedCommits.containsKey(log)){
             consoleLogger.info("phase 2 commit");
-            staggedCommites.remove(log);
+            stagedCommits.remove(log);
             logger.info(logCounter.incrementAndGet() + log);
             appointmentsRepository.deleteById(appointmentId);
         } else {
             consoleLogger.info("phase 1 commit");
             consoleLogger.info( log);
-            staggedCommites.put(log, logCounter.get() + 1);
+            stagedCommits.put(log, logCounter.get() + 1);
         }
         return ResponseEntity.ok().build();
     }
@@ -488,16 +488,16 @@ public class DataBaseController {
     @DeleteMapping("/appointmentSlots/{appointmentSlotId}")
     protected ResponseEntity<EntityModel<AppointmentSlot>> deleteAppointmentSlot(@PathVariable Long appointmentSlotId) {
         String log = " delete " + "/appointmentSlots/" + appointmentSlotId;
-        if(staggedCommites.containsKey(log)){
+        if(stagedCommits.containsKey(log)){
             consoleLogger.info("phase 2 commit");
-            staggedCommites.remove(log);
+            stagedCommits.remove(log);
             appointmentSlotRepository.deleteById(appointmentSlotId);
             logger.info(logCounter.incrementAndGet() + log);
         }
         else {
             consoleLogger.info("phase 1 commit");
             consoleLogger.info( log);
-            staggedCommites.put(log, logCounter.get() + 1);
+            stagedCommits.put(log, logCounter.get() + 1);
         }
         return ResponseEntity.ok().build();
     }
@@ -693,6 +693,62 @@ public class DataBaseController {
             finalModel.add(collectionModel.get(i));
         }
         return ResponseEntity.ok(finalModel);
+    }
+
+    @GetMapping("/getOneLog/{id}")
+    public ResponseEntity<String> getOneLog(@PathVariable int id){
+        List<String> collectionModel;
+        try {
+            collectionModel = LogHandler.readLogFile();
+        } catch (IOException e) {
+            return ResponseEntity.notFound().build();
+        }
+
+        String log = collectionModel.get(id*2);
+        return ResponseEntity.ok(log);
+    }
+
+    @GetMapping("/checkStaged/{url}")
+    public ResponseEntity<Boolean> checkStaged(@PathVariable String url) {
+        if(!stagedCommits.isEmpty()){
+            for(String log: stagedCommits.keySet()){
+                int logNum = stagedCommits.get(log);
+                String uri = "http://" + url + "/getOneLog/" + logNum;
+                HttpRequest request = HttpRequest.newBuilder().
+                        GET()
+                        .uri(URI.create(uri))
+                        .header("Content-Type", "application/charset-8")
+                        .build();
+                HttpResponse<String> response = null;
+                try {
+                    response = HttpClient.newBuilder()
+                            .build()
+                            .send(request, HttpResponse.BodyHandlers.ofString());
+                } catch (IOException | InterruptedException e) {
+                    System.out.println("problem in sending it");
+                    e.printStackTrace();
+                }
+
+                if (response != null) {
+                   String savedLog = response.body().split(" ", 1)[1];
+                   savedLog = savedLog.substring(0, savedLog.length()-2);
+                     if(!savedLog.equals(log)) {
+                          addOneLog(response.body().substring(1, response.body().length()-2));
+                     }
+                     else
+                    {
+                        stagedCommits.remove(log);
+                    }
+                }
+                else
+                {
+                    stagedCommits.remove(log);
+                }
+
+
+            }
+        }
+        return ResponseEntity.ok().build();
     }
 
 }
