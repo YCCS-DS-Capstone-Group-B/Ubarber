@@ -40,7 +40,7 @@ public class DataBaseController {
     private final AtomicBoolean batchCatchUp = new AtomicBoolean(false);
     private final HashMap<Integer, String> undoneLogs = new HashMap<>();
     private final HashMap<String, Integer> stagedCommits = new HashMap<>();
-    
+
 
 
     public DataBaseController(BarberRepository barberRepository, ClientRepository clientRepository, AppointmentsRepository appointmentsRepository, AppointmentSlotRepository appointmentSlotRepository) {
