@@ -25,6 +25,7 @@ public class sendJson {
             JSONObject jsonObject = jsonArray.getJSONObject(i);
             System.out.println(jsonObject.toString());
             sendRequest(urlString, jsonObject.toString());
+            Thread.sleep(1000);
         }
         getNearMe();
     }

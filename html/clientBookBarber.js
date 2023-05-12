@@ -29,7 +29,7 @@ bookBarberForm.addEventListener('submit', (event) => {
         body: JSON.stringify(formData)
     };
 
-    fetch(`http://localhost:8081/newAppointment/${formData.barberId}/${bookBarberForm.elements['barber-zip'].value}`, requestOptions)
+    fetch(`http://service-env-1.us-east-2.elasticbeanstalk.com/newAppointment/${formData.barberId}/${bookBarberForm.elements['barber-zip'].value}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');

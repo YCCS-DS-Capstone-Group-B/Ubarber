@@ -38,7 +38,7 @@ updateAppointmentSlotForm.addEventListener('submit', (event) => {
     };
 
 
-    fetch(`http://localhost:8081/updateAppointmentSlot/${appointmentSlot.appointmentSlotId}/${zip}`, requestOptions)
+    fetch(`http://service-env-1.us-east-2.elasticbeanstalk.com/updateAppointmentSlot/${appointmentSlot.appointmentSlotId}/${zip}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');

@@ -48,7 +48,7 @@ console.log(zip);
 const id = urlParams.get('id');
 console.log(id);
 
-fetch(`http://localhost:8081/clientUpdateProfile/${id}/${zip}`, requestOptions)
+fetch(`http://service-env-1.us-east-2.elasticbeanstalk.com/clientUpdateProfile/${id}/${zip}`, requestOptions)
     .then(response => response.json())
     .then(data => {
         const jsonElement = document.getElementById('json-data');

@@ -39,7 +39,7 @@ profileForm.addEventListener('submit', (event) => {
         body: JSON.stringify(formData)
     };
 
-    fetch(`http://localhost:8081/${registerType}`, requestOptions)
+    fetch(`http://service-env-1.us-east-2.elasticbeanstalk.com/${registerType}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             console.log(data);

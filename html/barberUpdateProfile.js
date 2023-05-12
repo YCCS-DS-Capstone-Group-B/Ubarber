@@ -42,7 +42,7 @@ updateProfileForm.addEventListener('submit', (event) => {
     body: JSON.stringify(formData)
 };
 
-fetch(`http://localhost:8081/barberUpdateProfile/${id}/${zip}`, requestOptions)
+fetch(`http://service-env-1.us-east-2.elasticbeanstalk.com/barberUpdateProfile/${id}/${zip}`, requestOptions)
     .then(response => response.json())
     .then(data => {
         const jsonElement = document.getElementById('json-data');

@@ -25,7 +25,7 @@ cancelAppointmentForm.addEventListener('submit', (event) => {
         mode: 'cors'
     };
 
-    fetch(`http://localhost:8081/barberCancelAppointment/${appointmentID}/${zip}`, requestOptions)
+    fetch(`http://service-env-1.us-east-2.elasticbeanstalk.com/barberCancelAppointment/${appointmentID}/${zip}`, requestOptions)
         .then(response => {
             if (response.status === 204) {
                 return Promise.resolve();

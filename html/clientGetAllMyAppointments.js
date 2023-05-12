@@ -25,7 +25,7 @@ clientGetAllMyAppointmentsForm.addEventListener('submit', (event) => {
         mode: 'cors'
     };
 
-    fetch(`http://localhost:8081/client/myAppointments/${clientID}/${zip}`, requestOptions)
+    fetch(`http://service-env-1.us-east-2.elasticbeanstalk.com/client/myAppointments/${clientID}/${zip}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');

@@ -25,7 +25,7 @@ barberGetAllMyAppointmentSlotsForm.addEventListener('submit', (event) => {
         mode: 'cors'
     };
 
-    fetch(`http://localhost:8081/barber/myAppointmentSlots/${barberID}/${zip}`, requestOptions)
+    fetch(`http://service-env-1.us-east-2.elasticbeanstalk.com/barber/myAppointmentSlots/${barberID}/${zip}`, requestOptions)
         .then(response => response.json())
         .then(data => {
             const jsonElement = document.getElementById('json-data');
