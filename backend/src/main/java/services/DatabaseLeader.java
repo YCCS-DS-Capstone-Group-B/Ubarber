@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
 
 public class DatabaseLeader extends Thread {
-    ConcurrentHashMap<String, String> databases;
+    ConcurrentHashMap<String, String> databases = new ConcurrentHashMap<>();
     ConcurrentHashMap<Integer, String> idToServers = new ConcurrentHashMap<>(); // map of ids to server ip addresses
     ConcurrentHashMap<Integer, String> idToReplicas = new ConcurrentHashMap<>(); // map of ids to replica ip addresses
     ConcurrentHashMap<String, Integer> ipToId = new ConcurrentHashMap<>(); // map of ip addresses to its id
@@ -24,13 +24,26 @@ public class DatabaseLeader extends Thread {
     Logger logger;
     AtomicInteger counter = new AtomicInteger(0);
 
-    public DatabaseLeader(){
-        this.databases = ListEBSEnvironmentInstances.getAllDatabase(); //get all the databases upon creation
+    public DatabaseLeader(boolean test){
+        if(test){
+            this.databases.put("0", "http://localhost:5050");
+            this.databases.put("1", "http://localhost:5050");
+            this.databases.put("2", "http://localhost:5050");
+            this.databases.put("3", "http://localhost:5050");
+            this.databases.put("4", "http://localhost:5050");
+            this.databases.put("5", "http://localhost:5050");
+            this.databases.put("6", "http://localhost:5050");
+        }
+        else {
+            this.databases = ListEBSEnvironmentInstances.getAllDatabase(); //get all the databases upon creation
+        }
         numDatabases = databases.size() / 2; //half of the databases are servers and the other half are replicas
         setIdToServers();
         setIdToReplicas();
+        if(!test){
+            awsTalker.start();
+        }
         this.logger = Logger.getLogger(String.valueOf(DatabaseLeader.class));
-        awsTalker.start();
         validateStaged.start();
     }
 
@@ -150,10 +163,12 @@ public class DatabaseLeader extends Thread {
 
     private void setIdToServers(){
         int i = 1;
+        int j = 0;
         for(String url: databases.values()){
             if(i <= databases.size() / 2){ //first half of the databases are servers
-                idToServers.put(i, url);
-                ipToId.put(url, i);
+                idToServers.put(j, url);
+                ipToId.put(url, j);
+                j++;
             }
             i++;
         }
@@ -161,7 +176,7 @@ public class DatabaseLeader extends Thread {
 
     private void setIdToReplicas(){
         int i = 1;
-        int j = 1;
+        int j = 0;
         for(String url: databases.values()){ //second half of the databases are replicas
             if(i > databases.size() / 2){
                 idToReplicas.put(j, url);

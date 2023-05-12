@@ -410,3 +410,409 @@ May 10, 2023 9:26:54 PM com.ubarber.database.DataBaseController newBarber
 INFO: 205 post /barbers {"id"=114, "location"="90035", "firstName"="Ethan", "middleName"="Alexander", "lastName"="null", "email"="ethan.alexander@example.com", "latitude"=34.05481, "longitude"=-118.38403, "geoHash"="9q5cdp7rshtn"}
 May 10, 2023 9:26:54 PM com.ubarber.database.DataBaseController newBarber
 INFO: 206 post /barbers {"id"=114, "location"="90035", "firstName"="Ethan", "middleName"="Alexander", "lastName"="null", "email"="ethan.alexander@example.com", "latitude"=34.05481, "longitude"=-118.38403, "geoHash"="9q5cdp7rshtn"}
+May 12, 2023 10:21:59 AM com.ubarber.database.DataBaseController newBarber
+INFO: 207 post /barbers {"id"=1, "location"="07621", "firstName"="John", "middleName"="Michael", "lastName"="null", "email"="john.michael@example.com", "latitude"=40.92133, "longitude"=-73.99684, "geoHash"="dr72u1t0h8uc"}
+May 12, 2023 10:22:00 AM com.ubarber.database.DataBaseController newBarber
+INFO: 208 post /barbers {"id"=3, "location"="60601", "firstName"="David", "middleName"="Alexander", "lastName"="null", "email"="david.alexander@example.com", "latitude"=41.88582, "longitude"=-87.62529, "geoHash"="dp3wq114wfb0"}
+May 12, 2023 10:22:01 AM com.ubarber.database.DataBaseController newBarber
+INFO: 209 post /barbers {"id"=4, "location"="10001", "firstName"="Samantha", "middleName"="Marie", "lastName"="null", "email"="samantha.marie@example.com", "latitude"=40.74802, "longitude"=-73.9928, "geoHash"="dr5ru3bn6v3r"}
+May 12, 2023 10:22:01 AM com.ubarber.database.DataBaseController newBarber
+INFO: 210 post /barbers {"id"=5, "location"="60606", "firstName"="Andrew", "middleName"="Joseph", "lastName"="null", "email"="andrew.joseph@example.com", "latitude"=41.88166, "longitude"=-87.63681, "geoHash"="dp3wmb2f6761"}
+May 12, 2023 10:22:02 AM com.ubarber.database.DataBaseController newBarber
+INFO: 211 post /barbers {"id"=8, "location"="10017", "firstName"="Ryan", "middleName"="Matthew", "lastName"="null", "email"="ryan.matthew@example.com", "latitude"=40.75251, "longitude"=-73.9753, "geoHash"="dr5rudubdd6r"}
+May 12, 2023 10:22:04 AM com.ubarber.database.DataBaseController newBarber
+INFO: 212 post /barbers {"id"=10, "location"="20001", "firstName"="Michael", "middleName"="Christopher", "lastName"="null", "email"="michael.christopher@example.com", "latitude"=38.90872, "longitude"=-77.01894, "geoHash"="dqcjr7he8x5g"}
+May 12, 2023 10:22:04 AM com.ubarber.database.DataBaseController newBarber
+INFO: 213 post /barbers {"id"=11, "location"="60607", "firstName"="Abby", "middleName"="Rose", "lastName"="null", "email"="abby.rose@example.com", "latitude"=41.87659, "longitude"=-87.65331, "geoHash"="dp3wjrkucf4v"}
+May 12, 2023 10:22:04 AM com.ubarber.database.DataBaseController newBarber
+INFO: 214 post /barbers {"id"=12, "location"="60602", "firstName"="Ethan", "middleName"="James", "lastName"="null", "email"="ethan.james@example.com", "latitude"=41.88292, "longitude"=-87.6294, "geoHash"="dp3wmbw1wypm"}
+May 12, 2023 10:22:05 AM com.ubarber.database.DataBaseController newBarber
+INFO: 215 post /barbers {"id"=13, "location"="10003", "firstName"="Lily", "middleName"="Isabella", "lastName"="null", "email"="lily.isabella@example.com", "latitude"=40.73245, "longitude"=-73.98927, "geoHash"="dr5rsr4etp18"}
+May 12, 2023 10:22:05 AM com.ubarber.database.DataBaseController newBarber
+INFO: 216 post /barbers {"id"=15, "location"="10016", "firstName"="Olivia", "middleName"="Grace", "lastName"="null", "email"="olivia.grace@example.com", "latitude"=40.7461, "longitude"=-73.97992, "geoHash"="dr5ru997nzt6"}
+May 12, 2023 10:22:06 AM com.ubarber.database.DataBaseController newBarber
+INFO: 217 post /barbers {"id"=16, "location"="60603", "firstName"="Lucas", "middleName"="Alexander", "lastName"="null", "email"="lucas.alexander@example.com", "latitude"=41.88069, "longitude"=-87.62961, "geoHash"="dp3wmbnhdn6z"}
+May 12, 2023 10:22:06 AM com.ubarber.database.DataBaseController newBarber
+INFO: 218 post /barbers {"id"=17, "location"="10007", "firstName"="Emma", "middleName"="Sophia", "lastName"="null", "email"="emma.sophia@example.com", "latitude"=40.71358, "longitude"=-74.00835, "geoHash"="dr5regsvb3qk"}
+May 12, 2023 10:22:07 AM com.ubarber.database.DataBaseController newBarber
+INFO: 219 post /barbers {"id"=20, "location"="10023", "firstName"="Luke", "middleName"="David", "lastName"="null", "email"="luke.david@example.com", "latitude"=40.77642, "longitude"=-73.98239, "geoHash"="dr5rurpev7ee"}
+May 12, 2023 10:22:08 AM com.ubarber.database.DataBaseController newBarber
+INFO: 220 post /barbers {"id"=22, "location"="10013", "firstName"="Ethan", "middleName"="Benjamin", "lastName"="null", "email"="ethan.benjamin@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:22:08 AM com.ubarber.database.DataBaseController newBarber
+INFO: 221 post /barbers {"id"=23, "location"="60616", "firstName"="Grace", "middleName"="Elizabeth", "lastName"="null", "email"="grace.elizabeth@example.com", "latitude"=41.84983, "longitude"=-87.63192, "geoHash"="dp3wjfs2um8r"}
+May 12, 2023 10:22:08 AM com.ubarber.database.DataBaseController newBarber
+INFO: 222 post /barbers {"id"=24, "location"="60611", "firstName"="Jackson", "middleName"="Alexander", "lastName"="null", "email"="jackson.alexander@example.com", "latitude"=41.89451, "longitude"=-87.62275, "geoHash"="dp3wq4ej1ywn"}
+May 12, 2023 10:22:10 AM com.ubarber.database.DataBaseController newBarber
+INFO: 223 post /barbers {"id"=28, "location"="60604", "firstName"="William", "middleName"="Joseph", "lastName"="null", "email"="william.joseph@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:22:10 AM com.ubarber.database.DataBaseController newBarber
+INFO: 224 post /barbers {"id"=29, "location"="10022", "firstName"="Ava", "middleName"="Elizabeth", "lastName"="null", "email"="ezj@gmail.com", "latitude"=40.75889, "longitude"=-73.96851, "geoHash"="dr5rugcv8zc3"}
+May 12, 2023 10:22:10 AM com.ubarber.database.DataBaseController newBarber
+INFO: 225 post /barbers {"id"=30, "location"="10012", "firstName"="Jacob", "middleName"="Michael", "lastName"="null", "email"="mjz@gmail.com", "latitude"=40.72501, "longitude"=-73.9983, "geoHash"="dr5rsju06sh7"}
+May 12, 2023 10:22:10 AM com.ubarber.database.DataBaseController newBarber
+INFO: 226 post /barbers {"id"=31, "location"="60614", "firstName"="Mia", "middleName"="Grace", "lastName"="null", "email"="mia.grace@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:22:11 AM com.ubarber.database.DataBaseController newBarber
+INFO: 227 post /barbers {"id"=33, "location"="10021", "firstName"="Evelyn", "middleName"="Rose", "lastName"="null", "email"="evelyn.rose@example.com", "latitude"=40.76878, "longitude"=-73.95835, "geoHash"="dr5rvj9pme3j"}
+May 12, 2023 10:22:12 AM com.ubarber.database.DataBaseController newBarber
+INFO: 228 post /barbers {"id"=35, "location"="60610", "firstName"="Olivia", "middleName"="Isabella", "lastName"="null", "email"="olivia.isabella@example.com", "latitude"=41.90464, "longitude"=-87.63448, "geoHash"="dp3wmud80x5d"}
+May 12, 2023 10:22:12 AM com.ubarber.database.DataBaseController newBarber
+INFO: 229 post /barbers {"id"=37, "location"="10016", "firstName"="Sophia", "middleName"="Elizabeth", "lastName"="null", "email"="sophia.elizabeth@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:22:13 AM com.ubarber.database.DataBaseController newBarber
+INFO: 230 post /barbers {"id"=38, "location"="60661", "firstName"="Michael", "middleName"="Anthony", "lastName"="null", "email"="michael.anthony@example.com", "latitude"=41.88387, "longitude"=-87.64271, "geoHash"="dp3wm8sx0z6b"}
+May 12, 2023 10:22:13 AM com.ubarber.database.DataBaseController newBarber
+INFO: 231 post /barbers {"id"=39, "location"="10019", "firstName"="Aaliyah", "middleName"="Zoe", "lastName"="null", "email"="aaliyah.zoe@example.com", "latitude"=40.76556, "longitude"=-73.98418, "geoHash"="dr5rumnkeehv"}
+May 12, 2023 10:22:14 AM com.ubarber.database.DataBaseController newBarber
+INFO: 232 post /barbers {"id"=41, "location"="60601", "firstName"="Charlotte", "middleName"="Sophia", "lastName"="null", "email"="charlotte.sophia@example.com", "latitude"=41.88582, "longitude"=-87.62529, "geoHash"="dp3wq114wfb0"}
+May 12, 2023 10:22:16 AM com.ubarber.database.DataBaseController newBarber
+INFO: 233 post /barbers {"id"=48, "location"="10012", "firstName"="Lucas", "middleName"="Daniel", "lastName"="null", "email"="lucas.daniel@example.com", "latitude"=40.72501, "longitude"=-73.9983, "geoHash"="dr5rsju06sh7"}
+May 12, 2023 10:22:16 AM com.ubarber.database.DataBaseController newBarber
+INFO: 234 post /barbers {"id"=51, "location"="10024", "firstName"="Abigail", "middleName"="Sofia", "lastName"="null", "email"="abigail.sofia@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:22:17 AM com.ubarber.database.DataBaseController newBarber
+INFO: 235 post /barbers {"id"=52, "location"="60657", "firstName"="William", "middleName"="Christopher", "lastName"="null", "email"="william.christopher@example.com", "latitude"=41.94072, "longitude"=-87.65287, "geoHash"="dp3wt7j4khfg"}
+May 12, 2023 10:22:17 AM com.ubarber.database.DataBaseController newBarber
+INFO: 236 post /barbers {"id"=55, "location"="60611", "firstName"="Isabella", "middleName"="Natalie", "lastName"="null", "email"="isabella.natalie@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:22:19 AM com.ubarber.database.DataBaseController newBarber
+INFO: 237 post /barbers {"id"=60, "location"="10013", "firstName"="Evelyn", "middleName"="Aria", "lastName"="null", "email"="evelyn.aria@example.com", "latitude"=40.72062, "longitude"=-74.00304, "geoHash"="dr5rshbwu1tz"}
+May 12, 2023 10:22:20 AM com.ubarber.database.DataBaseController newBarber
+INFO: 238 post /barbers {"id"=64, "location"="60614", "firstName"="Olivia", "middleName"="Ella", "lastName"="null", "email"="OElla@yahoo.com", "latitude"=41.92325, "longitude"=-87.64991, "geoHash"="dp3wmrzk9h4p"}
+May 12, 2023 10:22:20 AM com.ubarber.database.DataBaseController newBarber
+INFO: 239 post /barbers {"id"=65, "location"="10011", "firstName"="Ethan", "middleName"="Michael", "lastName"="null", "email"="em65@aol.com", "latitude"=40.74028, "longitude"=-73.99778, "geoHash"="dr5ru0s3qf8h"}
+May 12, 2023 10:22:21 AM com.ubarber.database.DataBaseController newBarber
+INFO: 240 post /barbers {"id"=67, "location"="60647", "firstName"="Benjamin", "middleName"="James", "lastName"="null", "email"="JB67@gmail.com", "latitude"=41.91955, "longitude"=-87.70069, "geoHash"="dp3wkr4r1f3z"}
+May 12, 2023 10:22:22 AM com.ubarber.database.DataBaseController newBarber
+INFO: 241 post /barbers {"id"=73, "location"="10025", "firstName"="Oliver", "middleName"="Elijah", "lastName"="null", "email"="", "latitude"=40.79885, "longitude"=-73.96798, "geoHash"="dr72hg4nt0us"}
+May 12, 2023 10:22:23 AM com.ubarber.database.DataBaseController newBarber
+INFO: 242 post /barbers {"id"=75, "location"="60610", "firstName"="Matthew", "middleName"="Daniel", "lastName"="null", "email"="", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:22:24 AM com.ubarber.database.DataBaseController newBarber
+INFO: 243 post /barbers {"id"=78, "location"="60613", "firstName"="Aria", "middleName"="Evelyn", "lastName"="null", "email"="", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:22:24 AM com.ubarber.database.DataBaseController newBarber
+INFO: 244 post /barbers {"id"=81, "location"="60640", "firstName"="Jayden", "middleName"="Michael", "lastName"="null", "email"="", "latitude"=41.9736, "longitude"=-87.66262, "geoHash"="dp3wv1n1byhu"}
+May 12, 2023 10:22:26 AM com.ubarber.database.DataBaseController newBarber
+INFO: 245 post /barbers {"id"=85, "location"="60607", "firstName"="Grayson", "middleName"="Mason", "lastName"="null", "email"="", "latitude"=41.87659, "longitude"=-87.65331, "geoHash"="dp3wjrkucf4v"}
+May 12, 2023 10:22:26 AM com.ubarber.database.DataBaseController newBarber
+INFO: 246 post /barbers {"id"=88, "location"="60611", "firstName"="Gabriel", "middleName"="Alexander", "lastName"="null", "email"="", "latitude"=41.89451, "longitude"=-87.62275, "geoHash"="dp3wq4ej1ywn"}
+May 12, 2023 10:22:31 AM com.ubarber.database.DataBaseController newBarber
+INFO: 247 post /barbers {"id"=102, "location"="60601", "firstName"="Logan", "middleName"="Isaac", "lastName"="null", "email"="logan.isaac@example.com", "latitude"=41.88582, "longitude"=-87.62529, "geoHash"="dp3wq114wfb0"}
+May 12, 2023 10:22:32 AM com.ubarber.database.DataBaseController newBarber
+INFO: 248 post /barbers {"id"=105, "location"="10036", "firstName"="Camila", "middleName"="Eleanor", "lastName"="null", "email"="camila.eleanor@example.com", "latitude"=40.75993, "longitude"=-73.98636, "geoHash"="dr5rukhgbcem"}
+May 12, 2023 10:22:33 AM com.ubarber.database.DataBaseController newBarber
+INFO: 249 post /barbers {"id"=109, "location"="10001", "firstName"="Stella", "middleName"="Aurora", "lastName"="null", "email"="stella.aurora@example.com", "latitude"=40.74802, "longitude"=-73.9928, "geoHash"="dr5ru3bn6v3r"}
+May 12, 2023 10:22:33 AM com.ubarber.database.DataBaseController newBarber
+INFO: 250 post /barbers {"id"=110, "location"="60603", "firstName"="Michael", "middleName"="David", "lastName"="null", "email"="michael.david@example.com", "latitude"=41.88069, "longitude"=-87.62961, "geoHash"="dp3wmbnhdn6z"}
+May 12, 2023 10:22:34 AM com.ubarber.database.DataBaseController newBarber
+INFO: 251 post /barbers {"id"=112, "location"="60610", "firstName"="Ethan", "middleName"="Noah", "lastName"="null", "email"="ethan.noah@example.com", "latitude"=41.90464, "longitude"=-87.63448, "geoHash"="dp3wmud80x5d"}
+May 12, 2023 10:26:42 AM com.ubarber.database.DataBaseController newBarber
+INFO: 252 post /barbers {"id"=1, "location"="07621", "firstName"="John", "middleName"="Michael", "lastName"="null", "email"="john.michael@example.com", "latitude"=40.92133, "longitude"=-73.99684, "geoHash"="dr72u1t0h8uc"}
+May 12, 2023 10:26:43 AM com.ubarber.database.DataBaseController newBarber
+INFO: 253 post /barbers {"id"=2, "location"="90210", "firstName"="Emily", "middleName"="Grace", "lastName"="null", "email"="emily.grace@example.com", "latitude"=34.08139, "longitude"=-118.39927, "geoHash"="9q5ccu263p96"}
+May 12, 2023 10:26:43 AM com.ubarber.database.DataBaseController newBarber
+INFO: 254 post /barbers {"id"=3, "location"="60601", "firstName"="David", "middleName"="Alexander", "lastName"="null", "email"="david.alexander@example.com", "latitude"=41.88582, "longitude"=-87.62529, "geoHash"="dp3wq114wfb0"}
+May 12, 2023 10:26:44 AM com.ubarber.database.DataBaseController newBarber
+INFO: 255 post /barbers {"id"=5, "location"="60606", "firstName"="Andrew", "middleName"="Joseph", "lastName"="null", "email"="andrew.joseph@example.com", "latitude"=41.88166, "longitude"=-87.63681, "geoHash"="dp3wmb2f6761"}
+May 12, 2023 10:26:44 AM com.ubarber.database.DataBaseController newBarber
+INFO: 256 post /barbers {"id"=6, "location"="94102", "firstName"="Megan", "middleName"="Elizabeth", "lastName"="null", "email"="megan.elizabeth@example.com", "latitude"=37.78152, "longitude"=-122.41672, "geoHash"="9q8yymfv79v9"}
+May 12, 2023 10:26:45 AM com.ubarber.database.DataBaseController newBarber
+INFO: 257 post /barbers {"id"=9, "location"="98101", "firstName"="Sophie", "middleName"="Anne", "lastName"="null", "email"="sophie.anne@example.com", "latitude"=47.61054, "longitude"=-122.33388, "geoHash"="c23nb5ppmzzt"}
+May 12, 2023 10:26:45 AM com.ubarber.database.DataBaseController newBarber
+INFO: 258 post /barbers {"id"=10, "location"="20001", "firstName"="Michael", "middleName"="Christopher", "lastName"="null", "email"="michael.christopher@example.com", "latitude"=38.90872, "longitude"=-77.01894, "geoHash"="dqcjr7he8x5g"}
+May 12, 2023 10:26:46 AM com.ubarber.database.DataBaseController newBarber
+INFO: 259 post /barbers {"id"=12, "location"="60602", "firstName"="Ethan", "middleName"="James", "lastName"="null", "email"="ethan.james@example.com", "latitude"=41.88292, "longitude"=-87.6294, "geoHash"="dp3wmbw1wypm"}
+May 12, 2023 10:26:46 AM com.ubarber.database.DataBaseController newBarber
+INFO: 260 post /barbers {"id"=13, "location"="10003", "firstName"="Lily", "middleName"="Isabella", "lastName"="null", "email"="lily.isabella@example.com", "latitude"=40.73245, "longitude"=-73.98927, "geoHash"="dr5rsr4etp18"}
+May 12, 2023 10:26:46 AM com.ubarber.database.DataBaseController newBarber
+INFO: 261 post /barbers {"id"=16, "location"="60603", "firstName"="Lucas", "middleName"="Alexander", "lastName"="null", "email"="lucas.alexander@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:26:47 AM com.ubarber.database.DataBaseController newBarber
+INFO: 262 post /barbers {"id"=17, "location"="10007", "firstName"="Emma", "middleName"="Sophia", "lastName"="null", "email"="emma.sophia@example.com", "latitude"=40.71358, "longitude"=-74.00835, "geoHash"="dr5regsvb3qk"}
+May 12, 2023 10:26:47 AM com.ubarber.database.DataBaseController newBarber
+INFO: 263 post /barbers {"id"=18, "location"="90025", "firstName"="James", "middleName"="William", "lastName"="null", "email"="james.william@example.com", "latitude"=34.04591, "longitude"=-118.45082, "geoHash"="9q5c8tfezcdg"}
+May 12, 2023 10:26:47 AM com.ubarber.database.DataBaseController newBarber
+INFO: 264 post /barbers {"id"=20, "location"="10023", "firstName"="Luke", "middleName"="David", "lastName"="null", "email"="luke.david@example.com", "latitude"=40.77642, "longitude"=-73.98239, "geoHash"="dr5rurpev7ee"}
+May 12, 2023 10:26:48 AM com.ubarber.database.DataBaseController newBarber
+INFO: 265 post /barbers {"id"=21, "location"="90254", "firstName"="Natalie", "middleName"="Rose", "lastName"="null", "email"="natalie.rose@example.com", "latitude"=33.86355, "longitude"=-118.39664, "geoHash"="9q5b9udjqr68"}
+May 12, 2023 10:26:48 AM com.ubarber.database.DataBaseController newBarber
+INFO: 266 post /barbers {"id"=24, "location"="60611", "firstName"="Jackson", "middleName"="Alexander", "lastName"="null", "email"="jackson.alexander@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:26:49 AM com.ubarber.database.DataBaseController newBarber
+INFO: 267 post /barbers {"id"=25, "location"="94107", "firstName"="Ava", "middleName"="Sophia", "lastName"="null", "email"="ava.sophia@example.com", "latitude"=37.77515, "longitude"=-122.39751, "geoHash"="9q8yyubb5q3e"}
+May 12, 2023 10:26:49 AM com.ubarber.database.DataBaseController newBarber
+INFO: 268 post /barbers {"id"=26, "location"="90265", "firstName"="Jacob", "middleName"="Daniel", "lastName"="null", "email"="jacob.daniel@example.com", "latitude"=34.03133, "longitude"=-118.74943, "geoHash"="9q599g1qcexn"}
+May 12, 2023 10:26:50 AM com.ubarber.database.DataBaseController newBarber
+INFO: 269 post /barbers {"id"=27, "location"="90272", "firstName"="Isabella", "middleName"="Olivia", "lastName"="null", "email"="isabella.olivia@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:26:50 AM com.ubarber.database.DataBaseController newBarber
+INFO: 270 post /barbers {"id"=28, "location"="60604", "firstName"="William", "middleName"="Joseph", "lastName"="null", "email"="william.joseph@example.com", "latitude"=41.87815, "longitude"=-87.62955, "geoHash"="dp3wjzwjgkzx"}
+May 12, 2023 10:26:50 AM com.ubarber.database.DataBaseController newBarber
+INFO: 271 post /barbers {"id"=29, "location"="10022", "firstName"="Ava", "middleName"="Elizabeth", "lastName"="null", "email"="ezj@gmail.com", "latitude"=40.75889, "longitude"=-73.96851, "geoHash"="dr5rugcv8zc3"}
+May 12, 2023 10:26:51 AM com.ubarber.database.DataBaseController newBarber
+INFO: 272 post /barbers {"id"=31, "location"="60614", "firstName"="Mia", "middleName"="Grace", "lastName"="null", "email"="mia.grace@example.com", "latitude"=41.92325, "longitude"=-87.64991, "geoHash"="dp3wmrzk9h4p"}
+May 12, 2023 10:26:51 AM com.ubarber.database.DataBaseController newBarber
+INFO: 273 post /barbers {"id"=32, "location"="90067", "firstName"="Samuel", "middleName"="Joseph", "lastName"="null", "email"="samuel.joseph@example.com", "latitude"=34.05892, "longitude"=-118.41605, "geoHash"="9q5cc2hpd4c7"}
+May 12, 2023 10:26:52 AM com.ubarber.database.DataBaseController newBarber
+INFO: 274 post /barbers {"id"=34, "location"="94103", "firstName"="Elijah", "middleName"="Benjamin", "lastName"="null", "email"="elijah.benjamin@example.com", "latitude"=37.77355, "longitude"=-122.41193, "geoHash"="9q8yykqqgk16"}
+May 12, 2023 10:26:52 AM com.ubarber.database.DataBaseController newBarber
+INFO: 275 post /barbers {"id"=35, "location"="60610", "firstName"="Olivia", "middleName"="Isabella", "lastName"="null", "email"="olivia.isabella@example.com", "latitude"=41.90464, "longitude"=-87.63448, "geoHash"="dp3wmud80x5d"}
+May 12, 2023 10:26:52 AM com.ubarber.database.DataBaseController newBarber
+INFO: 276 post /barbers {"id"=37, "location"="10016", "firstName"="Sophia", "middleName"="Elizabeth", "lastName"="null", "email"="sophia.elizabeth@example.com", "latitude"=40.7461, "longitude"=-73.97992, "geoHash"="dr5ru997nzt6"}
+May 12, 2023 10:26:53 AM com.ubarber.database.DataBaseController newBarber
+INFO: 277 post /barbers {"id"=38, "location"="60661", "firstName"="Michael", "middleName"="Anthony", "lastName"="null", "email"="michael.anthony@example.com", "latitude"=41.88387, "longitude"=-87.64271, "geoHash"="dp3wm8sx0z6b"}
+May 12, 2023 10:26:54 AM com.ubarber.database.DataBaseController newBarber
+INFO: 278 post /barbers {"id"=40, "location"="90232", "firstName"="Ethan", "middleName"="William", "lastName"="null", "email"="ethan.william@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:26:54 AM com.ubarber.database.DataBaseController newBarber
+INFO: 279 post /barbers {"id"=41, "location"="60601", "firstName"="Charlotte", "middleName"="Sophia", "lastName"="null", "email"="charlotte.sophia@example.com", "latitude"=41.88582, "longitude"=-87.62529, "geoHash"="dp3wq114wfb0"}
+May 12, 2023 10:26:55 AM com.ubarber.database.DataBaseController newBarber
+INFO: 280 post /barbers {"id"=42, "location"="90292", "firstName"="Benjamin", "middleName"="Henry", "lastName"="null", "email"="benjamin.henry@example.com", "latitude"=33.97893, "longitude"=-118.452, "geoHash"="9q5c299vs7eh"}
+May 12, 2023 10:26:55 AM com.ubarber.database.DataBaseController newBarber
+INFO: 281 post /barbers {"id"=43, "location"="94102", "firstName"="Harper", "middleName"="Avery", "lastName"="null", "email"="harper.avery@example.com", "latitude"=37.78152, "longitude"=-122.41672, "geoHash"="9q8yymfv79v9"}
+May 12, 2023 10:26:55 AM com.ubarber.database.DataBaseController newBarber
+INFO: 282 post /barbers {"id"=44, "location"="90094", "firstName"="Matthew", "middleName"="David", "lastName"="null", "email"="matthew.david@example.com", "latitude"=33.97286, "longitude"=-118.42327, "geoHash"="9q5c30wf3b1g"}
+May 12, 2023 10:26:56 AM com.ubarber.database.DataBaseController newBarber
+INFO: 283 post /barbers {"id"=45, "location"="90035", "firstName"="Victoria", "middleName"="Elizabeth", "lastName"="null", "email"="victoria.elizabeth@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:26:56 AM com.ubarber.database.DataBaseController newBarber
+INFO: 284 post /barbers {"id"=46, "location"="10023", "firstName"="Liam", "middleName"="Alexander", "lastName"="null", "email"="liam.alexander@example.com", "latitude"=40.77642, "longitude"=-73.98239, "geoHash"="dr5rurpev7ee"}
+May 12, 2023 10:26:56 AM com.ubarber.database.DataBaseController newBarber
+INFO: 285 post /barbers {"id"=47, "location"="60654", "firstName"="Ava", "middleName"="Chloe", "lastName"="null", "email"="ava.chloe@example.com", "latitude"=41.89241, "longitude"=-87.63461, "geoHash"="dp3wmf62vx4x"}
+May 12, 2023 10:26:57 AM com.ubarber.database.DataBaseController newBarber
+INFO: 286 post /barbers {"id"=48, "location"="10012", "firstName"="Lucas", "middleName"="Daniel", "lastName"="null", "email"="lucas.daniel@example.com", "latitude"=40.72501, "longitude"=-73.9983, "geoHash"="dr5rsju06sh7"}
+May 12, 2023 10:26:57 AM com.ubarber.database.DataBaseController newBarber
+INFO: 287 post /barbers {"id"=49, "location"="90266", "firstName"="Madison", "middleName"="Emma", "lastName"="null", "email"="madison.emma@example.com", "latitude"=33.88736, "longitude"=-118.40281, "geoHash"="9q5bc9j8ntcb"}
+May 12, 2023 10:26:58 AM com.ubarber.database.DataBaseController newBarber
+INFO: 288 post /barbers {"id"=51, "location"="10024", "firstName"="Abigail", "middleName"="Sofia", "lastName"="null", "email"="abigail.sofia@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:26:58 AM com.ubarber.database.DataBaseController newBarber
+INFO: 289 post /barbers {"id"=52, "location"="60657", "firstName"="William", "middleName"="Christopher", "lastName"="null", "email"="william.christopher@example.com", "latitude"=41.94072, "longitude"=-87.65287, "geoHash"="dp3wt7j4khfg"}
+May 12, 2023 10:26:58 AM com.ubarber.database.DataBaseController newBarber
+INFO: 290 post /barbers {"id"=53, "location"="90291", "firstName"="Emma", "middleName"="Madison", "lastName"="null", "email"="emma.madison@example.com", "latitude"=33.99288, "longitude"=-118.46563, "geoHash"="9q5c2hpyyspg"}
+May 12, 2023 10:26:59 AM com.ubarber.database.DataBaseController newBarber
+INFO: 291 post /barbers {"id"=54, "location"="90024", "firstName"="Aiden", "middleName"="Ryan", "lastName"="null", "email"="aiden.ryan@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:26:59 AM com.ubarber.database.DataBaseController newBarber
+INFO: 292 post /barbers {"id"=55, "location"="60611", "firstName"="Isabella", "middleName"="Natalie", "lastName"="null", "email"="isabella.natalie@example.com", "latitude"=41.89451, "longitude"=-87.62275, "geoHash"="dp3wq4ej1ywn"}
+May 12, 2023 10:26:59 AM com.ubarber.database.DataBaseController newBarber
+INFO: 293 post /barbers {"id"=56, "location"="90230", "firstName"="James", "middleName"="Matthew", "lastName"="null", "email"="james.matthew@example.com", "latitude"=33.99428, "longitude"=-118.39261, "geoHash"="9q5c3umph1pd"}
+May 12, 2023 10:27:00 AM com.ubarber.database.DataBaseController newBarber
+INFO: 294 post /barbers {"id"=57, "location"="90045", "firstName"="Ella", "middleName"="Avery", "lastName"="null", "email"="ella.avery@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:27:00 AM com.ubarber.database.DataBaseController newBarber
+INFO: 295 post /barbers {"id"=58, "location"="60606", "firstName"="Alexander", "middleName"="Nicholas", "lastName"="null", "email"="alexander.nicholas@example.com", "latitude"=41.88166, "longitude"=-87.63681, "geoHash"="dp3wmb2f6761"}
+May 12, 2023 10:27:00 AM com.ubarber.database.DataBaseController newBarber
+INFO: 296 post /barbers {"id"=59, "location"="94111", "firstName"="Mia", "middleName"="Olivia", "lastName"="null", "email"="mia.olivia@example.com", "latitude"=37.79464, "longitude"=-122.39965, "geoHash"="9q8zn8r39rtc"}
+May 12, 2023 10:27:00 AM com.ubarber.database.DataBaseController newBarber
+INFO: 297 post /barbers {"id"=60, "location"="10013", "firstName"="Evelyn", "middleName"="Aria", "lastName"="null", "email"="evelyn.aria@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:27:01 AM com.ubarber.database.DataBaseController newBarber
+INFO: 298 post /barbers {"id"=61, "location"="90277", "firstName"="Daniel", "middleName"="William", "lastName"="null", "email"="daniel", "latitude"=33.8326, "longitude"=-118.38597, "geoHash"="9q5b6p1cnvy8"}
+May 12, 2023 10:27:01 AM com.ubarber.database.DataBaseController newBarber
+INFO: 299 post /barbers {"id"=62, "location"="94133", "firstName"="Michael", "middleName"="Alexander", "lastName"="null", "email"=" am62@gmail.com", "latitude"=37.80003, "longitude"=-122.40972, "geoHash"="9q8zn3rcnu31"}
+May 12, 2023 10:27:02 AM com.ubarber.database.DataBaseController newBarber
+INFO: 300 post /barbers {"id"=64, "location"="60614", "firstName"="Olivia", "middleName"="Ella", "lastName"="null", "email"="OElla@yahoo.com", "latitude"=41.92325, "longitude"=-87.64991, "geoHash"="dp3wmrzk9h4p"}
+May 12, 2023 10:27:02 AM com.ubarber.database.DataBaseController newBarber
+INFO: 301 post /barbers {"id"=65, "location"="10011", "firstName"="Ethan", "middleName"="Michael", "lastName"="null", "email"="em65@aol.com", "latitude"=40.74028, "longitude"=-73.99778, "geoHash"="dr5ru0s3qf8h"}
+May 12, 2023 10:27:03 AM com.ubarber.database.DataBaseController newBarber
+INFO: 302 post /barbers {"id"=66, "location"="90025", "firstName"="Charlotte", "middleName"="Amelia", "lastName"="null", "email"="Ca66@yahoo.com", "latitude"=34.04591, "longitude"=-118.45082, "geoHash"="9q5c8tfezcdg"}
+May 12, 2023 10:27:03 AM com.ubarber.database.DataBaseController newBarber
+INFO: 303 post /barbers {"id"=67, "location"="60647", "firstName"="Benjamin", "middleName"="James", "lastName"="null", "email"="JB67@gmail.com", "latitude"=41.91955, "longitude"=-87.70069, "geoHash"="dp3wkr4r1f3z"}
+May 12, 2023 10:27:04 AM com.ubarber.database.DataBaseController newBarber
+INFO: 304 post /barbers {"id"=69, "location"="90210", "firstName"="Mason", "middleName"="Jacob", "lastName"="null", "email"="", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:27:04 AM com.ubarber.database.DataBaseController newBarber
+INFO: 305 post /barbers {"id"=70, "location"="90046", "firstName"="Amelia", "middleName"="Charlotte", "lastName"="null", "email"="", "latitude"=34.09756, "longitude"=-118.35925, "geoHash"="9q5cfxm2ttfs"}
+May 12, 2023 10:27:04 AM com.ubarber.database.DataBaseController newBarber
+INFO: 306 post /barbers {"id"=71, "location"="60622", "firstName"="Lucas", "middleName"="Benjamin", "lastName"="null", "email"="", "latitude"=41.90315, "longitude"=-87.68142, "geoHash"="dp3wku0rdc6d"}
+May 12, 2023 10:27:05 AM com.ubarber.database.DataBaseController newBarber
+INFO: 307 post /barbers {"id"=72, "location"="94102", "firstName"="Evelyn", "middleName"="Aria", "lastName"="null", "email"="", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:27:05 AM com.ubarber.database.DataBaseController newBarber
+INFO: 308 post /barbers {"id"=73, "location"="10025", "firstName"="Oliver", "middleName"="Elijah", "lastName"="null", "email"="", "latitude"=40.79885, "longitude"=-73.96798, "geoHash"="dr72hg4nt0us"}
+May 12, 2023 10:27:05 AM com.ubarber.database.DataBaseController newBarber
+INFO: 309 post /barbers {"id"=74, "location"="90048", "firstName"="Ava", "middleName"="Charlotte", "lastName"="null", "email"="", "latitude"=34.0722, "longitude"=-118.37455, "geoHash"="9q5cf6dkcn6j"}
+May 12, 2023 10:27:05 AM com.ubarber.database.DataBaseController newBarber
+INFO: 310 post /barbers {"id"=76, "location"="94117", "firstName"="Scarlett", "middleName"="Sofia", "lastName"="null", "email"="", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:27:06 AM com.ubarber.database.DataBaseController newBarber
+INFO: 311 post /barbers {"id"=77, "location"="90019", "firstName"="Sebastian", "middleName"="Alexander", "lastName"="null", "email"="", "latitude"=34.04858, "longitude"=-118.338, "geoHash"="9q5cenkgkere"}
+May 12, 2023 10:27:06 AM com.ubarber.database.DataBaseController newBarber
+INFO: 312 post /barbers {"id"=78, "location"="60613", "firstName"="Aria", "middleName"="Evelyn", "lastName"="null", "email"="", "latitude"=41.95488, "longitude"=-87.65609, "geoHash"="dp3wtmduch3z"}
+May 12, 2023 10:27:06 AM com.ubarber.database.DataBaseController newBarber
+INFO: 313 post /barbers {"id"=80, "location"="90066", "firstName"="Madison", "middleName"="Ava", "lastName"="null", "email"="", "latitude"=34.00219, "longitude"=-118.42912, "geoHash"="9q5c3jft17xe"}
+May 12, 2023 10:27:07 AM com.ubarber.database.DataBaseController newBarber
+INFO: 314 post /barbers {"id"=81, "location"="60640", "firstName"="Jayden", "middleName"="Michael", "lastName"="null", "email"="", "latitude"=41.9736, "longitude"=-87.66262, "geoHash"="dp3wv1n1byhu"}
+May 12, 2023 10:27:08 AM com.ubarber.database.DataBaseController newBarber
+INFO: 315 post /barbers {"id"=84, "location"="90034", "firstName"="Luke", "middleName"="Alexander", "lastName"="null", "email"="", "latitude"=34.02757, "longitude"=-118.40066, "geoHash"="9q5c9dx2bwv1"}
+May 12, 2023 10:27:08 AM com.ubarber.database.DataBaseController newBarber
+INFO: 316 post /barbers {"id"=85, "location"="60607", "firstName"="Grayson", "middleName"="Mason", "lastName"="null", "email"="", "latitude"=41.87659, "longitude"=-87.65331, "geoHash"="dp3wjrkucf4v"}
+May 12, 2023 10:27:08 AM com.ubarber.database.DataBaseController newBarber
+INFO: 317 post /barbers {"id"=86, "location"="94123", "firstName"="Layla", "middleName"="Aurora", "lastName"="null", "email"="", "latitude"=37.79988, "longitude"=-122.43529, "geoHash"="9q8zjcm26bqg"}
+May 12, 2023 10:27:08 AM com.ubarber.database.DataBaseController newBarber
+INFO: 318 post /barbers {"id"=87, "location"="90016", "firstName"="Isaac", "middleName"="Jacob", "lastName"="null", "email"="", "latitude"=34.0264, "longitude"=-118.35313, "geoHash"="9q5cdf3fhhty"}
+May 12, 2023 10:27:09 AM com.ubarber.database.DataBaseController newBarber
+INFO: 319 post /barbers {"id"=88, "location"="60611", "firstName"="Gabriel", "middleName"="Alexander", "lastName"="null", "email"="", "latitude"=41.89451, "longitude"=-87.62275, "geoHash"="dp3wq4ej1ywn"}
+May 12, 2023 10:27:09 AM com.ubarber.database.DataBaseController newBarber
+INFO: 320 post /barbers {"id"=90, "location"="90045", "firstName"="Ella", "middleName"="Mia", "lastName"="null", "email"="", "latitude"=33.96005, "longitude"=-118.39349, "geoHash"="9q5c1yhrxspm"}
+May 12, 2023 10:27:10 AM com.ubarber.database.DataBaseController newBarber
+INFO: 321 post /barbers {"id"=91, "location"="60605", "firstName"="Jack", "middleName"="William", "lastName"="null", "email"="", "latitude"=41.86858, "longitude"=-87.62598, "geoHash"="dp3wnjbwntj8"}
+May 12, 2023 10:27:10 AM com.ubarber.database.DataBaseController newBarber
+INFO: 322 post /barbers {"id"=94, "location"="60606", "firstName"="Victoria", "middleName"="Charlotte", "lastName"="null", "email"="", "latitude"=41.88166, "longitude"=-87.63681, "geoHash"="dp3wmb2f6761"}
+May 12, 2023 10:27:11 AM com.ubarber.database.DataBaseController newBarber
+INFO: 323 post /barbers {"id"=95, "location"="94114", "firstName"="Henry", "middleName"="Alexander", "lastName"="null", "email"="", "latitude"=37.75959, "longitude"=-122.43375, "geoHash"="9q8yvcymwcg0"}
+May 12, 2023 10:27:11 AM com.ubarber.database.DataBaseController newBarber
+INFO: 324 post /barbers {"id"=97, "location"="60657", "firstName"="Julian", "middleName"="Ethan", "lastName"="null", "email"="", "latitude"=41.94072, "longitude"=-87.65287, "geoHash"="dp3wt7j4khfg"}
+May 12, 2023 10:27:12 AM com.ubarber.database.DataBaseController newBarber
+INFO: 325 post /barbers {"id"=98, "location"="94107", "firstName"="Ella", "middleName"="Mia", "lastName"="null", "email"="", "latitude"=37.77515, "longitude"=-122.39751, "geoHash"="9q8yyubb5q3e"}
+May 12, 2023 10:27:13 AM com.ubarber.database.DataBaseController newBarber
+INFO: 326 post /barbers {"id"=101, "location"="90272", "firstName"="Sophia", "middleName"="Grace", "lastName"="null", "email"="sophia.grace@example.com", "latitude"=34.04894, "longitude"=-118.53628, "geoHash"="9q59wwkt2qrq"}
+May 12, 2023 10:27:13 AM com.ubarber.database.DataBaseController newBarber
+INFO: 327 post /barbers {"id"=102, "location"="60601", "firstName"="Logan", "middleName"="Isaac", "lastName"="null", "email"="logan.isaac@example.com", "latitude"=41.88582, "longitude"=-87.62529, "geoHash"="dp3wq114wfb0"}
+May 12, 2023 10:27:14 AM com.ubarber.database.DataBaseController newBarber
+INFO: 328 post /barbers {"id"=104, "location"="90036", "firstName"="Jackson", "middleName"="Benjamin", "lastName"="null", "email"="jackson.benjamin@example.com", "latitude"=34.06768, "longitude"=-118.34991, "geoHash"="9q5cfcu4x5yg"}
+May 12, 2023 10:27:14 AM com.ubarber.database.DataBaseController newBarber
+INFO: 329 post /barbers {"id"=105, "location"="10036", "firstName"="Camila", "middleName"="Eleanor", "lastName"="null", "email"="camila.eleanor@example.com", "latitude"=40.75993, "longitude"=-73.98636, "geoHash"="dr5rukhgbcem"}
+May 12, 2023 10:27:15 AM com.ubarber.database.DataBaseController newBarber
+INFO: 330 post /barbers {"id"=107, "location"="60622", "firstName"="Scarlett", "middleName"="Hazel", "lastName"="null", "email"="scarlett.hazel@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:27:15 AM com.ubarber.database.DataBaseController newBarber
+INFO: 331 post /barbers {"id"=108, "location"="90019", "firstName"="Luke", "middleName"="Oliver", "lastName"="null", "email"="luke.oliver@example.com", "latitude"=34.04858, "longitude"=-118.338, "geoHash"="9q5cenkgkere"}
+May 12, 2023 10:27:15 AM com.ubarber.database.DataBaseController newBarber
+INFO: 332 post /barbers {"id"=109, "location"="10001", "firstName"="Stella", "middleName"="Aurora", "lastName"="null", "email"="stella.aurora@example.com", "latitude"=40.74802, "longitude"=-73.9928, "geoHash"="dr5ru3bn6v3r"}
+May 12, 2023 10:27:16 AM com.ubarber.database.DataBaseController newBarber
+INFO: 333 post /barbers {"id"=111, "location"="90292", "firstName"="Leah", "middleName"="Victoria", "lastName"="null", "email"="leah.victoria@example.com", "latitude"=33.97893, "longitude"=-118.452, "geoHash"="9q5c299vs7eh"}
+May 12, 2023 10:27:16 AM com.ubarber.database.DataBaseController newBarber
+INFO: 334 post /barbers {"id"=112, "location"="60610", "firstName"="Ethan", "middleName"="Noah", "lastName"="null", "email"="ethan.noah@example.com", "latitude"=41.90464, "longitude"=-87.63448, "geoHash"="dp3wmud80x5d"}
+May 12, 2023 10:27:16 AM com.ubarber.database.DataBaseController newBarber
+INFO: 335 post /barbers {"id"=114, "location"="90035", "firstName"="Ethan", "middleName"="Alexander", "lastName"="null", "email"="ethan.alexander@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:27:16 AM com.ubarber.database.DataBaseController newBarber
+INFO: 336 post /barbers {"id"=115, "location"="94103", "firstName"="Chloe", "middleName"="Avery", "lastName"="null", "email"="chloe.avery@example.com", "latitude"=37.77355, "longitude"=-122.41193, "geoHash"="9q8yykqqgk16"}
+May 12, 2023 10:29:50 AM com.ubarber.database.DataBaseController newBarber
+INFO: 337 post /barbers {"id"=1, "location"="07621", "firstName"="John", "middleName"="Michael", "lastName"="null", "email"="john.michael@example.com", "latitude"=40.92133, "longitude"=-73.99684, "geoHash"="dr72u1t0h8uc"}
+May 12, 2023 10:31:21 AM com.ubarber.database.DataBaseController newBarber
+INFO: 338 post /barbers {"id"=2, "location"="90210", "firstName"="Emily", "middleName"="Grace", "lastName"="null", "email"="emily.grace@example.com", "latitude"=34.08139, "longitude"=-118.39927, "geoHash"="9q5ccu263p96"}
+May 12, 2023 10:32:04 AM com.ubarber.database.DataBaseController newBarber
+INFO: 339 post /barbers {"id"=3, "location"="60601", "firstName"="David", "middleName"="Alexander", "lastName"="null", "email"="david.alexander@example.com", "latitude"=41.88582, "longitude"=-87.62529, "geoHash"="dp3wq114wfb0"}
+May 12, 2023 10:32:36 AM com.ubarber.database.DataBaseController newBarber
+INFO: 340 post /barbers {"id"=4, "location"="10001", "firstName"="Samantha", "middleName"="Marie", "lastName"="null", "email"="samantha.marie@example.com", "latitude"=40.74802, "longitude"=-73.9928, "geoHash"="dr5ru3bn6v3r"}
+May 12, 2023 10:32:47 AM com.ubarber.database.DataBaseController newBarber
+INFO: 341 post /barbers {"id"=5, "location"="60606", "firstName"="Andrew", "middleName"="Joseph", "lastName"="null", "email"="andrew.joseph@example.com", "latitude"=41.88166, "longitude"=-87.63681, "geoHash"="dp3wmb2f6761"}
+May 12, 2023 10:33:31 AM com.ubarber.database.DataBaseController newBarber
+INFO: 342 post /barbers {"id"=6, "location"="94102", "firstName"="Megan", "middleName"="Elizabeth", "lastName"="null", "email"="megan.elizabeth@example.com", "latitude"=37.78152, "longitude"=-122.41672, "geoHash"="9q8yymfv79v9"}
+May 12, 2023 10:33:43 AM com.ubarber.database.DataBaseController newBarber
+INFO: 343 post /barbers {"id"=7, "location"="90291", "firstName"="Jennifer", "middleName"="Lynn", "lastName"="null", "email"="jennifer.lynn@example.com", "latitude"=33.99288, "longitude"=-118.46563, "geoHash"="9q5c2hpyyspg"}
+May 12, 2023 10:34:06 AM com.ubarber.database.DataBaseController newBarber
+INFO: 344 post /barbers {"id"=8, "location"="10017", "firstName"="Ryan", "middleName"="Matthew", "lastName"="null", "email"="ryan.matthew@example.com", "latitude"=40.75251, "longitude"=-73.9753, "geoHash"="dr5rudubdd6r"}
+May 12, 2023 10:34:35 AM com.ubarber.database.DataBaseController newBarber
+INFO: 345 post /barbers {"id"=9, "location"="98101", "firstName"="Sophie", "middleName"="Anne", "lastName"="null", "email"="sophie.anne@example.com", "latitude"=47.61054, "longitude"=-122.33388, "geoHash"="c23nb5ppmzzt"}
+May 12, 2023 10:35:09 AM com.ubarber.database.DataBaseController newBarber
+INFO: 346 post /barbers {"id"=10, "location"="20001", "firstName"="Michael", "middleName"="Christopher", "lastName"="null", "email"="michael.christopher@example.com", "latitude"=38.90872, "longitude"=-77.01894, "geoHash"="dqcjr7he8x5g"}
+May 12, 2023 10:35:16 AM com.ubarber.database.DataBaseController newBarber
+INFO: 347 post /barbers {"id"=11, "location"="60607", "firstName"="Abby", "middleName"="Rose", "lastName"="null", "email"="abby.rose@example.com", "latitude"=41.87659, "longitude"=-87.65331, "geoHash"="dp3wjrkucf4v"}
+May 12, 2023 10:35:28 AM com.ubarber.database.DataBaseController newBarber
+INFO: 348 post /barbers {"id"=12, "location"="60602", "firstName"="Ethan", "middleName"="James", "lastName"="null", "email"="ethan.james@example.com", "latitude"=41.88292, "longitude"=-87.6294, "geoHash"="dp3wmbw1wypm"}
+May 12, 2023 10:35:36 AM com.ubarber.database.DataBaseController newBarber
+INFO: 349 post /barbers {"id"=13, "location"="10003", "firstName"="Lily", "middleName"="Isabella", "lastName"="null", "email"="lily.isabella@example.com", "latitude"=40.73245, "longitude"=-73.98927, "geoHash"="dr5rsr4etp18"}
+May 12, 2023 10:35:41 AM com.ubarber.database.DataBaseController newBarber
+INFO: 350 post /barbers {"id"=14, "location"="90210", "firstName"="Matthew", "middleName"="Robert", "lastName"="null", "email"="matthew.robert@example.com", "latitude"=34.08139, "longitude"=-118.39927, "geoHash"="9q5ccu263p96"}
+May 12, 2023 10:36:05 AM com.ubarber.database.DataBaseController newBarber
+INFO: 351 post /barbers {"id"=15, "location"="10016", "firstName"="Olivia", "middleName"="Grace", "lastName"="null", "email"="olivia.grace@example.com", "latitude"=40.7461, "longitude"=-73.97992, "geoHash"="dr5ru997nzt6"}
+May 12, 2023 10:36:27 AM com.ubarber.database.DataBaseController newBarber
+INFO: 352 post /barbers {"id"=16, "location"="60603", "firstName"="Lucas", "middleName"="Alexander", "lastName"="null", "email"="lucas.alexander@example.com", "latitude"=41.88069, "longitude"=-87.62961, "geoHash"="dp3wmbnhdn6z"}
+May 12, 2023 10:36:31 AM com.ubarber.database.DataBaseController newBarber
+INFO: 353 post /barbers {"id"=17, "location"="10007", "firstName"="Emma", "middleName"="Sophia", "lastName"="null", "email"="emma.sophia@example.com", "latitude"=40.71358, "longitude"=-74.00835, "geoHash"="dr5regsvb3qk"}
+May 12, 2023 10:36:34 AM com.ubarber.database.DataBaseController newBarber
+INFO: 354 post /barbers {"id"=18, "location"="90025", "firstName"="James", "middleName"="William", "lastName"="null", "email"="james.william@example.com", "latitude"=34.04591, "longitude"=-118.45082, "geoHash"="9q5c8tfezcdg"}
+May 12, 2023 10:36:37 AM com.ubarber.database.DataBaseController newBarber
+INFO: 355 post /barbers {"id"=19, "location"="90212", "firstName"="Avery", "middleName"="Grace", "lastName"="null", "email"="avery.grace@example.com", "latitude"=34.06351, "longitude"=-118.39907, "geoHash"="9q5ccc06mdqx"}
+May 12, 2023 10:36:50 AM com.ubarber.database.DataBaseController newBarber
+INFO: 356 post /barbers {"id"=20, "location"="10023", "firstName"="Luke", "middleName"="David", "lastName"="null", "email"="luke.david@example.com", "latitude"=40.77642, "longitude"=-73.98239, "geoHash"="dr5rurpev7ee"}
+May 12, 2023 10:36:53 AM com.ubarber.database.DataBaseController newBarber
+INFO: 357 post /barbers {"id"=21, "location"="90254", "firstName"="Natalie", "middleName"="Rose", "lastName"="null", "email"="natalie.rose@example.com", "latitude"=33.86355, "longitude"=-118.39664, "geoHash"="9q5b9udjqr68"}
+May 12, 2023 10:36:56 AM com.ubarber.database.DataBaseController newBarber
+INFO: 358 post /barbers {"id"=22, "location"="10013", "firstName"="Ethan", "middleName"="Benjamin", "lastName"="null", "email"="ethan.benjamin@example.com", "latitude"=40.72062, "longitude"=-74.00304, "geoHash"="dr5rshbwu1tz"}
+May 12, 2023 10:36:59 AM com.ubarber.database.DataBaseController newBarber
+INFO: 359 post /barbers {"id"=23, "location"="60616", "firstName"="Grace", "middleName"="Elizabeth", "lastName"="null", "email"="grace.elizabeth@example.com", "latitude"=41.84983, "longitude"=-87.63192, "geoHash"="dp3wjfs2um8r"}
+May 12, 2023 10:37:10 AM com.ubarber.database.DataBaseController newBarber
+INFO: 360 post /barbers {"id"=24, "location"="60611", "firstName"="Jackson", "middleName"="Alexander", "lastName"="null", "email"="jackson.alexander@example.com", "latitude"=41.89451, "longitude"=-87.62275, "geoHash"="dp3wq4ej1ywn"}
+May 12, 2023 10:37:12 AM com.ubarber.database.DataBaseController newBarber
+INFO: 361 post /barbers {"id"=25, "location"="94107", "firstName"="Ava", "middleName"="Sophia", "lastName"="null", "email"="ava.sophia@example.com", "latitude"=37.77515, "longitude"=-122.39751, "geoHash"="9q8yyubb5q3e"}
+May 12, 2023 10:37:26 AM com.ubarber.database.DataBaseController newBarber
+INFO: 362 post /barbers {"id"=26, "location"="90265", "firstName"="Jacob", "middleName"="Daniel", "lastName"="null", "email"="jacob.daniel@example.com", "latitude"=34.03133, "longitude"=-118.74943, "geoHash"="9q599g1qcexn"}
+May 12, 2023 10:37:27 AM com.ubarber.database.DataBaseController newBarber
+INFO: 363 post /barbers {"id"=27, "location"="90272", "firstName"="Isabella", "middleName"="Olivia", "lastName"="null", "email"="isabella.olivia@example.com", "latitude"=34.04894, "longitude"=-118.53628, "geoHash"="9q59wwkt2qrq"}
+May 12, 2023 10:37:27 AM com.ubarber.database.DataBaseController newBarber
+INFO: 364 post /barbers {"id"=28, "location"="60604", "firstName"="William", "middleName"="Joseph", "lastName"="null", "email"="william.joseph@example.com", "latitude"=41.87815, "longitude"=-87.62955, "geoHash"="dp3wjzwjgkzx"}
+May 12, 2023 10:37:28 AM com.ubarber.database.DataBaseController newBarber
+INFO: 365 post /barbers {"id"=30, "location"="10012", "firstName"="Jacob", "middleName"="Michael", "lastName"="null", "email"="mjz@gmail.com", "latitude"=40.72501, "longitude"=-73.9983, "geoHash"="dr5rsju06sh7"}
+May 12, 2023 10:37:28 AM com.ubarber.database.DataBaseController newBarber
+INFO: 366 post /barbers {"id"=31, "location"="60614", "firstName"="Mia", "middleName"="Grace", "lastName"="null", "email"="mia.grace@example.com", "latitude"=41.92325, "longitude"=-87.64991, "geoHash"="dp3wmrzk9h4p"}
+May 12, 2023 10:37:28 AM com.ubarber.database.DataBaseController newBarber
+INFO: 367 post /barbers {"id"=33, "location"="10021", "firstName"="Evelyn", "middleName"="Rose", "lastName"="null", "email"="evelyn.rose@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:37:29 AM com.ubarber.database.DataBaseController newBarber
+INFO: 368 post /barbers {"id"=34, "location"="94103", "firstName"="Elijah", "middleName"="Benjamin", "lastName"="null", "email"="elijah.benjamin@example.com", "latitude"=37.77355, "longitude"=-122.41193, "geoHash"="9q8yykqqgk16"}
+May 12, 2023 10:37:29 AM com.ubarber.database.DataBaseController newBarber
+INFO: 369 post /barbers {"id"=35, "location"="60610", "firstName"="Olivia", "middleName"="Isabella", "lastName"="null", "email"="olivia.isabella@example.com", "latitude"=41.90464, "longitude"=-87.63448, "geoHash"="dp3wmud80x5d"}
+May 12, 2023 10:37:29 AM com.ubarber.database.DataBaseController newBarber
+INFO: 370 post /barbers {"id"=38, "location"="60661", "firstName"="Michael", "middleName"="Anthony", "lastName"="null", "email"="michael.anthony@example.com", "latitude"=41.88387, "longitude"=-87.64271, "geoHash"="dp3wm8sx0z6b"}
+May 12, 2023 10:37:30 AM com.ubarber.database.DataBaseController newBarber
+INFO: 371 post /barbers {"id"=39, "location"="10019", "firstName"="Aaliyah", "middleName"="Zoe", "lastName"="null", "email"="aaliyah.zoe@example.com", "latitude"=40.76556, "longitude"=-73.98418, "geoHash"="dr5rumnkeehv"}
+May 12, 2023 10:37:30 AM com.ubarber.database.DataBaseController newBarber
+INFO: 372 post /barbers {"id"=43, "location"="94102", "firstName"="Harper", "middleName"="Avery", "lastName"="null", "email"="harper.avery@example.com", "latitude"=37.78152, "longitude"=-122.41672, "geoHash"="9q8yymfv79v9"}
+May 12, 2023 10:37:31 AM com.ubarber.database.DataBaseController newBarber
+INFO: 373 post /barbers {"id"=44, "location"="90094", "firstName"="Matthew", "middleName"="David", "lastName"="null", "email"="matthew.david@example.com", "latitude"=33.97286, "longitude"=-118.42327, "geoHash"="9q5c30wf3b1g"}
+May 12, 2023 10:37:31 AM com.ubarber.database.DataBaseController newBarber
+INFO: 374 post /barbers {"id"=48, "location"="10012", "firstName"="Lucas", "middleName"="Daniel", "lastName"="null", "email"="lucas.daniel@example.com", "latitude"=40.72501, "longitude"=-73.9983, "geoHash"="dr5rsju06sh7"}
+May 12, 2023 10:37:32 AM com.ubarber.database.DataBaseController newBarber
+INFO: 375 post /barbers {"id"=49, "location"="90266", "firstName"="Madison", "middleName"="Emma", "lastName"="null", "email"="madison.emma@example.com", "latitude"=33.88736, "longitude"=-118.40281, "geoHash"="9q5bc9j8ntcb"}
+May 12, 2023 10:37:32 AM com.ubarber.database.DataBaseController newBarber
+INFO: 376 post /barbers {"id"=53, "location"="90291", "firstName"="Emma", "middleName"="Madison", "lastName"="null", "email"="emma.madison@example.com", "latitude"=33.99288, "longitude"=-118.46563, "geoHash"="9q5c2hpyyspg"}
+May 12, 2023 10:37:33 AM com.ubarber.database.DataBaseController newBarber
+INFO: 377 post /barbers {"id"=54, "location"="90024", "firstName"="Aiden", "middleName"="Ryan", "lastName"="null", "email"="aiden.ryan@example.com", "latitude"=34.06197, "longitude"=-118.44154, "geoHash"="9q5cbbc9256t"}
+May 12, 2023 10:37:33 AM com.ubarber.database.DataBaseController newBarber
+INFO: 378 post /barbers {"id"=58, "location"="60606", "firstName"="Alexander", "middleName"="Nicholas", "lastName"="null", "email"="alexander.nicholas@example.com", "latitude"=41.88166, "longitude"=-87.63681, "geoHash"="dp3wmb2f6761"}
+May 12, 2023 10:37:34 AM com.ubarber.database.DataBaseController newBarber
+INFO: 379 post /barbers {"id"=59, "location"="94111", "firstName"="Mia", "middleName"="Olivia", "lastName"="null", "email"="mia.olivia@example.com", "latitude"=37.79464, "longitude"=-122.39965, "geoHash"="9q8zn8r39rtc"}
+May 12, 2023 10:37:34 AM com.ubarber.database.DataBaseController newBarber
+INFO: 380 post /barbers {"id"=62, "location"="94133", "firstName"="Michael", "middleName"="Alexander", "lastName"="null", "email"=" am62@gmail.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:37:35 AM com.ubarber.database.DataBaseController newBarber
+INFO: 381 post /barbers {"id"=63, "location"="90049", "firstName"="Emily", "middleName"="Grace", "lastName"="null", "email"="Eg63@gmail.com", "latitude"=34.06402, "longitude"=-118.47143, "geoHash"="9q5cb15tr9e4"}
+May 12, 2023 10:37:35 AM com.ubarber.database.DataBaseController newBarber
+INFO: 382 post /barbers {"id"=64, "location"="60614", "firstName"="Olivia", "middleName"="Ella", "lastName"="null", "email"="OElla@yahoo.com", "latitude"=41.92325, "longitude"=-87.64991, "geoHash"="dp3wmrzk9h4p"}
+May 12, 2023 10:37:35 AM com.ubarber.database.DataBaseController newBarber
+INFO: 383 post /barbers {"id"=67, "location"="60647", "firstName"="Benjamin", "middleName"="James", "lastName"="null", "email"="JB67@gmail.com", "latitude"=41.91955, "longitude"=-87.70069, "geoHash"="dp3wkr4r1f3z"}
+May 12, 2023 10:37:36 AM com.ubarber.database.DataBaseController newBarber
+INFO: 384 post /barbers {"id"=68, "location"="94110", "firstName"="Harper", "middleName"="Sofia", "lastName"="null", "email"="hs68@gmail.com", "latitude"=37.75299, "longitude"=-122.41743, "geoHash"="9q8yy2dr55kj"}
+May 12, 2023 10:37:36 AM com.ubarber.database.DataBaseController newBarber
+INFO: 385 post /barbers {"id"=72, "location"="94102", "firstName"="Evelyn", "middleName"="Aria", "lastName"="null", "email"="", "latitude"=37.78152, "longitude"=-122.41672, "geoHash"="9q8yymfv79v9"}
+May 12, 2023 10:37:37 AM com.ubarber.database.DataBaseController newBarber
+INFO: 386 post /barbers {"id"=73, "location"="10025", "firstName"="Oliver", "middleName"="Elijah", "lastName"="null", "email"="", "latitude"=40.79885, "longitude"=-73.96798, "geoHash"="dr72hg4nt0us"}
+May 12, 2023 10:37:38 AM com.ubarber.database.DataBaseController newBarber
+INFO: 387 post /barbers {"id"=76, "location"="94117", "firstName"="Scarlett", "middleName"="Sofia", "lastName"="null", "email"="", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:37:38 AM com.ubarber.database.DataBaseController newBarber
+INFO: 388 post /barbers {"id"=77, "location"="90019", "firstName"="Sebastian", "middleName"="Alexander", "lastName"="null", "email"="", "latitude"=34.04858, "longitude"=-118.338, "geoHash"="9q5cenkgkere"}
+May 12, 2023 10:37:38 AM com.ubarber.database.DataBaseController newBarber
+INFO: 389 post /barbers {"id"=78, "location"="60613", "firstName"="Aria", "middleName"="Evelyn", "lastName"="null", "email"="", "latitude"=41.95488, "longitude"=-87.65609, "geoHash"="dp3wtmduch3z"}
+May 12, 2023 10:37:38 AM com.ubarber.database.DataBaseController newBarber
+INFO: 390 post /barbers {"id"=80, "location"="90066", "firstName"="Madison", "middleName"="Ava", "lastName"="null", "email"="", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:37:39 AM com.ubarber.database.DataBaseController newBarber
+INFO: 391 post /barbers {"id"=81, "location"="60640", "firstName"="Jayden", "middleName"="Michael", "lastName"="null", "email"="", "latitude"=41.9736, "longitude"=-87.66262, "geoHash"="dp3wv1n1byhu"}
+May 12, 2023 10:37:39 AM com.ubarber.database.DataBaseController newBarber
+INFO: 392 post /barbers {"id"=82, "location"="94103", "firstName"="Liam", "middleName"="Jacob", "lastName"="null", "email"="", "latitude"=37.77355, "longitude"=-122.41193, "geoHash"="9q8yykqqgk16"}
+May 12, 2023 10:37:39 AM com.ubarber.database.DataBaseController newBarber
+INFO: 393 post /barbers {"id"=85, "location"="60607", "firstName"="Grayson", "middleName"="Mason", "lastName"="null", "email"="", "latitude"=41.87659, "longitude"=-87.65331, "geoHash"="dp3wjrkucf4v"}
+May 12, 2023 10:37:40 AM com.ubarber.database.DataBaseController newBarber
+INFO: 394 post /barbers {"id"=86, "location"="94123", "firstName"="Layla", "middleName"="Aurora", "lastName"="null", "email"="", "latitude"=37.79988, "longitude"=-122.43529, "geoHash"="9q8zjcm26bqg"}
+May 12, 2023 10:37:40 AM com.ubarber.database.DataBaseController newBarber
+INFO: 395 post /barbers {"id"=90, "location"="90045", "firstName"="Ella", "middleName"="Mia", "lastName"="null", "email"="", "latitude"=33.96005, "longitude"=-118.39349, "geoHash"="9q5c1yhrxspm"}
+May 12, 2023 10:37:41 AM com.ubarber.database.DataBaseController newBarber
+INFO: 396 post /barbers {"id"=91, "location"="60605", "firstName"="Jack", "middleName"="William", "lastName"="null", "email"="", "latitude"=41.86858, "longitude"=-87.62598, "geoHash"="dp3wnjbwntj8"}
+May 12, 2023 10:37:41 AM com.ubarber.database.DataBaseController newBarber
+INFO: 397 post /barbers {"id"=94, "location"="60606", "firstName"="Victoria", "middleName"="Charlotte", "lastName"="null", "email"="", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:37:42 AM com.ubarber.database.DataBaseController newBarber
+INFO: 398 post /barbers {"id"=95, "location"="94114", "firstName"="Henry", "middleName"="Alexander", "lastName"="null", "email"="", "latitude"=37.75959, "longitude"=-122.43375, "geoHash"="9q8yvcymwcg0"}
+May 12, 2023 10:37:42 AM com.ubarber.database.DataBaseController newBarber
+INFO: 399 post /barbers {"id"=96, "location"="90024", "firstName"="Sofia", "middleName"="Mia", "lastName"="null", "email"="", "latitude"=34.06197, "longitude"=-118.44154, "geoHash"="9q5cbbc9256t"}
+May 12, 2023 10:37:42 AM com.ubarber.database.DataBaseController newBarber
+INFO: 400 post /barbers {"id"=99, "location"="90028", "firstName"="Jack", "middleName"="William", "lastName"="null", "email"="", "latitude"=34.10071, "longitude"=-118.32813, "geoHash"="9q5cgru549p6"}
+May 12, 2023 10:37:43 AM com.ubarber.database.DataBaseController newBarber
+INFO: 401 post /barbers {"id"=100, "location"="60603", "firstName"="Chloe", "middleName"="Lily", "lastName"="null", "email"="", "latitude"=41.88069, "longitude"=-87.62961, "geoHash"="dp3wmbnhdn6z"}
+May 12, 2023 10:37:43 AM com.ubarber.database.DataBaseController newBarber
+INFO: 402 post /barbers {"id"=103, "location"="94109", "firstName"="Avery", "middleName"="Elizabeth", "lastName"="null", "email"="avery.elizabeth@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:37:44 AM com.ubarber.database.DataBaseController newBarber
+INFO: 403 post /barbers {"id"=104, "location"="90036", "firstName"="Jackson", "middleName"="Benjamin", "lastName"="null", "email"="jackson.benjamin@example.com", "latitude"=34.06768, "longitude"=-118.34991, "geoHash"="9q5cfcu4x5yg"}
+May 12, 2023 10:37:44 AM com.ubarber.database.DataBaseController newBarber
+INFO: 404 post /barbers {"id"=105, "location"="10036", "firstName"="Camila", "middleName"="Eleanor", "lastName"="null", "email"="camila.eleanor@example.com", "latitude"=40.75993, "longitude"=-73.98636, "geoHash"="dr5rukhgbcem"}
+May 12, 2023 10:37:44 AM com.ubarber.database.DataBaseController newBarber
+INFO: 405 post /barbers {"id"=109, "location"="10001", "firstName"="Stella", "middleName"="Aurora", "lastName"="null", "email"="stella.aurora@example.com", "latitude"=40.74802, "longitude"=-73.9928, "geoHash"="dr5ru3bn6v3r"}
+May 12, 2023 10:37:45 AM com.ubarber.database.DataBaseController newBarber
+INFO: 406 post /barbers {"id"=110, "location"="60603", "firstName"="Michael", "middleName"="David", "lastName"="null", "email"="michael.david@example.com", "latitude"=41.88069, "longitude"=-87.62961, "geoHash"="dp3wmbnhdn6z"}
+May 12, 2023 10:37:45 AM com.ubarber.database.DataBaseController newBarber
+INFO: 407 post /barbers {"id"=113, "location"="90265", "firstName"="Aria", "middleName"="Aurora", "lastName"="null", "email"="aria.aurora@example.com", "latitude"=0.0, "longitude"=0.0, "geoHash"="s00000000000"}
+May 12, 2023 10:37:45 AM com.ubarber.database.DataBaseController newBarber
+INFO: 408 post /barbers {"id"=114, "location"="90035", "firstName"="Ethan", "middleName"="Alexander", "lastName"="null", "email"="ethan.alexander@example.com", "latitude"=34.05481, "longitude"=-118.38403, "geoHash"="9q5cdp7rshtn"}
+May 12, 2023 10:37:46 AM com.ubarber.database.DataBaseController newBarber
+INFO: 409 post /barbers {"id"=115, "location"="94103", "firstName"="Chloe", "middleName"="Avery", "lastName"="null", "email"="chloe.avery@example.com", "latitude"=37.77355, "longitude"=-122.41193, "geoHash"="9q8yykqqgk16"}

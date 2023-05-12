@@ -8,24 +8,24 @@ import org.json.JSONObject;
 public class sendJson {
 
     public static void main(String[] args) throws Exception {
-//        String jsonFilePath = "src/main/java/barbers.json";
-//        String urlString = "http://localhost:8081/registerBarber"; // Replace with the URL you want to send the requests to
-//
-//        BufferedReader reader = new BufferedReader(new FileReader(jsonFilePath));
-//        StringBuilder jsonBuilder = new StringBuilder();
-//        String line = reader.readLine();
-//        while (line != null) {
-//            jsonBuilder.append(line);
-//            line = reader.readLine();
-//        }
-//        reader.close();
-//
-//        JSONArray jsonArray = new JSONArray(jsonBuilder.toString());
-//        for (int i = 0; i < jsonArray.length(); i++) {
-//            JSONObject jsonObject = jsonArray.getJSONObject(i);
-//            System.out.println(jsonObject.toString());
-//            sendRequest(urlString, jsonObject.toString());
-//        }
+        String jsonFilePath = "src/main/java/barbers.json";
+        String urlString = "http://localhost:8081/registerBarber"; // Replace with the URL you want to send the requests to
+
+        BufferedReader reader = new BufferedReader(new FileReader(jsonFilePath));
+        StringBuilder jsonBuilder = new StringBuilder();
+        String line = reader.readLine();
+        while (line != null) {
+            jsonBuilder.append(line);
+            line = reader.readLine();
+        }
+        reader.close();
+
+        JSONArray jsonArray = new JSONArray(jsonBuilder.toString());
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject jsonObject = jsonArray.getJSONObject(i);
+            System.out.println(jsonObject.toString());
+            sendRequest(urlString, jsonObject.toString());
+        }
         getNearMe();
     }
 
@@ -41,6 +41,7 @@ public class sendJson {
         writer.close();
         int responseCode = connection.getResponseCode();
         System.out.println("Response code: " + responseCode);
+        System.out.println(connection.getResponseMessage());
     }
 
     public static void getNearMe() throws IOException {
