@@ -190,8 +190,11 @@ public class DatabaseLeader extends Thread {
     private void validatesStaged(){
         Random rand = new Random();
         int randomNum = rand.nextInt((idToServers.size()) +1);
-        String serverUrl = idToServers.get(randomNum);
-        String replicaUrl = idToReplicas.get(randomNum);
+        String serverFull = idToServers.get(randomNum);
+        String replicaFull = idToReplicas.get(randomNum);
+        if(serverFull == null || replicaFull == null) return;
+        String serverUrl = serverFull.split("//")[1];
+        String replicaUrl = replicaFull.split("//")[1];
         //TODO send a request to the server to check staged of the replica
         Http.get("http://" + serverUrl + "/checkStaged/" + replicaUrl);
         //TODO send a request to replica to check staged of the server
