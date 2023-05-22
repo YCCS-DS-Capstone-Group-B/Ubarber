@@ -26,13 +26,12 @@ public class DatabaseLeader extends Thread {
 
     public DatabaseLeader(boolean test){
         if(test){
-            this.databases.put("0", "localhost:5050");
-            this.databases.put("1", "localhost:5050");
-            this.databases.put("2", "localhost:5050");
-            this.databases.put("3", "localhost:5050");
-            this.databases.put("4", "localhost:5050");
-            this.databases.put("5", "localhost:5050");
-            this.databases.put("6", "localhost:5050");
+            this.databases.put("0", "http://localhost:5050");
+            this.databases.put("1", "http://localhost:5050");
+            this.databases.put("2", "http://localhost:5050");
+            this.databases.put("3", "http://localhost:5050");
+            this.databases.put("4", "http://localhost:5050");
+            this.databases.put("5", "http://localhost:5050");
         }
         else {
             this.databases = ListEBSEnvironmentInstances.getAllDatabase(); //get all the databases upon creation
