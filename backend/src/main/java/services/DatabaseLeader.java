@@ -29,9 +29,9 @@ public class DatabaseLeader extends Thread {
             this.databases.put("0", "http://localhost:5050");
             this.databases.put("1", "http://localhost:5050");
             this.databases.put("2", "http://localhost:5050");
-            this.databases.put("3", "http://localhost:5050");
-            this.databases.put("4", "http://localhost:5050");
-            this.databases.put("5", "http://localhost:5050");
+            this.databases.put("3", "http://localhost:5051");
+            this.databases.put("4", "http://localhost:5051");
+            this.databases.put("5", "http://localhost:5051");
         }
         else {
             this.databases = ListEBSEnvironmentInstances.getAllDatabase(); //get all the databases upon creation
@@ -242,14 +242,15 @@ public class DatabaseLeader extends Thread {
             }
             //TODO bring back up the server and log that it is back
             int serverId = downServers.poll();
-            String url = "localhost:5050";
-            idToServers.put(serverId, url); //add the new database to the list of servers to replace the down server
-            ipToId.put(url, 0);
+            String myUrl = "localhost:5050";
+            String repurl = "localhost:5051";
+            idToServers.put(serverId, myUrl); //add the new database to the list of servers to replace the down server
+            ipToId.put(myUrl, 0);
             //tell the new server up to get the data from the replica (/the main) while it was down
 //            Http.p("http://" + url + "/updateDatabase/" + url);
             HttpRequest request = HttpRequest.newBuilder()
                     .PUT(HttpRequest.BodyPublishers.ofString(""))
-                    .uri(java.net.URI.create("http://" + url + "/updateDatabase/" + url))
+                    .uri(java.net.URI.create("http://" + myUrl + "/updateDatabase/" + repurl))
                     .build();
 
             HttpResponse<String> response = null;
@@ -266,7 +267,7 @@ public class DatabaseLeader extends Thread {
             } else {
                 logger.warning("the update Database response was null");
             }
-            logger.info("Database " + serverId + " is up at " + url);
+            logger.info("Database " + serverId + " is up at " + myUrl);
         }
             //then can look at the database logs and see the call to update data
 

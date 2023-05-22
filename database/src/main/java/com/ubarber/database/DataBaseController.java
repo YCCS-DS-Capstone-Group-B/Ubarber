@@ -1,5 +1,6 @@
 package com.ubarber.database;
 
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
@@ -44,22 +45,33 @@ public class DataBaseController {
     @Value("${server.logs}")
     private String logFile;
 
-
-
-    public DataBaseController(BarberRepository barberRepository, ClientRepository clientRepository, AppointmentsRepository appointmentsRepository, AppointmentSlotRepository appointmentSlotRepository) {
-        this.barberRepository = barberRepository;
-        this.clientRepository = clientRepository;
-        this.appointmentsRepository = appointmentsRepository;
-        this.appointmentSlotRepository = appointmentSlotRepository;
+    @PostConstruct
+    public void init() {
         FileHandler fh = null;
         try {
-            fh = new FileHandler("h2Logs.txt", true);
+            fh = new FileHandler(this.logFile, true);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
         logger.addHandler(fh);
         SimpleFormatter formatter = new SimpleFormatter();
         fh.setFormatter(formatter);
+    }
+
+    public DataBaseController(BarberRepository barberRepository, ClientRepository clientRepository, AppointmentsRepository appointmentsRepository, AppointmentSlotRepository appointmentSlotRepository) {
+        this.barberRepository = barberRepository;
+        this.clientRepository = clientRepository;
+        this.appointmentsRepository = appointmentsRepository;
+        this.appointmentSlotRepository = appointmentSlotRepository;
+//        FileHandler fh = null;
+//        try {
+//            fh = new FileHandler(this.logFile, true);
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
+//        logger.addHandler(fh);
+//        SimpleFormatter formatter = new SimpleFormatter();
+//        fh.setFormatter(formatter);
         try {
             List<String> logs = LogHandler.readLogFile(this.logFile);
             String latestLog = logs.get(logs.size() -1);
@@ -597,12 +609,15 @@ public class DataBaseController {
         String request = details[2];
         switch (request){
             case "post" -> {
+                handlePost(details[3], details[4]);
                 return handlePost(details[3], details[4]);
             }
             case "put" -> {
+                handlePut(details[3], details[4]);
                 return handlePut(details[3], details[4]);
             }
             case "delete" -> {
+                handleDelete(details[3]);
                 return handleDelete(details[3]);
             }
         }
