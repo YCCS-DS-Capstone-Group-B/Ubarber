@@ -9553,3 +9553,102 @@ Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Binyami
 2023-05-21 21:35:47 database: disconnected session #12
 2023-05-21 21:35:47 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
 2023-05-21 21:35:47 database: closed
+2023-05-21 21:58:07 database: opening C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db (build 214)
+2023-05-21 21:58:08 database: opened C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db
+2023-05-21 21:58:08 database: connecting session #3 to C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db
+2023-05-21 21:58:08 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:58:08 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:58:08 jdbc[3]: 
+/*SQL #:1 t:2*/CALL READONLY();
+2023-05-21 21:58:08 database: connecting session #4 to C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db
+2023-05-21 21:58:08 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:58:08 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:58:08 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:58:08 database: connecting session #5 to C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db
+2023-05-21 21:58:08 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:58:08 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:58:08 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:58:08 database: connecting session #6 to C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db
+2023-05-21 21:58:08 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:58:08 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:58:08 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:58:08 database: connecting session #7 to C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db
+2023-05-21 21:58:08 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:58:08 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:58:08 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:58:08 database: connecting session #8 to C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db
+2023-05-21 21:58:08 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:58:08 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:58:08 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:58:08 database: connecting session #9 to C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db
+2023-05-21 21:58:08 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:58:08 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:58:08 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:58:08 database: connecting session #10 to C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db
+2023-05-21 21:58:08 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:58:08 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:58:08 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:58:08 database: connecting session #11 to C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db
+2023-05-21 21:58:08 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:58:08 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:58:08 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:58:08 database: connecting session #12 to C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db
+2023-05-21 21:58:08 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:58:08 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:58:08 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:58:09 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-21 21:58:10 jdbc[3]: 
+/*SQL t:2*/select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-21 22:03:36 database: closing C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db from shutdown hook
+2023-05-21 22:03:36 database: disconnecting session #3
+2023-05-21 22:03:36 database: disconnected session #3
+2023-05-21 22:03:36 database: disconnecting session #4
+2023-05-21 22:03:36 database: disconnected session #4
+2023-05-21 22:03:36 database: disconnecting session #5
+2023-05-21 22:03:36 database: disconnected session #5
+2023-05-21 22:03:36 database: disconnecting session #6
+2023-05-21 22:03:36 database: disconnected session #6
+2023-05-21 22:03:36 database: disconnecting session #7
+2023-05-21 22:03:36 database: disconnected session #7
+2023-05-21 22:03:36 database: disconnecting session #8
+2023-05-21 22:03:36 database: disconnected session #8
+2023-05-21 22:03:36 database: disconnecting session #9
+2023-05-21 22:03:36 database: disconnected session #9
+2023-05-21 22:03:36 database: disconnecting session #10
+2023-05-21 22:03:36 database: disconnected session #10
+2023-05-21 22:03:36 database: disconnecting session #11
+2023-05-21 22:03:36 database: disconnected session #11
+2023-05-21 22:03:36 database: disconnecting session #12
+2023-05-21 22:03:36 database: disconnected session #12
+2023-05-21 22:03:36 database: closing C:/Users/Binyamin Jachter/CompSci/Capstone/Ubarber/Ubarber/database/files/db
+2023-05-21 22:03:37 database: closed

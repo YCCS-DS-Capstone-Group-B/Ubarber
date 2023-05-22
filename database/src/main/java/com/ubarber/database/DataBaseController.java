@@ -1,5 +1,6 @@
 package com.ubarber.database;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.Link;
@@ -40,6 +41,8 @@ public class DataBaseController {
     private final AtomicBoolean batchCatchUp = new AtomicBoolean(false);
     private final HashMap<Integer, String> undoneLogs = new HashMap<>();
     private final HashMap<String, Integer> stagedCommits = new HashMap<>();
+    @Value("${server.logs}")
+    private String logFile;
 
 
 
@@ -58,7 +61,7 @@ public class DataBaseController {
         SimpleFormatter formatter = new SimpleFormatter();
         fh.setFormatter(formatter);
         try {
-            List<String> logs = LogHandler.readLogFile();
+            List<String> logs = LogHandler.readLogFile(this.logFile);
             String latestLog = logs.get(logs.size() -1);
             String[] splitLog = latestLog.split(" ", 3);
             logCounter.set(Integer.parseInt(splitLog[1]));
@@ -684,7 +687,7 @@ public class DataBaseController {
     public ResponseEntity<List<String>> getDatabaseLogs(@PathVariable int id){
         List<String> collectionModel;
         try {
-            collectionModel = LogHandler.readLogFile();
+            collectionModel = LogHandler.readLogFile(this.logFile);
         } catch (IOException e) {
             return ResponseEntity.notFound().build();
         }
@@ -700,7 +703,7 @@ public class DataBaseController {
     public ResponseEntity<String> getOneLog(@PathVariable int id){
         List<String> collectionModel;
         try {
-            collectionModel = LogHandler.readLogFile();
+            collectionModel = LogHandler.readLogFile(this.logFile);
         } catch (IOException e) {
             return ResponseEntity.notFound().build();
         }

@@ -17,14 +17,14 @@ public class LogHandler {
 
 
         System.out.println("---------------h2 logs------------------");
-        List<String> lines = readLogFile();
+        List<String> lines = readLogFile("h2Logs.txt");
         for (String line : lines) {
             System.out.println(line);
         }
     }
 
-    public static List<String> readLogFile() throws IOException {
-        File logFile = new File("h2Logs.txt");
+    public static List<String> readLogFile(String path) throws IOException {
+        File logFile = new File(path);
         List<String> lines = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(logFile))) {
             String line;
