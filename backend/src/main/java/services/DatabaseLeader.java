@@ -26,13 +26,13 @@ public class DatabaseLeader extends Thread {
 
     public DatabaseLeader(boolean test){
         if(test){
-            this.databases.put("0", "http://localhost:5050");
-            this.databases.put("1", "http://localhost:5050");
-            this.databases.put("2", "http://localhost:5050");
-            this.databases.put("3", "http://localhost:5050");
-            this.databases.put("4", "http://localhost:5050");
-            this.databases.put("5", "http://localhost:5050");
-            this.databases.put("6", "http://localhost:5050");
+            this.databases.put("0", "localhost:5050");
+            this.databases.put("1", "localhost:5050");
+            this.databases.put("2", "localhost:5050");
+            this.databases.put("3", "localhost:5050");
+            this.databases.put("4", "localhost:5050");
+            this.databases.put("5", "localhost:5050");
+            this.databases.put("6", "localhost:5050");
         }
         else {
             this.databases = ListEBSEnvironmentInstances.getAllDatabase(); //get all the databases upon creation
@@ -42,6 +42,9 @@ public class DatabaseLeader extends Thread {
         setIdToReplicas();
         if(!test){
             awsTalker.start();
+        }
+        else {
+            testSimulation.start();
         }
         this.logger = Logger.getLogger(String.valueOf(DatabaseLeader.class));
         validateStaged.start();
@@ -194,8 +197,10 @@ public class DatabaseLeader extends Thread {
         String replicaUrl = idToReplicas.get(randomNum);
         //TODO send a request to the server to check staged of the replica
         Http.get("http://" + serverUrl + "/checkStaged/" + replicaUrl);
+        logger.info("sent a request to main " + randomNum + " to compare staged with replica " + randomNum);
         //TODO send a request to replica to check staged of the server
         Http.get("http://" + replicaUrl + "/checkStaged/" + serverUrl);
+        logger.info("sent a request to replica " + randomNum + " to compare staged with main " + randomNum);
     }
 
     Thread validateStaged = new Thread(){
@@ -204,13 +209,68 @@ public class DatabaseLeader extends Thread {
             while(true){
                 validatesStaged();
                 try {
-                    Thread.sleep(2100);
+                    Thread.sleep(21000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
         }
     };
+
+
+    Thread testSimulation = new Thread(){
+        @Override
+        public void run() {
+            //TODO wait for 1 min
+            try {
+                Thread.sleep(60000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            //TODO shut down a server remove it from the database map and server map and add it to the down servers list
+            logger.info("Database " + ipToId.get(databases.get("0")) + " at " + databases.get("0") + " is down");
+            //TODO log that this server is down and its replica is now the main for that geohash
+            downServers.add(ipToId.get(databases.get("0"))); //add the id of the down server to the list of down servers
+            idToServers.put(ipToId.get(databases.get("0")), idToReplicas.get(ipToId.get(databases.get("0")))); //server is down so only send to its replica,
+            ///TODO wait for 1 min
+            try {
+                Thread.sleep(60000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            //TODO bring back up the server and log that it is back
+            int serverId = downServers.poll();
+            String url = "localhost:5050";
+            idToServers.put(serverId, url); //add the new database to the list of servers to replace the down server
+            ipToId.put(url, 0);
+            //tell the new server up to get the data from the replica (/the main) while it was down
+//            Http.p("http://" + url + "/updateDatabase/" + url);
+            HttpRequest request = HttpRequest.newBuilder()
+                    .PUT(HttpRequest.BodyPublishers.ofString(""))
+                    .uri(java.net.URI.create("http://" + url + "/updateDatabase/" + url))
+                    .build();
+
+            HttpResponse<String> response = null;
+            try {
+                response = HttpClient.newBuilder()
+                        .build()
+                        .send(request, HttpResponse.BodyHandlers.ofString());
+            } catch (IOException | InterruptedException e) {
+                logger.warning("problem in sending the updateDatabase request");
+                e.printStackTrace();
+            }
+            if (response != null) {
+                logger.info(response.body());
+            } else {
+                logger.warning("the update Database response was null");
+            }
+            logger.info("Database " + serverId + " is up at " + url);
+        }
+            //then can look at the database logs and see the call to update data
+
+    };
+
+
     public ConcurrentHashMap<Integer, String> getReplicas() {
         return idToReplicas;
     }

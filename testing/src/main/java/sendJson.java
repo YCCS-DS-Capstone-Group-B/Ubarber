@@ -9,7 +9,7 @@ public class sendJson {
 
     public static void main(String[] args) throws Exception {
         String jsonFilePath = "src/main/java/barbers.json";
-        String urlString = "http://localhost:8081/registerBarber"; // Replace with the URL you want to send the requests to
+        String urlString = "http://service-env-1.us-east-2.elasticbeanstalk.com/registerBarber"; // Replace with the URL you want to send the requests to
 
         BufferedReader reader = new BufferedReader(new FileReader(jsonFilePath));
         StringBuilder jsonBuilder = new StringBuilder();
@@ -25,7 +25,7 @@ public class sendJson {
             JSONObject jsonObject = jsonArray.getJSONObject(i);
             System.out.println(jsonObject.toString());
             sendRequest(urlString, jsonObject.toString());
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         }
         getNearMe();
     }

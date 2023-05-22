@@ -549,6 +549,7 @@ public class DataBaseController {
 
     @PutMapping("/updateDatabase/{url}")
     public List<String> updateDatabase(@PathVariable String url){
+        consoleLogger.info("was told to update database");
         String uri = "http://" + url + "/getDatabaseLogs/" + logCounter.get();
         HttpRequest request = HttpRequest.newBuilder().
                 GET()
@@ -710,6 +711,7 @@ public class DataBaseController {
 
     @GetMapping("/checkStaged/{url}")
     public ResponseEntity<Boolean> checkStaged(@PathVariable String url) {
+        consoleLogger.info("checking staged commits");
         if(!stagedCommits.isEmpty()){
             for(String log: stagedCommits.keySet()){
                 int logNum = stagedCommits.get(log);

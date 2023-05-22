@@ -7825,3 +7825,1731 @@ Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Binyami
 /*SQL */COMMIT;
 2023-05-12 10:37:46 jdbc[3]: 
 /*SQL */COMMIT;
+2023-05-12 10:50:50 database: disconnecting session #5
+2023-05-12 10:50:50 database: disconnected session #5
+2023-05-12 10:50:50 database: connecting session #13 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-12 10:50:50 jdbc[13]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-12 10:50:50 jdbc[13]: 
+/**/Connection conn10 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-12 10:50:50 jdbc[13]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-12 10:50:50 database: disconnecting session #7
+2023-05-12 10:50:50 database: disconnected session #7
+2023-05-12 10:50:50 database: connecting session #14 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-12 10:50:50 jdbc[14]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-12 10:50:50 jdbc[14]: 
+/**/Connection conn11 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-12 10:50:50 jdbc[14]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-12 10:50:55 database: disconnecting session #11
+2023-05-12 10:50:55 database: disconnected session #11
+2023-05-12 10:50:55 database: connecting session #15 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-12 10:50:55 jdbc[15]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-12 10:50:55 jdbc[15]: 
+/**/Connection conn12 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-12 10:50:55 jdbc[15]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-12 10:51:02 database: disconnecting session #10
+2023-05-12 10:51:02 database: disconnected session #10
+2023-05-12 10:51:02 database: connecting session #16 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-12 10:51:02 jdbc[16]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-12 10:51:02 jdbc[16]: 
+/**/Connection conn13 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-12 10:51:02 jdbc[16]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-12 10:51:02 database: disconnecting session #6
+2023-05-12 10:51:02 database: disconnected session #6
+2023-05-12 10:51:02 database: connecting session #17 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-12 10:51:02 jdbc[17]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-12 10:51:02 jdbc[17]: 
+/**/Connection conn14 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-12 10:51:02 jdbc[17]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-12 10:51:03 database: disconnecting session #9
+2023-05-12 10:51:03 database: disconnected session #9
+2023-05-12 10:51:04 database: connecting session #18 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-12 10:51:04 jdbc[18]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-12 10:51:04 jdbc[18]: 
+/**/Connection conn15 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-12 10:51:04 jdbc[18]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-12 10:51:05 database: disconnecting session #8
+2023-05-12 10:51:05 database: disconnected session #8
+2023-05-12 10:51:05 database: connecting session #19 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-12 10:51:05 jdbc[19]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-12 10:51:05 jdbc[19]: 
+/**/Connection conn16 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-12 10:51:05 jdbc[19]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-12 10:51:13 database: connecting session #20 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-12 10:51:13 jdbc[20]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-12 10:51:13 jdbc[20]: 
+/**/Connection conn17 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-12 10:51:13 jdbc[20]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-12 10:51:13 database: disconnecting session #3
+2023-05-12 10:51:13 database: disconnected session #3
+2023-05-12 10:51:17 database: disconnecting session #4
+2023-05-12 10:51:17 database: disconnected session #4
+2023-05-12 10:51:17 database: connecting session #21 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-12 10:51:17 jdbc[21]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-12 10:51:17 jdbc[21]: 
+/**/Connection conn18 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-12 10:51:17 jdbc[21]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-12 10:51:18 database: disconnecting session #12
+2023-05-12 10:51:18 database: disconnected session #12
+2023-05-12 10:51:18 database: connecting session #22 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-12 10:51:18 jdbc[22]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-12 10:51:18 jdbc[22]: 
+/**/Connection conn19 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-12 10:51:18 jdbc[22]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-12 11:20:07 jdbc[13]: 
+/*SQL l:163 #:1 t:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(1 AS BIGINT)};
+2023-05-12 11:20:07 jdbc[13]: 
+/*SQL l:74 #:1 t:40*/SELECT SETTING_VALUE FROM INFORMATION_SCHEMA.SETTINGS WHERE SETTING_NAME=? {1: 'QUERY_TIMEOUT'};
+2023-05-12 11:20:07 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:07 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:08 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(2 AS BIGINT)};
+2023-05-12 11:20:08 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:08 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:10 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(3 AS BIGINT)};
+2023-05-12 11:20:10 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:10 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:11 jdbc[13]: 
+/*SQL l:163 #:1 t:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(4 AS BIGINT)};
+2023-05-12 11:20:11 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:11 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:13 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(5 AS BIGINT)};
+2023-05-12 11:20:13 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:13 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:14 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(6 AS BIGINT)};
+2023-05-12 11:20:14 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:14 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:16 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(7 AS BIGINT)};
+2023-05-12 11:20:16 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:16 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:17 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(8 AS BIGINT)};
+2023-05-12 11:20:17 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:17 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:19 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(9 AS BIGINT)};
+2023-05-12 11:20:19 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:19 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:20 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(10 AS BIGINT)};
+2023-05-12 11:20:20 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:20 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:21 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(11 AS BIGINT)};
+2023-05-12 11:20:21 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:21 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:23 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(12 AS BIGINT)};
+2023-05-12 11:20:23 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:23 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:24 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(13 AS BIGINT)};
+2023-05-12 11:20:24 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:24 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:25 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(14 AS BIGINT)};
+2023-05-12 11:20:25 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:25 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:26 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(15 AS BIGINT)};
+2023-05-12 11:20:26 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:26 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:28 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(16 AS BIGINT)};
+2023-05-12 11:20:28 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:28 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:29 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(17 AS BIGINT)};
+2023-05-12 11:20:29 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:29 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:30 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(18 AS BIGINT)};
+2023-05-12 11:20:30 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:30 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:32 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(19 AS BIGINT)};
+2023-05-12 11:20:32 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:32 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:33 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(20 AS BIGINT)};
+2023-05-12 11:20:33 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:33 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:35 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(21 AS BIGINT)};
+2023-05-12 11:20:35 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:35 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:36 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(22 AS BIGINT)};
+2023-05-12 11:20:36 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:36 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:38 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(23 AS BIGINT)};
+2023-05-12 11:20:38 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:38 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:39 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(24 AS BIGINT)};
+2023-05-12 11:20:39 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:39 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:40 jdbc[13]: 
+/*SQL l:163 #:1 t:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(25 AS BIGINT)};
+2023-05-12 11:20:40 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:40 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:42 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(26 AS BIGINT)};
+2023-05-12 11:20:42 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:42 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:43 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(27 AS BIGINT)};
+2023-05-12 11:20:43 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:43 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:44 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(28 AS BIGINT)};
+2023-05-12 11:20:44 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:44 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:46 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(29 AS BIGINT)};
+2023-05-12 11:20:46 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:46 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:47 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(30 AS BIGINT)};
+2023-05-12 11:20:47 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:47 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:48 jdbc[13]: 
+/*SQL l:163 #:1 t:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(31 AS BIGINT)};
+2023-05-12 11:20:48 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:48 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:49 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(32 AS BIGINT)};
+2023-05-12 11:20:49 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:49 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:51 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(33 AS BIGINT)};
+2023-05-12 11:20:51 jdbc[13]: 
+/*SQL l:127 #:1 t:2*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'evelyn.rose@example.com', 2: 'Evelyn', 3: 'dr5rvj9pme3j', 4: NULL, 5: CAST(40.76878 AS DOUBLE PRECISION), 6: '10021', 7: CAST(-73.95835 AS DOUBLE PRECISION), 8: 'Rose', 9: CAST(33 AS BIGINT)};
+2023-05-12 11:20:51 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:51 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:52 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(34 AS BIGINT)};
+2023-05-12 11:20:52 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:52 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:54 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(35 AS BIGINT)};
+2023-05-12 11:20:54 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:54 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:55 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(36 AS BIGINT)};
+2023-05-12 11:20:55 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:55 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:56 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(37 AS BIGINT)};
+2023-05-12 11:20:56 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:56 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:57 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(38 AS BIGINT)};
+2023-05-12 11:20:57 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:57 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:59 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(39 AS BIGINT)};
+2023-05-12 11:20:59 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:20:59 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:00 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(40 AS BIGINT)};
+2023-05-12 11:21:00 jdbc[13]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'ethan.william@example.com', 2: 'Ethan', 3: '9q5c9c3bqjme', 4: NULL, 5: CAST(34.02061 AS DOUBLE PRECISION), 6: '90232', 7: CAST(-118.39699 AS DOUBLE PRECISION), 8: 'William', 9: CAST(40 AS BIGINT)};
+2023-05-12 11:21:00 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:00 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:02 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(41 AS BIGINT)};
+2023-05-12 11:21:02 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:02 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:03 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(42 AS BIGINT)};
+2023-05-12 11:21:03 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:03 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:04 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(43 AS BIGINT)};
+2023-05-12 11:21:04 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:04 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:06 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(44 AS BIGINT)};
+2023-05-12 11:21:06 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:06 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:07 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(45 AS BIGINT)};
+2023-05-12 11:21:07 jdbc[13]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'victoria.elizabeth@example.com', 2: 'Victoria', 3: '9q5cdp7rshtn', 4: NULL, 5: CAST(34.05481 AS DOUBLE PRECISION), 6: '90035', 7: CAST(-118.38403 AS DOUBLE PRECISION), 8: 'Elizabeth', 9: CAST(45 AS BIGINT)};
+2023-05-12 11:21:07 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:07 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:08 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(46 AS BIGINT)};
+2023-05-12 11:21:08 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:08 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:10 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(47 AS BIGINT)};
+2023-05-12 11:21:10 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:10 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:11 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(48 AS BIGINT)};
+2023-05-12 11:21:11 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:11 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:12 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(49 AS BIGINT)};
+2023-05-12 11:21:12 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:12 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:14 jdbc[13]: 
+/*SQL l:163 #:1 t:10*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(50 AS BIGINT)};
+2023-05-12 11:21:14 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:14 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:15 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(51 AS BIGINT)};
+2023-05-12 11:21:15 jdbc[13]: 
+/*SQL l:127 #:1 t:20*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'abigail.sofia@example.com', 2: 'Abigail', 3: 'dr72h8ugyg09', 4: NULL, 5: CAST(40.78603 AS DOUBLE PRECISION), 6: '10024', 7: CAST(-73.97512 AS DOUBLE PRECISION), 8: 'Sofia', 9: CAST(51 AS BIGINT)};
+2023-05-12 11:21:15 jdbc[13]: 
+/*SQL t:2*/COMMIT;
+2023-05-12 11:21:15 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:16 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(52 AS BIGINT)};
+2023-05-12 11:21:16 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:16 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:17 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(53 AS BIGINT)};
+2023-05-12 11:21:17 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:17 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:19 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(54 AS BIGINT)};
+2023-05-12 11:21:19 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:19 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:20 jdbc[13]: 
+/*SQL l:163 #:1 t:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(55 AS BIGINT)};
+2023-05-12 11:21:20 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:20 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:22 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(56 AS BIGINT)};
+2023-05-12 11:21:22 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:22 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:23 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(57 AS BIGINT)};
+2023-05-12 11:21:23 jdbc[13]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'ella.avery@example.com', 2: 'Ella', 3: '9q5c1yhrxspm', 4: NULL, 5: CAST(33.96005 AS DOUBLE PRECISION), 6: '90045', 7: CAST(-118.39349 AS DOUBLE PRECISION), 8: 'Avery', 9: CAST(57 AS BIGINT)};
+2023-05-12 11:21:23 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:23 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:24 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(58 AS BIGINT)};
+2023-05-12 11:21:24 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:24 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:25 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(59 AS BIGINT)};
+2023-05-12 11:21:25 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:25 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:27 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(60 AS BIGINT)};
+2023-05-12 11:21:27 jdbc[13]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'evelyn.aria@example.com', 2: 'Evelyn', 3: 'dr5rshbwu1tz', 4: NULL, 5: CAST(40.72062 AS DOUBLE PRECISION), 6: '10013', 7: CAST(-74.00304 AS DOUBLE PRECISION), 8: 'Aria', 9: CAST(60 AS BIGINT)};
+2023-05-12 11:21:27 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:27 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:28 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(61 AS BIGINT)};
+2023-05-12 11:21:28 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:28 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:29 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(62 AS BIGINT)};
+2023-05-12 11:21:29 jdbc[13]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: ' am62@gmail.com', 2: 'Michael', 3: '9q8zn3rcnu31', 4: NULL, 5: CAST(37.80003 AS DOUBLE PRECISION), 6: '94133', 7: CAST(-122.40972 AS DOUBLE PRECISION), 8: 'Alexander', 9: CAST(62 AS BIGINT)};
+2023-05-12 11:21:29 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:29 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:31 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(63 AS BIGINT)};
+2023-05-12 11:21:31 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:31 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:33 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(64 AS BIGINT)};
+2023-05-12 11:21:33 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:33 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:34 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(65 AS BIGINT)};
+2023-05-12 11:21:34 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:34 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:35 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(66 AS BIGINT)};
+2023-05-12 11:21:35 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:35 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:37 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(67 AS BIGINT)};
+2023-05-12 11:21:37 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:37 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:38 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(68 AS BIGINT)};
+2023-05-12 11:21:38 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:38 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:39 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(69 AS BIGINT)};
+2023-05-12 11:21:39 jdbc[13]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Mason', 3: '9q5ccu263p96', 4: NULL, 5: CAST(34.08139 AS DOUBLE PRECISION), 6: '90210', 7: CAST(-118.39927 AS DOUBLE PRECISION), 8: 'Jacob', 9: CAST(69 AS BIGINT)};
+2023-05-12 11:21:39 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:39 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:41 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(70 AS BIGINT)};
+2023-05-12 11:21:41 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:41 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:42 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(71 AS BIGINT)};
+2023-05-12 11:21:42 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:42 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:43 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(72 AS BIGINT)};
+2023-05-12 11:21:43 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:43 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:45 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(73 AS BIGINT)};
+2023-05-12 11:21:45 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:45 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:46 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(74 AS BIGINT)};
+2023-05-12 11:21:46 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:46 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:47 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(75 AS BIGINT)};
+2023-05-12 11:21:47 jdbc[13]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Matthew', 3: 'dp3wmud80x5d', 4: NULL, 5: CAST(41.90464 AS DOUBLE PRECISION), 6: '60610', 7: CAST(-87.63448 AS DOUBLE PRECISION), 8: 'Daniel', 9: CAST(75 AS BIGINT)};
+2023-05-12 11:21:47 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:47 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:48 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(76 AS BIGINT)};
+2023-05-12 11:21:48 jdbc[13]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Scarlett', 3: '9q8yvezv7sb4', 4: NULL, 5: CAST(37.77055 AS DOUBLE PRECISION), 6: '94117', 7: CAST(-122.44282 AS DOUBLE PRECISION), 8: 'Sofia', 9: CAST(76 AS BIGINT)};
+2023-05-12 11:21:48 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:48 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:50 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(77 AS BIGINT)};
+2023-05-12 11:21:50 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:50 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:51 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(78 AS BIGINT)};
+2023-05-12 11:21:51 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:51 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:53 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(79 AS BIGINT)};
+2023-05-12 11:21:53 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:53 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:54 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(80 AS BIGINT)};
+2023-05-12 11:21:54 jdbc[13]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Madison', 3: '9q5c3jft17xe', 4: NULL, 5: CAST(34.00219 AS DOUBLE PRECISION), 6: '90066', 7: CAST(-118.42912 AS DOUBLE PRECISION), 8: 'Ava', 9: CAST(80 AS BIGINT)};
+2023-05-12 11:21:54 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:54 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:55 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(81 AS BIGINT)};
+2023-05-12 11:21:55 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:55 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:56 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(82 AS BIGINT)};
+2023-05-12 11:21:56 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:56 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:58 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(83 AS BIGINT)};
+2023-05-12 11:21:58 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:58 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:59 jdbc[13]: 
+/*SQL l:163 #:1 t:5*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(84 AS BIGINT)};
+2023-05-12 11:21:59 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:21:59 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:00 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(85 AS BIGINT)};
+2023-05-12 11:22:00 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:00 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:02 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(86 AS BIGINT)};
+2023-05-12 11:22:02 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:02 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:03 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(87 AS BIGINT)};
+2023-05-12 11:22:03 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:03 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:04 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(88 AS BIGINT)};
+2023-05-12 11:22:04 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:04 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:06 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(89 AS BIGINT)};
+2023-05-12 11:22:06 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:06 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:07 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(90 AS BIGINT)};
+2023-05-12 11:22:07 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:07 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:08 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(91 AS BIGINT)};
+2023-05-12 11:22:08 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:08 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:10 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(92 AS BIGINT)};
+2023-05-12 11:22:10 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:10 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:11 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(93 AS BIGINT)};
+2023-05-12 11:22:11 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:11 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:12 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(94 AS BIGINT)};
+2023-05-12 11:22:12 jdbc[13]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: '', 2: 'Victoria', 3: 'dp3wmb2f6761', 4: NULL, 5: CAST(41.88166 AS DOUBLE PRECISION), 6: '60606', 7: CAST(-87.63681 AS DOUBLE PRECISION), 8: 'Charlotte', 9: CAST(94 AS BIGINT)};
+2023-05-12 11:22:12 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:12 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:13 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(95 AS BIGINT)};
+2023-05-12 11:22:13 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:13 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:15 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(96 AS BIGINT)};
+2023-05-12 11:22:15 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:15 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:16 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(97 AS BIGINT)};
+2023-05-12 11:22:16 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:16 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:17 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(98 AS BIGINT)};
+2023-05-12 11:22:17 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:17 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:19 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(99 AS BIGINT)};
+2023-05-12 11:22:19 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:19 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:20 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(100 AS BIGINT)};
+2023-05-12 11:22:20 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:20 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:21 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(101 AS BIGINT)};
+2023-05-12 11:22:21 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:21 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:22 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(102 AS BIGINT)};
+2023-05-12 11:22:22 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:22 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:24 jdbc[13]: 
+/*SQL l:163 #:1 t:3*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(103 AS BIGINT)};
+2023-05-12 11:22:24 jdbc[13]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'avery.elizabeth@example.com', 2: 'Avery', 3: '9q8yyrbt347x', 4: NULL, 5: CAST(37.79251 AS DOUBLE PRECISION), 6: '94109', 7: CAST(-122.41992 AS DOUBLE PRECISION), 8: 'Elizabeth', 9: CAST(103 AS BIGINT)};
+2023-05-12 11:22:24 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:24 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:25 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(104 AS BIGINT)};
+2023-05-12 11:22:25 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:25 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:26 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(105 AS BIGINT)};
+2023-05-12 11:22:26 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:26 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:28 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(106 AS BIGINT)};
+2023-05-12 11:22:28 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:28 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:29 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(107 AS BIGINT)};
+2023-05-12 11:22:29 jdbc[13]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'scarlett.hazel@example.com', 2: 'Scarlett', 3: 'dp3wku0rdc6d', 4: NULL, 5: CAST(41.90315 AS DOUBLE PRECISION), 6: '60622', 7: CAST(-87.68142 AS DOUBLE PRECISION), 8: 'Hazel', 9: CAST(107 AS BIGINT)};
+2023-05-12 11:22:29 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:29 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:30 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(108 AS BIGINT)};
+2023-05-12 11:22:30 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:30 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:31 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(109 AS BIGINT)};
+2023-05-12 11:22:31 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:31 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:33 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(110 AS BIGINT)};
+2023-05-12 11:22:33 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:33 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:34 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(111 AS BIGINT)};
+2023-05-12 11:22:34 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:34 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:35 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(112 AS BIGINT)};
+2023-05-12 11:22:35 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:35 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:37 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(113 AS BIGINT)};
+2023-05-12 11:22:37 jdbc[13]: 
+/*SQL l:127 #:1*/update barber set email=?, first_name=?, geo_hash=?, last_name=?, latitude=?, location=?, longitude=?, middle_name=? where id=? {1: 'aria.aurora@example.com', 2: 'Aria', 3: '9q599g1qcexn', 4: NULL, 5: CAST(34.03133 AS DOUBLE PRECISION), 6: '90265', 7: CAST(-118.74943 AS DOUBLE PRECISION), 8: 'Aurora', 9: CAST(113 AS BIGINT)};
+2023-05-12 11:22:37 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:37 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:38 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(114 AS BIGINT)};
+2023-05-12 11:22:38 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:38 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:39 jdbc[13]: 
+/*SQL l:163 #:1*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.id=? {1: CAST(115 AS BIGINT)};
+2023-05-12 11:22:39 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:39 jdbc[13]: 
+/*SQL */COMMIT;
+2023-05-12 11:22:40 jdbc[13]: 
+/*SQL l:185 #:3*/select b1_0.id,b1_0.email,b1_0.first_name,b1_0.geo_hash,b1_0.last_name,b1_0.latitude,b1_0.location,b1_0.longitude,b1_0.middle_name from barber b1_0 where b1_0.geo_hash like ? escape '\\' {1: 'dr72%'};
+2023-05-12 11:27:09 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db from shutdown hook
+2023-05-12 11:27:09 database: disconnecting session #17
+2023-05-12 11:27:09 database: disconnected session #17
+2023-05-12 11:27:09 database: disconnecting session #18
+2023-05-12 11:27:09 database: disconnected session #18
+2023-05-12 11:27:09 database: disconnecting session #19
+2023-05-12 11:27:09 database: disconnected session #19
+2023-05-12 11:27:09 database: disconnecting session #20
+2023-05-12 11:27:09 database: disconnected session #20
+2023-05-12 11:27:09 database: disconnecting session #21
+2023-05-12 11:27:09 database: disconnected session #21
+2023-05-12 11:27:09 database: disconnecting session #22
+2023-05-12 11:27:09 database: disconnected session #22
+2023-05-12 11:27:09 database: disconnecting session #13
+2023-05-12 11:27:09 database: disconnected session #13
+2023-05-12 11:27:09 database: disconnecting session #14
+2023-05-12 11:27:09 database: disconnected session #14
+2023-05-12 11:27:09 database: disconnecting session #15
+2023-05-12 11:27:09 database: disconnected session #15
+2023-05-12 11:27:09 database: disconnecting session #16
+2023-05-12 11:27:09 database: disconnected session #16
+2023-05-12 11:27:09 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-12 11:27:09 database: closed
+2023-05-20 23:05:09 database: opening /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db (build 214)
+2023-05-20 23:05:09 database: opened /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:05:09 database: connecting session #3 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:05:09 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:05:09 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:05:09 jdbc[3]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:05:09 database: connecting session #4 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:05:09 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:05:09 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:05:09 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:05:09 database: connecting session #5 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:05:09 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:05:09 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:05:09 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:05:09 database: connecting session #6 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:05:09 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:05:09 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:05:09 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:05:09 database: connecting session #7 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:05:09 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:05:09 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:05:09 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:05:09 database: connecting session #8 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:05:09 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:05:09 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:05:09 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:05:09 database: connecting session #9 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:05:09 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:05:09 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:05:09 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:05:09 database: connecting session #10 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:05:09 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:05:09 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:05:09 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:05:09 database: connecting session #11 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:05:09 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:05:09 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:05:09 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:05:09 database: connecting session #12 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:05:09 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:05:09 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:05:09 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:05:09 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-20 23:05:10 jdbc[3]: 
+/*SQL */select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-20 23:34:22 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db from shutdown hook
+2023-05-20 23:34:22 database: disconnecting session #3
+2023-05-20 23:34:22 database: disconnected session #3
+2023-05-20 23:34:22 database: disconnecting session #4
+2023-05-20 23:34:22 database: disconnected session #4
+2023-05-20 23:34:22 database: disconnecting session #5
+2023-05-20 23:34:22 database: disconnected session #5
+2023-05-20 23:34:22 database: disconnecting session #6
+2023-05-20 23:34:22 database: disconnected session #6
+2023-05-20 23:34:22 database: disconnecting session #7
+2023-05-20 23:34:22 database: disconnected session #7
+2023-05-20 23:34:22 database: disconnecting session #8
+2023-05-20 23:34:23 database: disconnected session #8
+2023-05-20 23:34:23 database: disconnecting session #9
+2023-05-20 23:34:23 database: disconnected session #9
+2023-05-20 23:34:23 database: disconnecting session #10
+2023-05-20 23:34:23 database: disconnected session #10
+2023-05-20 23:34:23 database: disconnecting session #11
+2023-05-20 23:34:23 database: disconnected session #11
+2023-05-20 23:34:23 database: disconnecting session #12
+2023-05-20 23:34:23 database: disconnected session #12
+2023-05-20 23:34:23 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:34:23 database: closed
+2023-05-20 23:41:13 database: opening /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db (build 214)
+2023-05-20 23:41:14 database: opened /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:41:14 database: connecting session #3 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:41:14 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:41:14 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:41:14 jdbc[3]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:41:14 database: connecting session #4 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:41:14 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:41:14 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:41:14 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:41:14 database: connecting session #5 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:41:14 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:41:14 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:41:14 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:41:14 database: connecting session #6 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:41:14 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:41:14 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:41:14 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:41:14 database: connecting session #7 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:41:14 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:41:14 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:41:14 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:41:14 database: connecting session #8 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:41:14 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:41:14 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:41:14 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:41:14 database: connecting session #9 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:41:14 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:41:14 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:41:14 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:41:14 database: connecting session #10 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:41:14 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:41:14 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:41:14 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:41:14 database: connecting session #11 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:41:14 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:41:14 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:41:14 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:41:14 database: connecting session #12 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:41:14 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-20 23:41:14 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-20 23:41:14 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-20 23:41:14 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-20 23:41:14 jdbc[3]: 
+/*SQL */select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-20 23:48:38 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db from shutdown hook
+2023-05-20 23:48:38 database: disconnecting session #3
+2023-05-20 23:48:38 database: disconnected session #3
+2023-05-20 23:48:38 database: disconnecting session #4
+2023-05-20 23:48:38 database: disconnected session #4
+2023-05-20 23:48:38 database: disconnecting session #5
+2023-05-20 23:48:38 database: disconnected session #5
+2023-05-20 23:48:38 database: disconnecting session #6
+2023-05-20 23:48:38 database: disconnected session #6
+2023-05-20 23:48:38 database: disconnecting session #7
+2023-05-20 23:48:38 database: disconnected session #7
+2023-05-20 23:48:38 database: disconnecting session #8
+2023-05-20 23:48:38 database: disconnected session #8
+2023-05-20 23:48:38 database: disconnecting session #9
+2023-05-20 23:48:38 database: disconnected session #9
+2023-05-20 23:48:38 database: disconnecting session #10
+2023-05-20 23:48:38 database: disconnected session #10
+2023-05-20 23:48:38 database: disconnecting session #11
+2023-05-20 23:48:38 database: disconnected session #11
+2023-05-20 23:48:38 database: disconnecting session #12
+2023-05-20 23:48:38 database: disconnected session #12
+2023-05-20 23:48:38 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-20 23:48:38 database: closed
+2023-05-21 16:58:17 database: opening /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db (build 214)
+2023-05-21 16:58:18 database: opened /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 16:58:18 database: connecting session #3 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 16:58:18 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 16:58:18 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 16:58:18 jdbc[3]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 16:58:18 database: connecting session #4 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 16:58:18 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 16:58:18 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 16:58:18 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 16:58:18 database: connecting session #5 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 16:58:18 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 16:58:18 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 16:58:18 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 16:58:18 database: connecting session #6 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 16:58:18 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 16:58:18 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 16:58:18 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 16:58:18 database: connecting session #7 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 16:58:18 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 16:58:18 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 16:58:18 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 16:58:18 database: connecting session #8 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 16:58:18 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 16:58:18 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 16:58:18 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 16:58:18 database: connecting session #9 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 16:58:18 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 16:58:18 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 16:58:18 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 16:58:18 database: connecting session #10 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 16:58:18 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 16:58:18 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 16:58:18 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 16:58:18 database: connecting session #11 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 16:58:18 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 16:58:18 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 16:58:18 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 16:58:18 database: connecting session #12 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 16:58:18 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 16:58:18 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 16:58:18 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 16:58:18 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-21 16:58:19 jdbc[3]: 
+/*SQL */select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-21 17:17:33 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db from shutdown hook
+2023-05-21 17:17:33 database: disconnecting session #3
+2023-05-21 17:17:33 database: disconnected session #3
+2023-05-21 17:17:33 database: disconnecting session #4
+2023-05-21 17:17:33 database: disconnected session #4
+2023-05-21 17:17:33 database: disconnecting session #5
+2023-05-21 17:17:33 database: disconnected session #5
+2023-05-21 17:17:33 database: disconnecting session #6
+2023-05-21 17:17:33 database: disconnected session #6
+2023-05-21 17:17:33 database: disconnecting session #7
+2023-05-21 17:17:33 database: disconnected session #7
+2023-05-21 17:17:33 database: disconnecting session #8
+2023-05-21 17:17:33 database: disconnected session #8
+2023-05-21 17:17:33 database: disconnecting session #9
+2023-05-21 17:17:33 database: disconnected session #9
+2023-05-21 17:17:33 database: disconnecting session #10
+2023-05-21 17:17:33 database: disconnected session #10
+2023-05-21 17:17:33 database: disconnecting session #11
+2023-05-21 17:17:33 database: disconnected session #11
+2023-05-21 17:17:33 database: disconnecting session #12
+2023-05-21 17:17:33 database: disconnected session #12
+2023-05-21 17:17:34 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:17:34 database: closed
+2023-05-21 17:18:39 database: opening /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db (build 214)
+2023-05-21 17:18:40 database: opened /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:18:40 database: connecting session #3 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:18:40 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:18:40 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:18:40 jdbc[3]: 
+/*SQL #:1 t:1*/CALL READONLY();
+2023-05-21 17:18:40 database: connecting session #4 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:18:40 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:18:40 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:18:40 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:18:40 database: connecting session #5 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:18:40 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:18:40 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:18:40 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:18:40 database: connecting session #6 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:18:40 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:18:40 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:18:40 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:18:40 database: connecting session #7 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:18:40 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:18:40 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:18:40 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:18:40 database: connecting session #8 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:18:40 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:18:40 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:18:40 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:18:40 database: connecting session #9 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:18:40 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:18:40 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:18:40 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:18:40 database: connecting session #10 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:18:40 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:18:40 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:18:40 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:18:40 database: connecting session #11 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:18:40 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:18:40 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:18:40 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:18:40 database: connecting session #12 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:18:40 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:18:40 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:18:40 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:18:41 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-21 17:18:42 jdbc[3]: 
+/*SQL t:3*/select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-21 17:24:45 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db from shutdown hook
+2023-05-21 17:24:45 database: disconnecting session #3
+2023-05-21 17:24:45 database: disconnected session #3
+2023-05-21 17:24:45 database: disconnecting session #4
+2023-05-21 17:24:45 database: disconnected session #4
+2023-05-21 17:24:45 database: disconnecting session #5
+2023-05-21 17:24:45 database: disconnected session #5
+2023-05-21 17:24:45 database: disconnecting session #6
+2023-05-21 17:24:45 database: disconnected session #6
+2023-05-21 17:24:45 database: disconnecting session #7
+2023-05-21 17:24:45 database: disconnected session #7
+2023-05-21 17:24:45 database: disconnecting session #8
+2023-05-21 17:24:45 database: disconnected session #8
+2023-05-21 17:24:45 database: disconnecting session #9
+2023-05-21 17:24:45 database: disconnected session #9
+2023-05-21 17:24:45 database: disconnecting session #10
+2023-05-21 17:24:45 database: disconnected session #10
+2023-05-21 17:24:45 database: disconnecting session #11
+2023-05-21 17:24:45 database: disconnected session #11
+2023-05-21 17:24:45 database: disconnecting session #12
+2023-05-21 17:24:45 database: disconnected session #12
+2023-05-21 17:24:45 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:24:45 database: closed
+2023-05-21 17:32:15 database: opening /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db (build 214)
+2023-05-21 17:32:15 database: opened /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:32:15 database: connecting session #3 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:32:15 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:32:15 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:32:15 jdbc[3]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:32:15 database: connecting session #4 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:32:15 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:32:15 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:32:15 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:32:15 database: connecting session #5 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:32:15 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:32:15 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:32:15 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:32:15 database: connecting session #6 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:32:15 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:32:15 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:32:15 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:32:15 database: connecting session #7 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:32:15 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:32:15 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:32:15 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:32:15 database: connecting session #8 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:32:15 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:32:15 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:32:15 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:32:15 database: connecting session #9 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:32:15 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:32:15 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:32:15 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:32:15 database: connecting session #10 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:32:15 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:32:15 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:32:15 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:32:15 database: connecting session #11 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:32:15 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:32:15 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:32:15 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:32:15 database: connecting session #12 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:32:15 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:32:15 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:32:15 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:32:15 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-21 17:32:16 jdbc[3]: 
+/*SQL */select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-21 17:40:30 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db from shutdown hook
+2023-05-21 17:40:30 database: disconnecting session #3
+2023-05-21 17:40:30 database: disconnected session #3
+2023-05-21 17:40:30 database: disconnecting session #4
+2023-05-21 17:40:30 database: disconnected session #4
+2023-05-21 17:40:30 database: disconnecting session #5
+2023-05-21 17:40:30 database: disconnected session #5
+2023-05-21 17:40:30 database: disconnecting session #6
+2023-05-21 17:40:30 database: disconnected session #6
+2023-05-21 17:40:30 database: disconnecting session #7
+2023-05-21 17:40:30 database: disconnected session #7
+2023-05-21 17:40:30 database: disconnecting session #8
+2023-05-21 17:40:30 database: disconnected session #8
+2023-05-21 17:40:30 database: disconnecting session #9
+2023-05-21 17:40:30 database: disconnected session #9
+2023-05-21 17:40:30 database: disconnecting session #10
+2023-05-21 17:40:30 database: disconnected session #10
+2023-05-21 17:40:30 database: disconnecting session #11
+2023-05-21 17:40:30 database: disconnected session #11
+2023-05-21 17:40:30 database: disconnecting session #12
+2023-05-21 17:40:30 database: disconnected session #12
+2023-05-21 17:40:30 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:40:30 database: closed
+2023-05-21 17:49:05 database: opening /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db (build 214)
+2023-05-21 17:49:05 database: opened /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:49:05 database: connecting session #3 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:49:05 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:49:05 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:49:05 jdbc[3]: 
+/*SQL #:1 t:1*/CALL READONLY();
+2023-05-21 17:49:05 database: connecting session #4 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:49:05 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:49:05 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:49:05 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:49:05 database: connecting session #5 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:49:05 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:49:05 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:49:05 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:49:05 database: connecting session #6 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:49:05 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:49:05 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:49:05 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:49:06 database: connecting session #7 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:49:06 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:49:06 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:49:06 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:49:06 database: connecting session #8 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:49:06 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:49:06 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:49:06 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:49:06 database: connecting session #9 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:49:06 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:49:06 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:49:06 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:49:06 database: connecting session #10 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:49:06 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:49:06 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:49:06 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:49:06 database: connecting session #11 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:49:06 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:49:06 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:49:06 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:49:06 database: connecting session #12 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:49:06 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:49:06 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:49:06 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:49:06 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-21 17:49:07 jdbc[3]: 
+/*SQL */select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-21 17:52:19 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db from shutdown hook
+2023-05-21 17:52:19 database: disconnecting session #3
+2023-05-21 17:52:19 database: disconnected session #3
+2023-05-21 17:52:19 database: disconnecting session #4
+2023-05-21 17:52:19 database: disconnected session #4
+2023-05-21 17:52:19 database: disconnecting session #5
+2023-05-21 17:52:19 database: disconnected session #5
+2023-05-21 17:52:19 database: disconnecting session #6
+2023-05-21 17:52:19 database: disconnected session #6
+2023-05-21 17:52:19 database: disconnecting session #7
+2023-05-21 17:52:19 database: disconnected session #7
+2023-05-21 17:52:19 database: disconnecting session #8
+2023-05-21 17:52:19 database: disconnected session #8
+2023-05-21 17:52:19 database: disconnecting session #9
+2023-05-21 17:52:19 database: disconnected session #9
+2023-05-21 17:52:19 database: disconnecting session #10
+2023-05-21 17:52:19 database: disconnected session #10
+2023-05-21 17:52:19 database: disconnecting session #11
+2023-05-21 17:52:19 database: disconnected session #11
+2023-05-21 17:52:19 database: disconnecting session #12
+2023-05-21 17:52:19 database: disconnected session #12
+2023-05-21 17:52:19 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:52:19 database: closed
+2023-05-21 17:54:08 database: opening /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db (build 214)
+2023-05-21 17:54:08 database: opened /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:54:08 database: connecting session #3 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:54:08 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:54:08 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:54:08 jdbc[3]: 
+/*SQL #:1 t:1*/CALL READONLY();
+2023-05-21 17:54:08 database: connecting session #4 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:54:08 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:54:08 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:54:08 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:54:08 database: connecting session #5 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:54:08 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:54:08 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:54:08 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:54:08 database: connecting session #6 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:54:08 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:54:08 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:54:08 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:54:08 database: connecting session #7 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:54:08 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:54:08 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:54:08 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:54:08 database: connecting session #8 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:54:08 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:54:08 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:54:08 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:54:08 database: connecting session #9 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:54:08 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:54:08 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:54:08 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:54:08 database: connecting session #10 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:54:08 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:54:08 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:54:08 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:54:08 database: connecting session #11 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:54:08 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:54:08 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:54:08 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:54:08 database: connecting session #12 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:54:08 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:54:08 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:54:08 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:54:08 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-21 17:54:09 jdbc[3]: 
+/*SQL */select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-21 17:57:38 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db from shutdown hook
+2023-05-21 17:57:38 database: disconnecting session #3
+2023-05-21 17:57:38 database: disconnected session #3
+2023-05-21 17:57:38 database: disconnecting session #4
+2023-05-21 17:57:38 database: disconnected session #4
+2023-05-21 17:57:38 database: disconnecting session #5
+2023-05-21 17:57:38 database: disconnected session #5
+2023-05-21 17:57:38 database: disconnecting session #6
+2023-05-21 17:57:38 database: disconnected session #6
+2023-05-21 17:57:38 database: disconnecting session #7
+2023-05-21 17:57:38 database: disconnected session #7
+2023-05-21 17:57:38 database: disconnecting session #8
+2023-05-21 17:57:38 database: disconnected session #8
+2023-05-21 17:57:38 database: disconnecting session #9
+2023-05-21 17:57:38 database: disconnected session #9
+2023-05-21 17:57:38 database: disconnecting session #10
+2023-05-21 17:57:38 database: disconnected session #10
+2023-05-21 17:57:38 database: disconnecting session #11
+2023-05-21 17:57:38 database: disconnected session #11
+2023-05-21 17:57:38 database: disconnecting session #12
+2023-05-21 17:57:38 database: disconnected session #12
+2023-05-21 17:57:38 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:57:38 database: closed
+2023-05-21 17:59:04 database: opening /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db (build 214)
+2023-05-21 17:59:04 database: opened /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:59:04 database: connecting session #3 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:59:04 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:59:04 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:59:04 jdbc[3]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:59:04 database: connecting session #4 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:59:04 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:59:04 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:59:04 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:59:04 database: connecting session #5 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:59:04 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:59:04 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:59:04 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:59:04 database: connecting session #6 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:59:04 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:59:04 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:59:04 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:59:04 database: connecting session #7 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:59:04 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:59:04 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:59:04 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:59:04 database: connecting session #8 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:59:04 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:59:04 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:59:04 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:59:04 database: connecting session #9 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:59:04 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:59:04 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:59:04 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:59:04 database: connecting session #10 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:59:04 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:59:04 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:59:04 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:59:04 database: connecting session #11 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:59:04 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:59:04 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:59:04 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:59:04 database: connecting session #12 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 17:59:04 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 17:59:04 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 17:59:04 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 17:59:05 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-21 17:59:05 jdbc[3]: 
+/*SQL */select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-21 18:02:13 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db from shutdown hook
+2023-05-21 18:02:14 database: disconnecting session #3
+2023-05-21 18:02:14 database: disconnected session #3
+2023-05-21 18:02:14 database: disconnecting session #4
+2023-05-21 18:02:14 database: disconnected session #4
+2023-05-21 18:02:14 database: disconnecting session #5
+2023-05-21 18:02:14 database: disconnected session #5
+2023-05-21 18:02:14 database: disconnecting session #6
+2023-05-21 18:02:14 database: disconnected session #6
+2023-05-21 18:02:14 database: disconnecting session #7
+2023-05-21 18:02:14 database: disconnected session #7
+2023-05-21 18:02:14 database: disconnecting session #8
+2023-05-21 18:02:14 database: disconnected session #8
+2023-05-21 18:02:14 database: disconnecting session #9
+2023-05-21 18:02:14 database: disconnected session #9
+2023-05-21 18:02:14 database: disconnecting session #10
+2023-05-21 18:02:14 database: disconnected session #10
+2023-05-21 18:02:14 database: disconnecting session #11
+2023-05-21 18:02:14 database: disconnected session #11
+2023-05-21 18:02:14 database: disconnecting session #12
+2023-05-21 18:02:14 database: disconnected session #12
+2023-05-21 18:02:14 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 18:02:14 database: closed
+2023-05-21 21:23:23 database: opening /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db (build 214)
+2023-05-21 21:23:23 database: opened /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 21:23:23 database: connecting session #3 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 21:23:23 jdbc[3]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:23:23 jdbc[3]: 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:23:23 jdbc[3]: 
+/*SQL #:1 t:1*/CALL READONLY();
+2023-05-21 21:23:23 database: connecting session #4 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 21:23:23 jdbc[4]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:23:23 jdbc[4]: 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:23:23 jdbc[4]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:23:23 database: connecting session #5 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 21:23:23 jdbc[5]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:23:23 jdbc[5]: 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:23:23 jdbc[5]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:23:23 database: connecting session #6 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 21:23:23 jdbc[6]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:23:23 jdbc[6]: 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:23:23 jdbc[6]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:23:23 database: connecting session #7 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 21:23:23 jdbc[7]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:23:23 jdbc[7]: 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:23:23 jdbc[7]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:23:23 database: connecting session #8 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 21:23:23 jdbc[8]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:23:23 jdbc[8]: 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:23:23 jdbc[8]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:23:23 database: connecting session #9 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 21:23:23 jdbc[9]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:23:23 jdbc[9]: 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:23:23 jdbc[9]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:23:23 database: connecting session #10 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 21:23:23 jdbc[10]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:23:23 jdbc[10]: 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:23:23 jdbc[10]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:23:23 database: connecting session #11 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 21:23:23 jdbc[11]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:23:23 jdbc[11]: 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:23:23 jdbc[11]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:23:23 database: connecting session #12 to /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 21:23:23 jdbc[12]: 
+/*SQL */SET TRACE_LEVEL_FILE 2;
+2023-05-21 21:23:23 jdbc[12]: 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:file:./files/db;TRACE_LEVEL_FILE=2", "", "");
+2023-05-21 21:23:23 jdbc[12]: 
+/*SQL #:1*/CALL READONLY();
+2023-05-21 21:23:24 jdbc[3]: 
+/*SQL #:1*/CALL DATABASE();
+2023-05-21 21:23:26 jdbc[3]: 
+/*SQL t:1*/select * from INFORMATION_SCHEMA.SEQUENCES;
+2023-05-21 21:35:47 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db from shutdown hook
+2023-05-21 21:35:47 database: disconnecting session #3
+2023-05-21 21:35:47 database: disconnected session #3
+2023-05-21 21:35:47 database: disconnecting session #4
+2023-05-21 21:35:47 database: disconnected session #4
+2023-05-21 21:35:47 database: disconnecting session #5
+2023-05-21 21:35:47 database: disconnected session #5
+2023-05-21 21:35:47 database: disconnecting session #6
+2023-05-21 21:35:47 database: disconnected session #6
+2023-05-21 21:35:47 database: disconnecting session #7
+2023-05-21 21:35:47 database: disconnected session #7
+2023-05-21 21:35:47 database: disconnecting session #8
+2023-05-21 21:35:47 database: disconnected session #8
+2023-05-21 21:35:47 database: disconnecting session #9
+2023-05-21 21:35:47 database: disconnected session #9
+2023-05-21 21:35:47 database: disconnecting session #10
+2023-05-21 21:35:47 database: disconnected session #10
+2023-05-21 21:35:47 database: disconnecting session #11
+2023-05-21 21:35:47 database: disconnected session #11
+2023-05-21 21:35:47 database: disconnecting session #12
+2023-05-21 21:35:47 database: disconnected session #12
+2023-05-21 21:35:47 database: closing /Users/sethjacobs/Desktop/JacobsSeth/Ubarber/database/files/db
+2023-05-21 21:35:47 database: closed

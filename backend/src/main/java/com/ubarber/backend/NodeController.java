@@ -50,9 +50,9 @@ public class NodeController {
 		barber.setLongitude(latLong[1]);
 		barber.setGeoHash(ShardingUtils.getGeoHash(barber.getLatitude(),barber.getLongitude()));
 		int bucket = ShardingUtils.getBucket(barber.getLocation(),servers.size());
-		ResponseEntity<EntityModel<Barber>> response = ProfileService.registerBarberProfile(databaseLeader.getServers().get(bucket), barber); //databaseLeader.getServers().get(bucket)
+		ResponseEntity<EntityModel<Barber>> response = ProfileService.registerBarberProfile(databaseLeader.getServers().get(bucket), barber);
 		if(response.getStatusCodeValue() == 200){ //phase 1 main passed successfully
-			ResponseEntity<EntityModel<Barber>> response2 = ProfileService.registerBarberProfile(databaseLeader.getReplicas().get(bucket), barber); //databaseLeader.getReplicas().get(bucket)
+			ResponseEntity<EntityModel<Barber>> response2 = ProfileService.registerBarberProfile(databaseLeader.getReplicas().get(bucket), barber);
 			if(!databaseLeader.getServers().get(bucket).equals(databaseLeader.getReplicas().get(bucket)) && response2.getStatusCodeValue() == 200) { //phase 1 replica passed successfully
 				ResponseEntity<EntityModel<Barber>> responseCommited = ProfileService.registerBarberProfile(databaseLeader.getServers().get(bucket), barber); //phase 2 main
 				ResponseEntity<EntityModel<Barber>> responseCommited2 = ProfileService.registerBarberProfile(databaseLeader.getReplicas().get(bucket), barber); //phase 2 replica
